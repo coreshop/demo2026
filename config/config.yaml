@@ -11,6 +11,7 @@ doctrine:
                 dbname: '%env(DATABASE_NAME)%'
                 host: '%env(DATABASE_HOST)%'
                 port: '%env(DATABASE_PORT)%'
+                database_version: '%env(DATABASE_VERSION)%'
 
 lexik_jwt_authentication:
     secret_key: '%env(resolve:JWT_SECRET_KEY)%' # required for token creation
