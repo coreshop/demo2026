@@ -1,0 +1,14 @@
+pimcore_static_routes:
+    definitions:
+        coreshop_logout:
+            name: coreshop_logout
+            pattern: /(\w+)\/shop\/logout$/
+            reverse: /%_locale/shop/logout
+            controller: 'CoreShop\Bundle\FrontendBundle\Controller\SecurityController::logoutAction'
+            variables: _locale
+            defaults: null
+            siteId: {  }
+            methods: {  }
+            priority: 2
+            creationDate: 1688643688
+            modificationDate: 1688643688

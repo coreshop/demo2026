@@ -1,0 +1,25 @@
+pimcore:
+    assets:
+        image:
+            thumbnails:
+                definitions:
+                    coreshop_productQuote:
+                        items:
+                            -
+                                method: scaleByWidth
+                                arguments:
+                                    width: 400
+                        medias: {  }
+                        name: coreshop_productQuote
+                        description: ''
+                        group: CoreShop
+                        format: SOURCE
+                        quality: 90
+                        highResolution: 0.0
+                        preserveColor: false
+                        preserveMetaData: false
+                        rasterizeSVG: false
+                        downloadable: false
+                        modificationDate: 1688643691
+                        creationDate: 1688643691
+                        preserveAnimation: false
