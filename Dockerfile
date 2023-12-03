@@ -1,7 +1,7 @@
 ARG PHP_VERSION=8.1
-ARG DOCKER_BASE_VERSION=4.1.0
+ARG DOCKER_BASE_VERSION=5.1.0
 ARG NGINX_VERSION=1.21
-ARG ALPINE_VERSION=3.17
+ARG ALPINE_VERSION=3.18
 
 FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/php-alpine-${ALPINE_VERSION}-fpm:${PHP_VERSION}-${DOCKER_BASE_VERSION} as cors_php
 WORKDIR /var/www/html
@@ -42,8 +42,6 @@ RUN set -eux; \
     PIMCORE_DISABLE_CACHE=1 bin/console pimcore:build:classes; \
     COMPOSER_MEMORY_LIMIT=-1 composer dump-autoload --classmap-authoritative --optimize; \
     sync;
-
-COPY --chown=www-data:www-data hotfix/AdminSessionBagListener.php ./vendor/pimcore/admin-ui-classic-bundle/src/EventListener/AdminSessionBagListener.php
 
 ENTRYPOINT ["docker-entrypoint"]
 CMD ["php-fpm"]

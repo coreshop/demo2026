@@ -3,20 +3,20 @@ version: '3.4'
 networks:
     cors_dev:
         external: true
-    coreshop_datahub_demo:
+    coreshop_coreshop4_demo:
         external: false
 
 services:
     db:
         image: mariadb:10.5
-        container_name: coreshop-datahub-demo
+        container_name: coreshop-coreshop4-demo
         networks:
             - cors_dev
-            - coreshop_datahub_demo
+            - coreshop_coreshop4_demo
         working_dir: /application
         command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_general_ci]
         volumes:
-            - coreshop-datahub-demo-database:/var/lib/mysql
+            - coreshop-coreshop4-demo-database:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=ROOT
             - MYSQL_DATABASE=pimcore
@@ -33,21 +33,21 @@ services:
             - php-debug
         networks:
             - cors_dev
-            - coreshop_datahub_demo
+            - coreshop_coreshop4_demo
         labels:
             - traefik.enable=true
-            - traefik.http.routers.coreshop_datahub_demo.rule=Host(`coreshop-datahub-demo.localhost`)
-            - traefik.http.routers.coreshop_datahub_demo.entrypoints=cors_dev
-            - traefik.http.routers.coreshop_datahub_demo.tls=true
-            - traefik.http.services.coreshop_datahub_demo.loadbalancer.server.port=80
+            - traefik.http.routers.coreshop_coreshop4_demo.rule=Host(`coreshop-coreshop4-demo.localhost`)
+            - traefik.http.routers.coreshop_coreshop4_demo.entrypoints=cors_dev
+            - traefik.http.routers.coreshop_coreshop4_demo.tls=true
+            - traefik.http.services.coreshop_coreshop4_demo.loadbalancer.server.port=80
             - traefik.docker.network=cors_dev
 
     php:
         image: pimcore/pimcore:PHP8.1-fpm
-        container_name: coreshop-datahub-demo-php
+        container_name: coreshop-coreshop4-demo-php
         platform: linux/amd64
         networks:
-            - coreshop_datahub_demo
+            - coreshop_coreshop4_demo
         environment:
             - COMPOSER_AUTH=${COMPOSER_AUTH}
         depends_on:
@@ -57,9 +57,9 @@ services:
 
     php-debug:
         image: pimcore/pimcore:PHP8.1-fpm-debug
-        container_name: coreshop-datahub-demo-php-debug
+        container_name: coreshop-coreshop4-demo-php-debug
         networks:
-            - coreshop_datahub_demo
+            - coreshop_coreshop4_demo
         depends_on:
             - db
         volumes:
@@ -71,4 +71,4 @@ services:
             XDEBUG_TRIGGER: PHPSTORM
 
 volumes:
-    coreshop-datahub-demo-database:
+    coreshop-coreshop4-demo-database:
