@@ -9,10 +9,6 @@
   },
   "require": {
     "coreshop/core-shop": "4.0.x-dev",
-    "coreshop/datahub-bundle": "dev-main",
-    "lexik/jwt-authentication-bundle": "^2.19",
-    "nelmio/cors-bundle": "^2.3",
-    "pimcore/data-hub": "^1.6",
     "pimcore/pimcore": "^11.0"
   },
   "autoload": {

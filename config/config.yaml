@@ -12,17 +12,3 @@ doctrine:
                 host: '%env(DATABASE_HOST)%'
                 port: '%env(DATABASE_PORT)%'
                 server_version: '%env(DATABASE_VERSION)%'
-
-lexik_jwt_authentication:
-    secret_key: '%env(resolve:JWT_SECRET_KEY)%' # required for token creation
-    public_key: '%env(resolve:JWT_PUBLIC_KEY)%' # required for token verification
-    pass_phrase: '%env(JWT_PASSPHRASE)%' # required for token creation
-    token_ttl: 3600 # in seconds, default is 3600
-
-nelmio_cors:
-    paths:
-        '^/pimcore-graphql-webservices/coreshop':
-            allow_origin: ['*']
-            allow_headers: ['*']
-            allow_methods: ['POST', 'PUT', 'GET', 'DELETE']
-            max_age: 3600
