@@ -21,6 +21,7 @@ RUN set -eux; \
 
 USER www-data
 
+COPY --chown=www-data:www-data hotfix/LocationAwareConfigRepository.php vendor/pimcore/pimcore/lib/Config/LocationAwareConfigRepository.php
 COPY --chown=www-data:www-data composer.* ./
 COPY --chown=www-data:www-data bin bin/
 COPY --chown=www-data:www-data public/index.php public/index.php
