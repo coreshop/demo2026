@@ -475,12 +475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "dd7aadeeeb5af284d9e47be47719d4db9a94bb94"
+                "reference": "0a17120320b6585894e50b32583f05a15471d3de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/dd7aadeeeb5af284d9e47be47719d4db9a94bb94",
-                "reference": "dd7aadeeeb5af284d9e47be47719d4db9a94bb94",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/0a17120320b6585894e50b32583f05a15471d3de",
+                "reference": "0a17120320b6585894e50b32583f05a15471d3de",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -664,7 +664,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-22T08:14:11+00:00"
+            "time": "2024-01-29T07:24:01+00:00"
         },
         {
             "name": "dachcom-digital/emailizr",

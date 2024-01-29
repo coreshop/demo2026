@@ -23,11 +23,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1706037422,
+   'modificationDate' => 1706518593,
    'userOwner' => 0,
-   'userModification' => 2,
+   'userModification' => 0,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\Category',
-   'implementsInterfaces' => '',
+   'implementsInterfaces' => NULL,
    'listingParentClass' => '',
    'useTraits' => '',
    'listingUseTraits' => '',
@@ -335,6 +335,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'blockedVarsForExport' => 
                 array (
                 ),
+                 'options' => NULL,
                  'maxItems' => NULL,
                  'renderType' => NULL,
                  'dynamicOptions' => false,
@@ -539,11 +540,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'labelWidth' => 100,
      'labelAlign' => 'left',
   )),
-   'icon' => '',
+   'icon' => NULL,
    'group' => 'CoreShop',
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '@CoreShop\\Component\\Pimcore\\DataObject\\CompositeLinkGenerator',
-   'previewGeneratorReference' => '',
+   'previewGeneratorReference' => NULL,
    'compositeIndices' => 
   array (
   ),
@@ -553,7 +554,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'grid' => 
     array (
       'id' => true,
-      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
@@ -562,7 +562,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'search' => 
     array (
       'id' => true,
-      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
