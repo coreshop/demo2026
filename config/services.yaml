@@ -59,7 +59,8 @@ services:
         resource: '../src/Command/*'
         tags: [ 'console.command' ]
 
-
+    App\EventListener\:
+        resource: '../src/EventListener/'
 
     # Example custom templating helper
     # App\Templating\Helper\Example:
