@@ -21,11 +21,6 @@
     ]
   },
   "repositories": {
-    "packagist.org": false,
-    "private-packagist": {
-      "type": "composer",
-      "url": "https://repo.packagist.com/cors/"
-    }
   },
   "scripts": {
     "post-create-project-cmd": "Pimcore\\Composer::postCreateProject",
