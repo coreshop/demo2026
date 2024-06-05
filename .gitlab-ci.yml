@@ -15,7 +15,7 @@ daily_update:on-schedule:
     rules:
         -   if: $CI_PIPELINE_SOURCE == "schedule"
     before_script:
-        - apt-get update && apt-get install -y git
+        - apk add git
         # Clone the repository via HTTPS inside a new directory
         - git remote set-url origin "https://${GITLAB_USERNAME}:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
 
