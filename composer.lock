@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "508a8a832a2333d54aca7119bb693d38",
+    "content-hash": "c17eaef991601ebf8b78ef6149a3d0f6",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -433,20 +433,20 @@
         },
         {
             "name": "coreshop/core-shop",
-            "version": "4.0.x-dev",
+            "version": "dev-next",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "39af7687a782c3d461447ddd3680c1ed14216537"
+                "reference": "6b2ff0a10d8fb101bd7dd66900c829b68d6e8bc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/39af7687a782c3d461447ddd3680c1ed14216537",
-                "reference": "39af7687a782c3d461447ddd3680c1ed14216537",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/6b2ff0a10d8fb101bd7dd66900c829b68d6e8bc6",
+                "reference": "6b2ff0a10d8fb101bd7dd66900c829b68d6e8bc6",
                 "shasum": ""
             },
             "require": {
-                "dachcom-digital/emailizr": "^2.0 || ^3.0",
+                "dachcom-digital/emailizr": "^3.0",
                 "doctrine/data-fixtures": "^1.5",
                 "doctrine/doctrine-bundle": "^2.4",
                 "doctrine/doctrine-fixtures-bundle": "^3.4",
@@ -454,7 +454,7 @@
                 "ext-json": "*",
                 "fakerphp/faker": "^1.16",
                 "gedmo/doctrine-extensions": "^3.11",
-                "jms/serializer-bundle": "^4.0",
+                "jms/serializer-bundle": "^4.0 | ^5.0",
                 "knplabs/knp-menu-bundle": "^3.1",
                 "laminas/laminas-stdlib": "^3.6",
                 "laminas/laminas-zendframework-bridge": "^1.5",
@@ -536,6 +536,7 @@
                 "coreshop/store-bundle": "self.version",
                 "coreshop/taxation": "self.version",
                 "coreshop/taxation-bundle": "self.version",
+                "coreshop/test-bundle": "self.version",
                 "coreshop/theme-bundle": "self.version",
                 "coreshop/tracking": "self.version",
                 "coreshop/tracking-bundle": "self.version",
@@ -564,7 +565,6 @@
             "suggest": {
                 "dpfaffenbauer/process-manager": "Allows to start Processes from within Pimcore UI and also tracks the status."
             },
-            "default-branch": true,
             "type": "pimcore-bundle",
             "extra": {
                 "symfony-bin-dir": "bin",
@@ -572,7 +572,8 @@
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
                 "branch-alias": {
-                    "dev-4.0": "4.0-dev"
+                    "dev-next": "4.1-dev",
+                    "dev-4.1": "4.1-dev"
                 }
             },
             "autoload": {
@@ -614,7 +615,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coreshop/CoreShop/issues",
-                "source": "https://github.com/coreshop/CoreShop/tree/4.0"
+                "source": "https://github.com/coreshop/CoreShop/tree/next"
             },
             "funding": [
                 {
@@ -622,7 +623,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-25T17:47:36+00:00"
+            "time": "2024-06-11T13:33:05+00:00"
         },
         {
             "name": "dachcom-digital/emailizr",

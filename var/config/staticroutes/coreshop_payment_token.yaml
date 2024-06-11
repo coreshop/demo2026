@@ -9,6 +9,6 @@ pimcore_static_routes:
             defaults: null
             siteId: {  }
             methods: {  }
-            priority: 1
+            priority: 3
             creationDate: 1706518593
-            modificationDate: 1706518593
+            modificationDate: 1718112842

@@ -8,7 +8,7 @@
     "process-timeout": 0
   },
   "require": {
-    "coreshop/core-shop": "4.0.x-dev",
+    "coreshop/core-shop": "4.1.x-dev",
     "pimcore/pimcore": "^11.0"
   },
   "autoload": {

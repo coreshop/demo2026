@@ -61,6 +61,7 @@
  * - convertedPimcoreAdjustmentTotalGross [coreShopMoney]
  * - convertedAdjustmentItems [fieldcollections]
  * - priceRuleItems [fieldcollections]
+ * - attributes [fieldcollections]
  */
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
@@ -70,7 +71,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1706518591,
+   'modificationDate' => 1718112843,
    'userOwner' => 0,
    'userModification' => 0,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\OrderItem',
@@ -207,6 +208,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'permissionEdit' => NULL,
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
+                     'width' => NULL,
+                     'height' => NULL,
                      'fieldDefinitionsCache' => NULL,
                   )),
                   1 => 
@@ -1792,6 +1795,36 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'allowedTypes' => 
                     array (
                       0 => 'CoreShopPriceRuleItem',
+                    ),
+                     'lazyLoading' => true,
+                     'maxItems' => NULL,
+                     'disallowAddRemove' => false,
+                     'disallowReorder' => false,
+                     'collapsed' => false,
+                     'collapsible' => false,
+                     'border' => false,
+                  )),
+                  1 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                     'name' => 'attributes',
+                     'title' => 'coreshop.order.attributes',
+                     'tooltip' => '',
+                     'mandatory' => false,
+                     'noteditable' => false,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'fieldtype' => '',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                     'blockedVarsForExport' => 
+                    array (
+                    ),
+                     'allowedTypes' => 
+                    array (
                     ),
                      'lazyLoading' => true,
                      'maxItems' => NULL,

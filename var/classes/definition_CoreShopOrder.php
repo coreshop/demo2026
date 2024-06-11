@@ -61,7 +61,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1706518591,
+   'modificationDate' => 1718112843,
    'userOwner' => 0,
    'userModification' => 0,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\Order',
@@ -70,13 +70,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'useTraits' => '',
    'listingUseTraits' => '',
    'encryption' => false,
-   'encryptedTables' => 
+   'encryptedTables' =>
   array (
   ),
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' => 
+   'layoutDefinitions' =>
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
@@ -88,9 +88,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
-     'children' => 
+     'children' =>
     array (
-      0 => 
+      0 =>
       Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
@@ -102,9 +102,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'collapsed' => false,
          'bodyStyle' => NULL,
          'datatype' => 'layout',
-         'children' => 
+         'children' =>
         array (
-          0 => 
+          0 =>
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'order',
              'type' => NULL,
@@ -116,9 +116,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'collapsed' => false,
              'bodyStyle' => '',
              'datatype' => 'layout',
-             'children' => 
+             'children' =>
             array (
-              0 => 
+              0 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'orderNumber',
                  'title' => 'coreshop.order.number',
@@ -134,13 +134,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -148,7 +148,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              1 => 
+              1 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'quoteNumber',
                  'title' => 'coreshop.order.quote.number',
@@ -164,13 +164,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -178,7 +178,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              2 => 
+              2 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'saleState',
                  'title' => 'coreshop.order.sale_state',
@@ -194,13 +194,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -208,7 +208,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              3 => 
+              3 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'token',
                  'title' => 'coreshop.order.token',
@@ -224,21 +224,21 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => true,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
-                 'unique' => false,
+                 'unique' => true,
                  'showCharCount' => false,
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              4 => 
+              4 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'name' => 'backendCreated',
                  'title' => 'coreshop.order.backend_created',
@@ -254,13 +254,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => 0,
                  'defaultValueGenerator' => '',
               )),
-              5 => 
+              5 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
                  'name' => 'orderDate',
                  'title' => 'coreshop.order.date',
@@ -276,7 +276,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
@@ -284,7 +284,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'columnType' => 'bigint(20)',
                  'defaultValueGenerator' => '',
               )),
-              6 => 
+              6 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Language::__set_state(array(
                  'name' => 'localeCode',
                  'title' => 'coreshop.order.locale',
@@ -300,7 +300,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'options' => NULL,
@@ -314,7 +314,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'optionsProviderData' => NULL,
                  'onlySystemLanguages' => false,
               )),
-              7 => 
+              7 =>
               CoreShop\Bundle\ShippingBundle\CoreExtension\Carrier::__set_state(array(
                  'name' => 'carrier',
                  'title' => 'coreshop.order.carrier',
@@ -330,12 +330,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'allowEmpty' => false,
               )),
-              8 => 
+              8 =>
               CoreShop\Bundle\StoreBundle\CoreExtension\Store::__set_state(array(
                  'name' => 'store',
                  'title' => 'coreshop.order.store',
@@ -351,16 +351,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'allowEmpty' => false,
-                 'options' => 
+                 'options' =>
                 array (
                 ),
                  'optionsProviderClass' => '@CoreShop\\Bundle\\StoreBundle\\CoreExtension\\StoreOptionProvider',
               )),
-              9 => 
+              9 =>
               CoreShop\Bundle\PaymentBundle\CoreExtension\PaymentProvider::__set_state(array(
                  'name' => 'paymentProvider',
                  'title' => 'coreshop.order.payment_provider',
@@ -376,12 +376,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'allowEmpty' => false,
               )),
-              10 => 
+              10 =>
               CoreShop\Bundle\PimcoreBundle\CoreExtension\SerializedData::__set_state(array(
                  'name' => 'paymentSettings',
                  'title' => 'coreshop.order.payment_settings',
@@ -397,12 +397,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'phpdocType' => '',
               )),
-              11 => 
+              11 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
                  'name' => 'comment',
                  'title' => 'coreshop.order.comment',
@@ -418,7 +418,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'maxLength' => NULL,
@@ -427,7 +427,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'height' => '',
                  'width' => 350,
               )),
-              12 => 
+              12 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
                  'name' => 'additionalData',
                  'title' => 'coreshop.order.additional_data',
@@ -443,16 +443,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
-                 'allowedTypes' => 
+                 'allowedTypes' =>
                 array (
                 ),
                  'maxItems' => NULL,
                  'border' => false,
               )),
-              13 => 
+              13 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\BooleanSelect::__set_state(array(
                  'name' => 'immutable',
                  'title' => 'coreshop.order.immutable',
@@ -468,25 +468,25 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'yesLabel' => 'yes',
                  'noLabel' => 'no',
                  'emptyLabel' => 'null',
-                 'options' => 
+                 'options' =>
                 array (
-                  0 => 
+                  0 =>
                   array (
                     'key' => 'null',
                     'value' => 0,
                   ),
-                  1 => 
+                  1 =>
                   array (
                     'key' => 'yes',
                     'value' => 1,
                   ),
-                  2 => 
+                  2 =>
                   array (
                     'key' => 'no',
                     'value' => -1,
@@ -494,9 +494,38 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'width' => '',
               )),
+                14 => \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                    'name' => 'name',
+                    'title' => 'coreshop.order.name',
+                    'tooltip' => '',
+                    'mandatory' => false,
+                    'noteditable' => true,
+                    'index' => false,
+                    'locked' => false,
+                    'style' => '',
+                    'permissions' => NULL,
+                    'fieldtype' => '',
+                    'relationType' => false,
+                    'invisible' => false,
+                    'visibleGridView' => false,
+                    'visibleSearch' => false,
+                    'blockedVarsForExport' =>
+                        array (
+                        ),
+                    'defaultValue' => NULL,
+                    'columnLength' => 190,
+                    'regex' => '',
+                    'regexFlags' =>
+                        array (
+                        ),
+                    'unique' => false,
+                    'showCharCount' => false,
+                    'width' => '',
+                    'defaultValueGenerator' => '',
+                )),
             ),
              'locked' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'fieldtype' => 'panel',
@@ -506,7 +535,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          1 => 
+          1 =>
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'status',
              'type' => NULL,
@@ -518,9 +547,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'collapsed' => false,
              'bodyStyle' => '',
              'datatype' => 'layout',
-             'children' => 
+             'children' =>
             array (
-              0 => 
+              0 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'quoteState',
                  'title' => 'coreshop.order.quote_state',
@@ -536,13 +565,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -550,7 +579,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              1 => 
+              1 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'orderState',
                  'title' => 'coreshop.order.order_state',
@@ -566,13 +595,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -580,7 +609,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              2 => 
+              2 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'paymentState',
                  'title' => 'coreshop.order.payment_state',
@@ -596,13 +625,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -610,7 +639,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              3 => 
+              3 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'shippingState',
                  'title' => 'coreshop.order.shipping_state',
@@ -626,13 +655,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -640,7 +669,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'defaultValueGenerator' => '',
               )),
-              4 => 
+              4 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'invoiceState',
                  'title' => 'coreshop.order.invoice_state',
@@ -656,13 +685,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => NULL,
                  'columnLength' => 190,
                  'regex' => '',
-                 'regexFlags' => 
+                 'regexFlags' =>
                 array (
                 ),
                  'unique' => false,
@@ -672,7 +701,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'fieldtype' => 'panel',
@@ -682,7 +711,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          2 => 
+          2 =>
           Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
              'name' => 'numbers',
              'type' => NULL,
@@ -694,9 +723,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'collapsed' => false,
              'bodyStyle' => '',
              'datatype' => 'layout',
-             'children' => 
+             'children' =>
             array (
-              0 => 
+              0 =>
               Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'numbers_store',
                  'type' => NULL,
@@ -708,9 +737,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'collapsed' => false,
                  'bodyStyle' => '',
                  'datatype' => 'layout',
-                 'children' => 
+                 'children' =>
                 array (
-                  0 => 
+                  0 =>
                   CoreShop\Bundle\CurrencyBundle\CoreExtension\Currency::__set_state(array(
                      'name' => 'baseCurrency',
                      'title' => 'coreshop.order.base_currency',
@@ -726,12 +755,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'allowEmpty' => false,
                   )),
-                  1 => 
+                  1 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                      'name' => 'totals',
                      'type' => NULL,
@@ -743,9 +772,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                          'name' => 'paymentTotal',
                          'title' => 'coreshop.order.payment_total',
@@ -761,7 +790,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'defaultValue' => NULL,
@@ -775,7 +804,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'width' => '',
                          'defaultValueGenerator' => '',
                       )),
-                      1 => 
+                      1 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'totalNet',
                          'title' => 'coreshop.order.total_net',
@@ -791,7 +820,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -801,7 +830,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      2 => 
+                      2 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'totalGross',
                          'title' => 'coreshop.order.total_gross',
@@ -817,7 +846,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -827,7 +856,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      3 => 
+                      3 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'subtotalNet',
                          'title' => 'coreshop.order.subtotal_net',
@@ -843,7 +872,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -853,7 +882,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      4 => 
+                      4 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'subtotalGross',
                          'title' => 'coreshop.order.subtotal_gross',
@@ -869,7 +898,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -881,14 +910,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'fieldset',
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  2 => 
+                  2 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                      'name' => 'shipping',
                      'type' => NULL,
@@ -900,9 +929,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                          'name' => 'shippingTaxRate',
                          'title' => 'coreshop.order.shipping_tax_rate',
@@ -918,7 +947,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'defaultValue' => NULL,
@@ -934,14 +963,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'fieldset',
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  3 => 
+                  3 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'taxes',
                      'type' => NULL,
@@ -953,9 +982,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'taxes',
                          'title' => 'coreshop.order.taxes',
@@ -971,10 +1000,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
-                         'allowedTypes' => 
+                         'allowedTypes' =>
                         array (
                           0 => 'CoreShopTaxItem',
                         ),
@@ -988,7 +1017,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'panel',
@@ -998,7 +1027,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  4 => 
+                  4 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'adjustments',
                      'type' => NULL,
@@ -1010,9 +1039,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'pimcoreAdjustmentTotalNet',
                          'title' => 'coreshop.order.adjustments_total_net',
@@ -1028,7 +1057,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1038,7 +1067,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      1 => 
+                      1 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'pimcoreAdjustmentTotalGross',
                          'title' => 'coreshop.order.adjustments_total_gross',
@@ -1054,7 +1083,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1064,7 +1093,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      2 => 
+                      2 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'adjustmentItems',
                          'title' => 'coreshop.order.adjustments',
@@ -1080,10 +1109,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
-                         'allowedTypes' => 
+                         'allowedTypes' =>
                         array (
                           0 => 'CoreShopAdjustment',
                         ),
@@ -1097,7 +1126,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'panel',
@@ -1109,7 +1138,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'fieldtype' => 'panel',
@@ -1119,7 +1148,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
               )),
-              1 => 
+              1 =>
               Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'numbers_converted',
                  'type' => NULL,
@@ -1131,9 +1160,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'collapsed' => false,
                  'bodyStyle' => '',
                  'datatype' => 'layout',
-                 'children' => 
+                 'children' =>
                 array (
-                  0 => 
+                  0 =>
                   CoreShop\Bundle\CurrencyBundle\CoreExtension\Currency::__set_state(array(
                      'name' => 'currency',
                      'title' => 'coreshop.order.converted_currency',
@@ -1149,12 +1178,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'invisible' => false,
                      'visibleGridView' => false,
                      'visibleSearch' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'allowEmpty' => false,
                   )),
-                  1 => 
+                  1 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                      'name' => 'totals',
                      'type' => NULL,
@@ -1166,9 +1195,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                          'name' => 'convertedPaymentTotal',
                          'title' => 'coreshop.order.converted_payment_total',
@@ -1184,7 +1213,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'defaultValue' => NULL,
@@ -1198,7 +1227,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'width' => '',
                          'defaultValueGenerator' => '',
                       )),
-                      1 => 
+                      1 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedTotalNet',
                          'title' => 'coreshop.order.converted_total_net',
@@ -1214,7 +1243,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1224,7 +1253,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      2 => 
+                      2 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedTotalGross',
                          'title' => 'coreshop.order.converted_total_gross',
@@ -1240,7 +1269,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1250,7 +1279,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      3 => 
+                      3 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedSubtotalNet',
                          'title' => 'coreshop.order.converted_subtotal_net',
@@ -1266,7 +1295,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1276,7 +1305,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      4 => 
+                      4 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedSubtotalGross',
                          'title' => 'coreshop.order.converted_subtotal_gross',
@@ -1292,7 +1321,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1304,14 +1333,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'fieldset',
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  2 => 
+                  2 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'taxes_converted',
                      'type' => NULL,
@@ -1323,9 +1352,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'convertedTaxes',
                          'title' => 'coreshop.order.converted_taxes',
@@ -1341,10 +1370,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
-                         'allowedTypes' => 
+                         'allowedTypes' =>
                         array (
                           0 => 'CoreShopTaxItem',
                         ),
@@ -1358,7 +1387,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'panel',
@@ -1368,7 +1397,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  3 => 
+                  3 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'adjustments_converted',
                      'type' => NULL,
@@ -1380,9 +1409,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedPimcoreAdjustmentTotalNet',
                          'title' => 'coreshop.order.converted_adjustments_total_net',
@@ -1398,7 +1427,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1408,7 +1437,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      1 => 
+                      1 =>
                       CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedPimcoreAdjustmentTotalGross',
                          'title' => 'coreshop.order.converted_adjustments_total_gross',
@@ -1424,7 +1453,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'width' => NULL,
@@ -1434,7 +1463,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'maxValue' => NULL,
                          'nullable' => false,
                       )),
-                      2 => 
+                      2 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'convertedAdjustmentItems',
                          'title' => 'coreshop.order.converted_adjustments',
@@ -1450,10 +1479,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
-                         'allowedTypes' => 
+                         'allowedTypes' =>
                         array (
                           0 => 'CoreShopAdjustment',
                         ),
@@ -1467,7 +1496,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'panel',
@@ -1479,7 +1508,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'fieldtype' => 'panel',
@@ -1489,7 +1518,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
               )),
-              2 => 
+              2 =>
               Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'other',
                  'type' => NULL,
@@ -1501,9 +1530,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'collapsed' => false,
                  'bodyStyle' => '',
                  'datatype' => 'layout',
-                 'children' => 
+                 'children' =>
                 array (
-                  0 => 
+                  0 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                      'name' => 'weight',
                      'type' => NULL,
@@ -1515,9 +1544,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                          'name' => 'weight',
                          'title' => 'coreshop.order.weight',
@@ -1533,7 +1562,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
                          'defaultValue' => NULL,
@@ -1549,14 +1578,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'fieldset',
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
                   )),
-                  1 => 
+                  1 =>
                   Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                      'name' => 'price_rules',
                      'type' => NULL,
@@ -1568,9 +1597,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'collapsed' => false,
                      'bodyStyle' => '',
                      'datatype' => 'layout',
-                     'children' => 
+                     'children' =>
                     array (
-                      0 => 
+                      0 =>
                       Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'priceRuleItems',
                          'title' => 'coreshop.order.price_rules',
@@ -1586,10 +1615,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'invisible' => false,
                          'visibleGridView' => false,
                          'visibleSearch' => false,
-                         'blockedVarsForExport' => 
+                         'blockedVarsForExport' =>
                         array (
                         ),
-                         'allowedTypes' => 
+                         'allowedTypes' =>
                         array (
                           0 => 'CoreShopProposalCartPriceRuleItem',
                         ),
@@ -1603,7 +1632,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                       )),
                     ),
                      'locked' => false,
-                     'blockedVarsForExport' => 
+                     'blockedVarsForExport' =>
                     array (
                     ),
                      'fieldtype' => 'fieldset',
@@ -1612,7 +1641,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   )),
                 ),
                  'locked' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'fieldtype' => 'panel',
@@ -1624,14 +1653,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'fieldtype' => 'tabpanel',
              'border' => false,
              'tabPosition' => 'top',
           )),
-          3 => 
+          3 =>
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'items',
              'type' => NULL,
@@ -1643,9 +1672,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'collapsed' => false,
              'bodyStyle' => '',
              'datatype' => 'layout',
-             'children' => 
+             'children' =>
             array (
-              0 => 
+              0 =>
               CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelations::__set_state(array(
                  'name' => 'items',
                  'title' => 'coreshop.order.items',
@@ -1661,10 +1690,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
-                 'classes' => 
+                 'classes' =>
                 array (
                 ),
                  'displayMode' => NULL,
@@ -1674,11 +1703,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'allowToClearRelation' => true,
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' => 
+                 'assetTypes' =>
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' => 
+                 'documentTypes' =>
                 array (
                 ),
                  'enableTextSelection' => false,
@@ -1686,7 +1715,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'height' => 400,
                  'stack' => 'coreshop.order_item',
               )),
-              1 => 
+              1 =>
               Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'name' => 'needsRecalculation',
                  'title' => 'coreshop.order.needs_recalculation',
@@ -1702,7 +1731,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => true,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
                  'defaultValue' => 0,
@@ -1710,7 +1739,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'fieldtype' => 'panel',
@@ -1720,7 +1749,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelWidth' => 100,
              'labelAlign' => 'left',
           )),
-          4 => 
+          4 =>
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'customer',
              'type' => NULL,
@@ -1732,9 +1761,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'collapsed' => false,
              'bodyStyle' => '',
              'datatype' => 'layout',
-             'children' => 
+             'children' =>
             array (
-              0 => 
+              0 =>
               CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
                  'name' => 'customer',
                  'title' => 'coreshop.order.customer',
@@ -1750,12 +1779,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
-                 'classes' => 
+                 'classes' =>
                 array (
-                  0 => 
+                  0 =>
                   array (
                     'classes' => 'CoreShopCustomer',
                   ),
@@ -1766,18 +1795,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'allowToClearRelation' => true,
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' => 
+                 'assetTypes' =>
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' => 
+                 'documentTypes' =>
                 array (
                 ),
                  'width' => '',
                  'stack' => 'coreshop.customer',
                  'returnConcrete' => false,
               )),
-              1 => 
+              1 =>
               CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
                  'name' => 'shippingAddress',
                  'title' => 'coreshop.order.shipping_address',
@@ -1793,12 +1822,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
-                 'classes' => 
+                 'classes' =>
                 array (
-                  0 => 
+                  0 =>
                   array (
                     'classes' => 'CoreShopAddress',
                   ),
@@ -1809,18 +1838,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'allowToClearRelation' => true,
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' => 
+                 'assetTypes' =>
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' => 
+                 'documentTypes' =>
                 array (
                 ),
                  'width' => '',
                  'stack' => 'coreshop.address',
                  'returnConcrete' => false,
               )),
-              2 => 
+              2 =>
               CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
                  'name' => 'invoiceAddress',
                  'title' => 'coreshop.order.invoice_address',
@@ -1836,12 +1865,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
-                 'blockedVarsForExport' => 
+                 'blockedVarsForExport' =>
                 array (
                 ),
-                 'classes' => 
+                 'classes' =>
                 array (
-                  0 => 
+                  0 =>
                   array (
                     'classes' => 'CoreShopAddress',
                   ),
@@ -1852,11 +1881,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'allowToClearRelation' => true,
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' => 
+                 'assetTypes' =>
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' => 
+                 'documentTypes' =>
                 array (
                 ),
                  'width' => '',
@@ -1865,7 +1894,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
             ),
              'locked' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'fieldtype' => 'panel',
@@ -1877,7 +1906,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
           )),
         ),
          'locked' => false,
-         'blockedVarsForExport' => 
+         'blockedVarsForExport' =>
         array (
         ),
          'fieldtype' => 'tabpanel',
@@ -1886,7 +1915,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       )),
     ),
      'locked' => false,
-     'blockedVarsForExport' => 
+     'blockedVarsForExport' =>
     array (
     ),
      'fieldtype' => 'panel',
@@ -1901,13 +1930,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => NULL,
    'previewGeneratorReference' => NULL,
-   'compositeIndices' => 
+   'compositeIndices' =>
   array (
   ),
    'showFieldLookup' => false,
-   'propertyVisibility' => 
+   'propertyVisibility' =>
   array (
-    'grid' => 
+    'grid' =>
     array (
       'id' => true,
       'key' => false,
@@ -1916,7 +1945,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' => 
+    'search' =>
     array (
       'id' => true,
       'key' => false,
@@ -1927,16 +1956,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     ),
   ),
    'enableGridLocking' => false,
-   'deletedDataComponents' => 
+   'deletedDataComponents' =>
   array (
   ),
-   'blockedVarsForExport' => 
+   'blockedVarsForExport' =>
   array (
   ),
-   'fieldDefinitionsCache' => 
+   'fieldDefinitionsCache' =>
   array (
   ),
-   'activeDispatchingEvents' => 
+   'activeDispatchingEvents' =>
   array (
   ),
 ));

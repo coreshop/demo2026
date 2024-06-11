@@ -18,7 +18,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1706518593,
+   'modificationDate' => 1718112843,
    'userOwner' => 0,
    'userModification' => 0,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\Wishlist',
@@ -27,13 +27,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'useTraits' => '',
    'listingUseTraits' => '',
    'encryption' => false,
-   'encryptedTables' => 
+   'encryptedTables' =>
   array (
   ),
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' => 
+   'layoutDefinitions' =>
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
@@ -45,9 +45,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
-     'children' => 
+     'children' =>
     array (
-      0 => 
+      0 =>
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
@@ -59,9 +59,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'collapsed' => false,
          'bodyStyle' => '',
          'datatype' => 'layout',
-         'children' => 
+         'children' =>
         array (
-          0 => 
+          0 =>
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'token',
              'title' => 'Token',
@@ -77,21 +77,21 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'defaultValue' => NULL,
              'columnLength' => 190,
              'regex' => '',
-             'regexFlags' => 
+             'regexFlags' =>
             array (
             ),
-             'unique' => false,
+             'unique' => true,
              'showCharCount' => false,
              'width' => '',
              'defaultValueGenerator' => '',
           )),
-          1 => 
+          1 =>
           CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelations::__set_state(array(
              'name' => 'items',
              'title' => 'Items',
@@ -107,10 +107,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
-             'classes' => 
+             'classes' =>
             array (
             ),
              'displayMode' => NULL,
@@ -120,11 +120,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'allowToClearRelation' => true,
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' => 
+             'assetTypes' =>
             array (
             ),
              'documentsAllowed' => false,
-             'documentTypes' => 
+             'documentTypes' =>
             array (
             ),
              'enableTextSelection' => false,
@@ -132,7 +132,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
              'stack' => 'coreshop.wishlist_item',
           )),
-          2 => 
+          2 =>
           CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
              'name' => 'customer',
              'title' => 'Customer',
@@ -148,12 +148,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
-             'classes' => 
+             'classes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'classes' => 'CoreShopCustomer',
               ),
@@ -164,18 +164,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'allowToClearRelation' => true,
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' => 
+             'assetTypes' =>
             array (
             ),
              'documentsAllowed' => false,
-             'documentTypes' => 
+             'documentTypes' =>
             array (
             ),
              'width' => NULL,
              'stack' => 'coreshop.customer',
              'returnConcrete' => false,
           )),
-          3 => 
+          3 =>
           CoreShop\Bundle\StoreBundle\CoreExtension\Store::__set_state(array(
              'name' => 'store',
              'title' => 'Store',
@@ -191,18 +191,47 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
-             'blockedVarsForExport' => 
+             'blockedVarsForExport' =>
             array (
             ),
              'allowEmpty' => false,
-             'options' => 
+             'options' =>
             array (
             ),
              'optionsProviderClass' => '@CoreShop\\Bundle\\StoreBundle\\CoreExtension\\StoreOptionProvider',
           )),
+            4 => \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                'name' => 'name',
+                'title' => 'coreshop.order.name',
+                'tooltip' => '',
+                'mandatory' => false,
+                'noteditable' => true,
+                'index' => false,
+                'locked' => false,
+                'style' => '',
+                'permissions' => NULL,
+                'fieldtype' => '',
+                'relationType' => false,
+                'invisible' => false,
+                'visibleGridView' => false,
+                'visibleSearch' => false,
+                'blockedVarsForExport' =>
+                    array (
+                    ),
+                'defaultValue' => NULL,
+                'columnLength' => 190,
+                'regex' => '',
+                'regexFlags' =>
+                    array (
+                    ),
+                'unique' => false,
+                'showCharCount' => false,
+                'width' => '',
+                'defaultValueGenerator' => '',
+            )),
         ),
          'locked' => false,
-         'blockedVarsForExport' => 
+         'blockedVarsForExport' =>
         array (
         ),
          'fieldtype' => 'panel',
@@ -214,7 +243,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       )),
     ),
      'locked' => false,
-     'blockedVarsForExport' => 
+     'blockedVarsForExport' =>
     array (
     ),
      'fieldtype' => 'panel',
@@ -229,13 +258,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '',
    'previewGeneratorReference' => '',
-   'compositeIndices' => 
+   'compositeIndices' =>
   array (
   ),
    'showFieldLookup' => false,
-   'propertyVisibility' => 
+   'propertyVisibility' =>
   array (
-    'grid' => 
+    'grid' =>
     array (
       'id' => true,
       'key' => false,
@@ -244,7 +273,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' => 
+    'search' =>
     array (
       'id' => true,
       'key' => false,
@@ -255,16 +284,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     ),
   ),
    'enableGridLocking' => false,
-   'deletedDataComponents' => 
+   'deletedDataComponents' =>
   array (
   ),
-   'blockedVarsForExport' => 
+   'blockedVarsForExport' =>
   array (
   ),
-   'fieldDefinitionsCache' => 
+   'fieldDefinitionsCache' =>
   array (
   ),
-   'activeDispatchingEvents' => 
+   'activeDispatchingEvents' =>
   array (
   ),
 ));
