@@ -33,7 +33,6 @@
  * - itemQuantityFactor [numeric]
  * - wholesalePrice [coreShopMoney]
  * - wholesaleBuyingPrice [coreShopMoneyCurrency]
- * - taxRule [coreShopTaxRuleGroup]
  * - specificPriceRules [coreShopProductSpecificPriceRules]
  * - quantityPriceRules [coreShopProductQuantityPriceRules]
  * - weight [numeric]
@@ -49,11 +48,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1706518593,
+   'modificationDate' => 1718114390,
    'userOwner' => 0,
-   'userModification' => 0,
+   'userModification' => 2,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\Product',
-   'implementsInterfaces' => NULL,
+   'implementsInterfaces' => '',
    'listingParentClass' => '',
    'useTraits' => '',
    'listingUseTraits' => '',
@@ -326,6 +325,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'permissionEdit' => NULL,
                          'labelWidth' => 100,
                          'labelAlign' => 'left',
+                         'width' => NULL,
+                         'height' => NULL,
                          'fieldDefinitionsCache' => NULL,
                       )),
                       1 => 
@@ -389,6 +390,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'permissionEdit' => NULL,
                          'labelWidth' => 100,
                          'labelAlign' => 'left',
+                         'width' => NULL,
+                         'height' => NULL,
                          'fieldDefinitionsCache' => NULL,
                       )),
                     ),
@@ -396,6 +399,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'permissionEdit' => NULL,
                      'labelWidth' => 100,
                      'labelAlign' => 'left',
+                     'width' => NULL,
+                     'height' => NULL,
                      'fieldDefinitionsCache' => NULL,
                   )),
                   1 => 
@@ -501,6 +506,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                     ),
                      'yesLabel' => 'isDigitalProduct',
                      'noLabel' => 'noDigitalProduct',
+                     'emptyLabel' => 'empty',
                      'options' => 
                     array (
                       0 => 
@@ -583,12 +589,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'blockedVarsForExport' => 
                     array (
                     ),
-                     'options' => NULL,
                      'maxItems' => NULL,
                      'renderType' => NULL,
                      'dynamicOptions' => false,
+                     'defaultValue' => NULL,
                      'height' => '',
                      'width' => '',
+                     'defaultValueGenerator' => '',
                      'optionsProviderType' => NULL,
                      'optionsProviderClass' => NULL,
                      'optionsProviderData' => NULL,
@@ -719,6 +726,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'permissionEdit' => NULL,
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
+                 'width' => NULL,
+                 'height' => NULL,
                  'fieldDefinitionsCache' => NULL,
               )),
             ),
@@ -808,6 +817,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'permissionEdit' => NULL,
                  'labelWidth' => 100,
                  'labelAlign' => 'left',
+                 'width' => NULL,
+                 'height' => NULL,
                  'fieldDefinitionsCache' => NULL,
               )),
             ),
@@ -1206,6 +1217,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'yesLabel' => 'isTracked',
                  'noLabel' => 'notTracked',
+                 'emptyLabel' => 'empty',
                  'options' => 
                 array (
                   0 => 
@@ -1471,30 +1483,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'blockedVarsForExport' => 
                     array (
                     ),
-                     'width' => NULL,
+                     'width' => 0,
                      'minValue' => 0.0,
                      'maxValue' => 0.0,
-                  )),
-                  5 => 
-                  CoreShop\Bundle\TaxationBundle\CoreExtension\TaxRuleGroup::__set_state(array(
-                     'name' => 'taxRule',
-                     'title' => 'coreshop.product.tax_rule',
-                     'tooltip' => '',
-                     'mandatory' => false,
-                     'noteditable' => false,
-                     'index' => false,
-                     'locked' => false,
-                     'style' => '',
-                     'permissions' => NULL,
-                     'fieldtype' => 'coreShopTaxRuleGroup',
-                     'relationType' => false,
-                     'invisible' => false,
-                     'visibleGridView' => false,
-                     'visibleSearch' => false,
-                     'blockedVarsForExport' => 
-                    array (
-                    ),
-                     'allowEmpty' => true,
                   )),
                 ),
                  'locked' => false,
@@ -1752,11 +1743,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'labelWidth' => 100,
      'labelAlign' => 'left',
   )),
-   'icon' => NULL,
+   'icon' => '',
    'group' => 'CoreShop',
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '@CoreShop\\Component\\Pimcore\\DataObject\\CompositeLinkGenerator',
-   'previewGeneratorReference' => NULL,
+   'previewGeneratorReference' => '',
    'compositeIndices' => 
   array (
   ),
@@ -1766,6 +1757,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
@@ -1774,6 +1766,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
@@ -1783,6 +1776,27 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'enableGridLocking' => false,
    'deletedDataComponents' => 
   array (
+    0 => 
+    CoreShop\Bundle\TaxationBundle\CoreExtension\TaxRuleGroup::__set_state(array(
+       'name' => 'taxRule',
+       'title' => 'coreshop.product.tax_rule',
+       'tooltip' => '',
+       'mandatory' => false,
+       'noteditable' => false,
+       'index' => false,
+       'locked' => false,
+       'style' => '',
+       'permissions' => NULL,
+       'fieldtype' => 'coreShopTaxRuleGroup',
+       'relationType' => false,
+       'invisible' => false,
+       'visibleGridView' => false,
+       'visibleSearch' => false,
+       'blockedVarsForExport' => 
+      array (
+      ),
+       'allowEmpty' => true,
+    )),
   ),
    'blockedVarsForExport' => 
   array (
