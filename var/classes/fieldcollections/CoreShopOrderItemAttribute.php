@@ -6,7 +6,7 @@
  * - attributeValue [coreShopSerializedData]
  */
 
-return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
+return \Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'dao' => NULL,
    'key' => 'CoreShopOrderItemAttribute',
    'parentClass' => 'CoreShop\\Component\\Order\\Model\\OrderItemAttribute',
@@ -14,7 +14,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'title' => 'Order Item Attribute',
    'group' => 'CoreShop',
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => NULL,
      'type' => NULL,
      'region' => NULL,
@@ -28,7 +28,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -42,7 +42,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'attributeKey',
              'title' => 'Key',
              'tooltip' => '',
@@ -72,7 +72,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          CoreShop\Bundle\PimcoreBundle\CoreExtension\SerializedData::__set_state(array(
+          \CoreShop\Bundle\PimcoreBundle\CoreExtension\SerializedData::__set_state(array(
              'name' => 'attributeValue',
              'title' => 'Value',
              'tooltip' => '',

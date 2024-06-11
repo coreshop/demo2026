@@ -437,12 +437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "ad369391f1319fa07e2c19da5d91eda24c1f5bfd"
+                "reference": "6d93aa8fe3b20adb4e722c372c5473b5b582885e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/ad369391f1319fa07e2c19da5d91eda24c1f5bfd",
-                "reference": "ad369391f1319fa07e2c19da5d91eda24c1f5bfd",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/6d93aa8fe3b20adb4e722c372c5473b5b582885e",
+                "reference": "6d93aa8fe3b20adb4e722c372c5473b5b582885e",
                 "shasum": ""
             },
             "require": {
@@ -623,7 +623,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-11T13:57:46+00:00"
+            "time": "2024-06-11T15:12:38+00:00"
         },
         {
             "name": "dachcom-digital/emailizr",
@@ -15905,7 +15905,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "coreshop/core-shop": 20
+        "coreshop/core-shop": 20,
+        "pimcore/generic-data-index-bundle": 20,
+        "pimcore/studio-backend-bundle": 20,
+        "pimcore/studio-ui-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
