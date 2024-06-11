@@ -1,4 +1,4 @@
-ARG PHP_VERSION=8.1
+ARG PHP_VERSION=8.2
 ARG DOCKER_BASE_VERSION=5.1.7
 ARG NGINX_VERSION=1.26
 ARG ALPINE_VERSION=3.19
@@ -48,6 +48,28 @@ RUN set -eux; \
 
 ENTRYPOINT ["docker-entrypoint"]
 CMD ["php-fpm"]
+
+FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/php-alpine-${ALPINE_VERSION}-supervisord:${PHP_VERSION}-${DOCKER_BASE_VERSION} as cors_php_supervisord
+
+COPY .docker/php/docker-entrypoint-supervisord.sh /usr/local/bin/docker-entrypoint
+
+RUN set -eux; \
+    chmod +x /usr/local/bin/docker-entrypoint; \
+    chmod +x /usr/local/bin/install; \
+    chmod +x /usr/local/bin/health;
+
+COPY .docker/supervisord/pimcore.conf /etc/supervisor/conf.d/pimcore.conf
+COPY .docker/supervisord/coreshop.conf /etc/supervisor/conf.d/coreshop.conf
+
+ARG APP_ENV=prod
+ENV APP_ENV=$APP_ENV
+ENV APP_DEBUG=0
+
+USER www-data
+
+COPY --from=cors_php /var/www/html /var/www/html
+
+ENTRYPOINT ["docker-entrypoint"]
 
 FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/nginx:${NGINX_VERSION}-${DOCKER_BASE_VERSION} AS cors_nginx
 

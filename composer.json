@@ -9,7 +9,10 @@
   },
   "require": {
     "coreshop/core-shop": "4.1.x-dev",
-    "pimcore/pimcore": "^11.0"
+    "pimcore/generic-data-index-bundle": "1.x-dev",
+    "pimcore/pimcore": "^11.0",
+    "pimcore/studio-backend-bundle": "1.x-dev",
+    "pimcore/studio-ui-bundle": "1.x-dev"
   },
   "autoload": {
     "psr-4": {

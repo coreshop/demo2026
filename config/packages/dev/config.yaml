@@ -1,2 +1,7 @@
 imports:
     - { resource: ../../config.yaml }
+
+pimcore_open_search_client:
+    clients:
+        default:
+            hosts: ['opensearch']

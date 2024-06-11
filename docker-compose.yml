@@ -43,7 +43,7 @@ services:
             - traefik.docker.network=cors_dev
 
     php:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm:8.1-5.1.7
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm:8.2-5.1.7
         container_name: coreshop-coreshop4-demo-php
         networks:
             - coreshop_coreshop4_demo
@@ -55,7 +55,7 @@ services:
             - .:/var/www/html:cached
 
     php-debug:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm-debug:8.1-5.1.7
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm-debug:8.2-5.1.7
         container_name: coreshop-coreshop4-demo-php-debug
         networks:
             - coreshop_coreshop4_demo
@@ -69,5 +69,37 @@ services:
             XDEBUG_HOST: 198.19.248.254
             XDEBUG_TRIGGER: PHPSTORM
 
+    supervisord:
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-supervisord:8.2-5.1.7
+        depends_on:
+            - db
+        volumes:
+            - ./:/var/www/html:cached
+            - ./.docker/supervisord/coreshop.conf:/etc/supervisor/conf.d/coreshop.conf:ro
+            - ./.docker/supervisord/pimcore.conf:/etc/supervisor/conf.d/pimcore.conf:ro
+        networks:
+            - coreshop_coreshop4_demo
+
+
+    opensearch:
+        image: opensearchproject/opensearch:${OPENSEARCH_VERSION:-2.11.1}
+        environment:
+            discovery.type: single-node
+            node.name: opensearch
+            OPENSEARCH_JAVA_OPTS: "-Xms512m -Xmx512m"
+            plugins.security.disabled: 'true'
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+            nofile:
+                soft: 65536 # maximum number of open files for the OpenSearch user, set to at least 65536 on modern systems
+                hard: 65536
+        networks:
+            - coreshop_coreshop4_demo
+        volumes:
+            - opensearch-data:/usr/share/opensearch/data
+
 volumes:
     coreshop-coreshop4-demo-database:
+    opensearch-data:
