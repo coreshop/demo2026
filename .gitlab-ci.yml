@@ -48,6 +48,7 @@ build_and_push:
         #- docker push $CI_REGISTRY_IMAGE/php:$TAG
         - docker push $GCP_REGISTRY_IMAGE/nginx:$TAG
         - docker push $GCP_REGISTRY_IMAGE/php-alpine-fpm:$TAG
+        - docker push $GCP_REGISTRY_IMAGE/php-alpine-supervisord:$TAG
     tags:
         - cors
 
