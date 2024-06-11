@@ -13,5 +13,6 @@ bin/console pimcore:bundle:install PimcoreStudioBackendBundle --no-post-change-c
 bin/console pimcore:bundle:install PimcoreGenericDataIndexBundle --no-post-change-commands
 bin/console pimcore:bundle:install PimcoreApplicationLoggerBundle --no-post-change-commands
 bin/console coreshop:install:demo
+bin/console generic-data-index:update:index -r
 
 exec docker-php-entrypoint "$@"
