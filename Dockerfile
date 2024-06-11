@@ -51,12 +51,10 @@ CMD ["php-fpm"]
 
 FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/php-alpine-${ALPINE_VERSION}-supervisord:${PHP_VERSION}-${DOCKER_BASE_VERSION} as cors_php_supervisord
 
-COPY .docker/php/docker-entrypoint-supervisord.sh /usr/local/bin/docker-entrypoint
+COPY .docker/php/docker-entrypoint-supervisord.sh /usr/local/bin/docker-entrypoint-supervisord
 
 RUN set -eux; \
-    chmod +x /usr/local/bin/docker-entrypoint; \
-    chmod +x /usr/local/bin/install; \
-    chmod +x /usr/local/bin/health;
+    chmod +x /usr/local/bin/docker-entrypoint-supervisord;
 
 COPY .docker/supervisord/pimcore.conf /etc/supervisor/conf.d/pimcore.conf
 COPY .docker/supervisord/coreshop.conf /etc/supervisor/conf.d/coreshop.conf
@@ -69,7 +67,8 @@ USER www-data
 
 COPY --from=cors_php /var/www/html /var/www/html
 
-ENTRYPOINT ["docker-entrypoint"]
+ENTRYPOINT ["docker-entrypoint-supervisord"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 
 FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/nginx:${NGINX_VERSION}-${DOCKER_BASE_VERSION} AS cors_nginx
 
