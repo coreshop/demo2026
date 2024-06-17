@@ -4187,16 +4187,16 @@
         },
         {
             "name": "laminas/laminas-code",
-            "version": "4.13.0",
+            "version": "4.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-code.git",
-                "reference": "7353d4099ad5388e84737dd16994316a04f48dbf"
+                "reference": "562e02b7d85cb9142b5116cc76c4c7c162a11a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/7353d4099ad5388e84737dd16994316a04f48dbf",
-                "reference": "7353d4099ad5388e84737dd16994316a04f48dbf",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/562e02b7d85cb9142b5116cc76c4c7c162a11a1c",
+                "reference": "562e02b7d85cb9142b5116cc76c4c7c162a11a1c",
                 "shasum": ""
             },
             "require": {
@@ -4208,7 +4208,7 @@
                 "laminas/laminas-coding-standard": "^2.5.0",
                 "laminas/laminas-stdlib": "^3.17.0",
                 "phpunit/phpunit": "^10.3.3",
-                "psalm/plugin-phpunit": "^0.18.4",
+                "psalm/plugin-phpunit": "^0.19.0",
                 "vimeo/psalm": "^5.15.0"
             },
             "suggest": {
@@ -4246,7 +4246,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-10-18T10:00:55+00:00"
+            "time": "2024-06-17T08:50:25+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -6977,20 +6977,20 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.37",
+            "version": "3.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "cfa2013d0f68c062055180dd4328cc8b9d1f30b8"
+                "reference": "b18b8788e51156c4dd97b7f220a31149a0052067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/cfa2013d0f68c062055180dd4328cc8b9d1f30b8",
-                "reference": "cfa2013d0f68c062055180dd4328cc8b9d1f30b8",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/b18b8788e51156c4dd97b7f220a31149a0052067",
+                "reference": "b18b8788e51156c4dd97b7f220a31149a0052067",
                 "shasum": ""
             },
             "require": {
-                "paragonie/constant_time_encoding": "^1|^2",
+                "paragonie/constant_time_encoding": "^1|^2|^3",
                 "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
                 "php": ">=5.6.1"
             },
@@ -7067,7 +7067,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.37"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.38"
             },
             "funding": [
                 {
@@ -7083,7 +7083,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-03T02:14:58+00:00"
+            "time": "2024-06-17T10:11:32+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -7614,12 +7614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "add3777845fda2eecaa6365a2d36586457b271a6"
+                "reference": "2a6e14d2072f22da4425163900f41a2ea53b02ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/add3777845fda2eecaa6365a2d36586457b271a6",
-                "reference": "add3777845fda2eecaa6365a2d36586457b271a6",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/2a6e14d2072f22da4425163900f41a2ea53b02ac",
+                "reference": "2a6e14d2072f22da4425163900f41a2ea53b02ac",
                 "shasum": ""
             },
             "require": {
@@ -7660,7 +7660,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-06-13T14:02:20+00:00"
+            "time": "2024-06-17T12:46:28+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7668,12 +7668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "f9089d1e6687f3e7cb471f5e68e30cbcc3d744c0"
+                "reference": "5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/f9089d1e6687f3e7cb471f5e68e30cbcc3d744c0",
-                "reference": "f9089d1e6687f3e7cb471f5e68e30cbcc3d744c0",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae",
+                "reference": "5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae",
                 "shasum": ""
             },
             "require": {
@@ -7721,7 +7721,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-06-14T05:09:07+00:00"
+            "time": "2024-06-17T13:26:13+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
