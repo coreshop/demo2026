@@ -10,7 +10,7 @@ variables:
 daily_update:on-schedule:
     stage: build
     image:
-        name: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm:8.1-5.1.5
+        name: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm:8.2-5.1.5
         entrypoint: [""]
     rules:
         -   if: $CI_PIPELINE_SOURCE == "schedule"
