@@ -7132,16 +7132,16 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "736b6761fadaef684b7a238bda6abf7a3a691b99"
+                "reference": "2347505e01d0aa3097441d4a9b1db17b0b2bb494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/736b6761fadaef684b7a238bda6abf7a3a691b99",
-                "reference": "736b6761fadaef684b7a238bda6abf7a3a691b99",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/2347505e01d0aa3097441d4a9b1db17b0b2bb494",
+                "reference": "2347505e01d0aa3097441d4a9b1db17b0b2bb494",
                 "shasum": ""
             },
             "require": {
@@ -7177,9 +7177,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.4.3"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.4.4"
             },
-            "time": "2024-05-31T10:01:25+00:00"
+            "time": "2024-06-17T13:20:30+00:00"
         },
         {
             "name": "pimcore/generic-data-index-bundle",
@@ -7612,12 +7612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "2a6e14d2072f22da4425163900f41a2ea53b02ac"
+                "reference": "5f800a240f801ec30e6a50bdeefe8ae45fbef4b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/2a6e14d2072f22da4425163900f41a2ea53b02ac",
-                "reference": "2a6e14d2072f22da4425163900f41a2ea53b02ac",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/5f800a240f801ec30e6a50bdeefe8ae45fbef4b2",
+                "reference": "5f800a240f801ec30e6a50bdeefe8ae45fbef4b2",
                 "shasum": ""
             },
             "require": {
@@ -7658,7 +7658,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-06-17T12:46:28+00:00"
+            "time": "2024-06-18T14:32:21+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7666,12 +7666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "466df1986e92a8d0be498d836d5e0ab94621545e"
+                "reference": "973337843283a37d7a4c08b61dc79b44a2ff1d8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/466df1986e92a8d0be498d836d5e0ab94621545e",
-                "reference": "466df1986e92a8d0be498d836d5e0ab94621545e",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/973337843283a37d7a4c08b61dc79b44a2ff1d8b",
+                "reference": "973337843283a37d7a4c08b61dc79b44a2ff1d8b",
                 "shasum": ""
             },
             "require": {
@@ -7719,7 +7719,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-06-18T07:54:33+00:00"
+            "time": "2024-06-18T12:05:01+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
