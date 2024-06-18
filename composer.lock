@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abe553954c18fe5225ec6808570fea2",
+    "content-hash": "908f3634233fc1c3b64b7440b8322693",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -6325,55 +6325,53 @@
         },
         {
             "name": "payum/payum-bundle",
-            "version": "dev-master",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/PayumBundle.git",
-                "reference": "e2a3ffee369efdd414c9cb13cd2bd09eb93beaa8"
+                "reference": "a10faf18eabc9066ea1e10de0d6b81f77ba0646a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/e2a3ffee369efdd414c9cb13cd2bd09eb93beaa8",
-                "reference": "e2a3ffee369efdd414c9cb13cd2bd09eb93beaa8",
+                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/a10faf18eabc9066ea1e10de0d6b81f77ba0646a",
+                "reference": "a10faf18eabc9066ea1e10de0d6b81f77ba0646a",
                 "shasum": ""
             },
             "require": {
                 "payum/core": "^1.7.2",
                 "php": "^7.4 || ^8.0",
-                "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.4 || ^7.0",
-                "symfony/form": "^4.4.20 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/framework-bundle": "^4.4 || ^5.4 || ^6.0 || ^7.0",
+                "symfony/form": "^4.4.20 || ^5.4 || ^6.0",
+                "symfony/framework-bundle": "^4.4 || ^5.4 || ^6.0",
                 "symfony/polyfill-php80": "^1.26",
-                "symfony/security-csrf": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/validator": "^4.4 || ^5.4 || ^6.0 || ^7.0"
+                "symfony/security-csrf": "^4.4 || ^5.4 || ^6.0",
+                "symfony/validator": "^4.4 || ^5.4 || ^6.0"
             },
             "require-dev": {
                 "defuse/php-encryption": "^2",
-                "doctrine/orm": "^2.8 || ^3.0",
+                "doctrine/orm": "^2.8",
                 "omnipay/common": "^3@dev",
                 "omnipay/dummy": "^3@alpha",
                 "omnipay/paypal": "^3@dev",
                 "payum/offline": "^1.7",
-                "payum/omnipay-v3-bridge": "dev-master",
+                "payum/omnipay-v3-bridge": "^1@alpha",
                 "payum/paypal-express-checkout-nvp": "^1.7",
                 "payum/stripe": "^1.7",
                 "php-http/guzzle7-adapter": "^1.0",
                 "phpunit/phpunit": "^9.5",
-                "psr/log": "^1 || ^2 || ^3",
+                "psr/log": "^1 || ^2",
                 "stripe/stripe-php": "~7.0",
-                "symfony/browser-kit": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/expression-language": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/phpunit-bridge": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/templating": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/twig-bundle": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/web-profiler-bundle": "^4.4 || ^5.4 || ^6.0 || ^7.0",
-                "symfony/yaml": "^4.4 || ^5.4 || ^6.0 || ^7.0",
+                "symfony/browser-kit": "^4.4 || ^5.4 || ^6.0",
+                "symfony/expression-language": "^4.4 || ^5.4 || ^6.0",
+                "symfony/phpunit-bridge": "^4.4 || ^5.4 || ^6.0",
+                "symfony/templating": "^4.4 || ^5.4 || ^6.0",
+                "symfony/twig-bundle": "^4.4 || ^5.4 || ^6.0",
+                "symfony/web-profiler-bundle": "^4.4 || ^5.4 || ^6.0",
+                "symfony/yaml": "^4.4 || ^5.4 || ^6.0",
                 "twig/twig": "^2.0 || ^3.0"
             },
             "suggest": {
                 "sonata-project/admin-bundle": "^3 If you want to configure payments in the backend."
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -6425,9 +6423,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Payum/PayumBundle/issues",
-                "source": "https://github.com/Payum/PayumBundle/tree/master"
+                "source": "https://github.com/Payum/PayumBundle/tree/2.5.2"
             },
-            "time": "2024-05-01T16:54:01+00:00"
+            "time": "2023-08-16T15:46:43+00:00"
         },
         {
             "name": "pear/net_url2",
@@ -7241,27 +7239,27 @@
             "description": "Pimcore Generic data index Bundle",
             "support": {
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
-                "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
+                "source": "https://github.com/pimcore/generic-data-index-bundle/tree/v1.1.0"
             },
             "time": "2024-06-14T10:44:10+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/google-marketing-bundle.git",
-                "reference": "ef7104230cd2cde6330bcebcd80e40a9871ab59f"
+                "reference": "ac66ccbb55ac2dbb8da331e851caae5d29b59313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/google-marketing-bundle/zipball/ef7104230cd2cde6330bcebcd80e40a9871ab59f",
-                "reference": "ef7104230cd2cde6330bcebcd80e40a9871ab59f",
+                "url": "https://api.github.com/repos/pimcore/google-marketing-bundle/zipball/ac66ccbb55ac2dbb8da331e851caae5d29b59313",
+                "reference": "ac66ccbb55ac2dbb8da331e851caae5d29b59313",
                 "shasum": ""
             },
             "require": {
                 "google/apiclient": "^2.12",
-                "php": "~8.1.0 || ~8.2.0",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
                 "pimcore/pimcore": "^11.0"
             },
             "require-dev": {
@@ -7293,9 +7291,9 @@
             "description": "Pimcore Google Marketing Bundle provides additional tools for integrating google marketing tools.",
             "support": {
                 "issues": "https://github.com/pimcore/google-marketing-bundle/issues",
-                "source": "https://github.com/pimcore/google-marketing-bundle/tree/v1.0.2"
+                "source": "https://github.com/pimcore/google-marketing-bundle/tree/v1.1.0"
             },
-            "time": "2023-12-15T10:22:31+00:00"
+            "time": "2024-06-18T08:26:32+00:00"
         },
         {
             "name": "pimcore/newsletter-bundle",
@@ -7400,16 +7398,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v11.2.5",
+            "version": "v11.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "28853bb212bd4345a0c9dd211468afe5461dc85d"
+                "reference": "0d78ab7e802b85e821d2fa9bb6e8dfe15add10e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/28853bb212bd4345a0c9dd211468afe5461dc85d",
-                "reference": "28853bb212bd4345a0c9dd211468afe5461dc85d",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/0d78ab7e802b85e821d2fa9bb6e8dfe15add10e7",
+                "reference": "0d78ab7e802b85e821d2fa9bb6e8dfe15add10e7",
                 "shasum": ""
             },
             "require": {
@@ -7606,7 +7604,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-06-06T08:56:18+00:00"
+            "time": "2024-06-14T08:56:15+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7668,12 +7666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae"
+                "reference": "466df1986e92a8d0be498d836d5e0ab94621545e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae",
-                "reference": "5d63e452e8a23dcfbabaa6529a059b7cc8ebd2ae",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/466df1986e92a8d0be498d836d5e0ab94621545e",
+                "reference": "466df1986e92a8d0be498d836d5e0ab94621545e",
                 "shasum": ""
             },
             "require": {
@@ -7721,7 +7719,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-06-17T13:26:13+00:00"
+            "time": "2024-06-18T07:54:33+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -13939,27 +13937,27 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v7.1.1",
+            "version": "v6.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
-                "reference": "27cd1bce9d7f3457a152a6ca9790712d6954dd21"
+                "reference": "f46ab02b76311087873257071559edcaf6d7ab99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/27cd1bce9d7f3457a152a6ca9790712d6954dd21",
-                "reference": "27cd1bce9d7f3457a152a6ca9790712d6954dd21",
+                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/f46ab02b76311087873257071559edcaf6d7ab99",
+                "reference": "f46ab02b76311087873257071559edcaf6d7ab99",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "symfony/security-core": "^6.4|^7.0"
+                "php": ">=8.1",
+                "symfony/security-core": "^5.4|^6.0|^7.0"
             },
             "conflict": {
-                "symfony/http-foundation": "<6.4"
+                "symfony/http-foundation": "<5.4"
             },
             "require-dev": {
-                "symfony/http-foundation": "^6.4|^7.0"
+                "symfony/http-foundation": "^5.4|^6.0|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -13987,7 +13985,7 @@
             "description": "Symfony Security Component - CSRF Library",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-csrf/tree/v7.1.1"
+                "source": "https://github.com/symfony/security-csrf/tree/v6.4.8"
             },
             "funding": [
                 {
@@ -14003,7 +14001,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-05-31T14:49:08+00:00"
         },
         {
             "name": "symfony/security-http",

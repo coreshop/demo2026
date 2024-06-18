@@ -9,6 +9,7 @@
   },
   "require": {
     "coreshop/core-shop": "4.1.x-dev",
+    "payum/payum-bundle": "2.5.2",
     "pimcore/generic-data-index-bundle": "1.x-dev",
     "pimcore/pimcore": "^11.0",
     "pimcore/studio-backend-bundle": "1.x-dev",
