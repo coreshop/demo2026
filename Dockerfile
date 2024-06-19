@@ -30,6 +30,7 @@ RUN set -eux; \
     chmod +x bin/console; \
     sync;
 
+COPY --chown=www-data:www-data hotfix/Installer.php vendor/pimcore/pimcore/bundles/InstallBundle/src/Installer.php
 COPY --chown=www-data:www-data public/index.php public/index.php
 COPY --chown=www-data:www-data config config/
 COPY --chown=www-data:www-data src src/
