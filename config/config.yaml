@@ -12,3 +12,9 @@ doctrine:
                 host: '%env(DATABASE_HOST)%'
                 port: '%env(DATABASE_PORT)%'
                 server_version: '%env(DATABASE_VERSION)%'
+
+pimcore_studio_backend:
+    mercure_settings:
+        jwt_key: 'wrMZk0YSUABq3GuSGKcxmjAZXv9lJYB3'
+        hub_url_client: 'https://coreshop-coreshop4-demo-mercure.localhost/.well-known/mercure'
+        hub_url_server: 'http://mercure/.well-known/mercure'

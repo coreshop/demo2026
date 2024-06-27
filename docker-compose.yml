@@ -81,6 +81,7 @@ services:
 
     opensearch:
         image: opensearchproject/opensearch:${OPENSEARCH_VERSION:-2.11.1}
+        container_name: opensearch
         environment:
             discovery.type: single-node
             node.name: opensearch
@@ -98,6 +99,30 @@ services:
         volumes:
             - opensearch-data:/usr/share/opensearch/data
 
+    mercure:
+        image: dunglas/mercure:latest
+        container_name: mercure
+        environment:
+            # Uncomment the following line to disable HTTPS
+            SERVER_NAME: ':80'
+            MERCURE_PUBLISHER_JWT_KEY: 'wrMZk0YSUABq3GuSGKcxmjAZXv9lJYB3'
+            MERCURE_SUBSCRIBER_JWT_KEY: 'wrMZk0YSUABq3GuSGKcxmjAZXv9lJYB3'
+        # Uncomment the following line to enable the development mode
+        command: /usr/bin/caddy run --config /etc/caddy/dev.Caddyfile
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.coreshop_coreshop4_demo_mecure.rule=Host(`coreshop-coreshop4-demo-mercure.localhost`)
+            - traefik.http.routers.coreshop_coreshop4_demo_mecure.entrypoints=cors_dev
+            - traefik.http.routers.coreshop_coreshop4_demo_mecure.tls=true
+            - traefik.http.services.coreshop_coreshop4_demo_mecure.loadbalancer.server.port=80
+            - traefik.docker.network=cors_dev
+        volumes:
+            - coreshop-demo-mercure-data:/data
+            - coreshop-demo-mercure-config:/config
+
+
 volumes:
     coreshop-coreshop4-demo-database:
+    coreshop-demo-mercure-data:
+    coreshop-demo-mercure-config:
     opensearch-data:
