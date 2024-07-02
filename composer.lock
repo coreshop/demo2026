@@ -5131,6 +5131,194 @@
             "time": "2023-07-31T13:36:50+00:00"
         },
         {
+            "name": "maennchen/zipstream-php",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php-64bit": "^8.1"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "guzzlehttp/guzzle": "^7.5",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpunit": "^10.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "suggest": {
+                "guzzlehttp/psr7": "^2.4",
+                "psr/http-message": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/zipstream",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-06-21T14:59:35+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPComplex/issues",
+                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
+            },
+            "time": "2022-12-06T16:21:08+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "sebastian/phpcpd": "^4.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@demon-angel.eu"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
+                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
+            },
+            "time": "2022-12-02T22:17:43+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.9.0",
             "source": {
@@ -6700,6 +6888,110 @@
             "time": "2024-03-15T13:55:21+00:00"
         },
         {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "dbed77bd3a0f68f96c0dd68ad4499d5674fecc3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/dbed77bd3a0f68f96c0dd68ad4499d5674fecc3e",
+                "reference": "dbed77bd3a0f68f96c0dd68ad4499d5674fecc3e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "maennchen/zipstream-php": "^2.1 || ^3.0",
+                "markbaker/complex": "^3.0",
+                "markbaker/matrix": "^3.0",
+                "php": "^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
+                "dompdf/dompdf": "^2.0",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "mitoteam/jpgraph": "^10.3",
+                "mpdf/mpdf": "^8.1.1",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpstan/phpstan": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.6",
+                "squizlabs/php_codesniffer": "^3.7",
+                "tecnickcom/tcpdf": "^6.5"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "ext-intl": "PHP Internationalization Functions",
+                "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.1.0"
+            },
+            "time": "2024-05-11T04:17:56+00:00"
+        },
+        {
             "name": "phpseclib/phpseclib",
             "version": "3.0.39",
             "source": {
@@ -6858,21 +7150,23 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.4.4",
+            "version": "v1.5.0-RC2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "2347505e01d0aa3097441d4a9b1db17b0b2bb494"
+                "reference": "0e14ad32b3b97a68c4feddc664589f292fa36194"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/2347505e01d0aa3097441d4a9b1db17b0b2bb494",
-                "reference": "2347505e01d0aa3097441d4a9b1db17b0b2bb494",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/0e14ad32b3b97a68c4feddc664589f292fa36194",
+                "reference": "0e14ad32b3b97a68c4feddc664589f292fa36194",
                 "shasum": ""
             },
             "require": {
                 "cbschuld/browser.php": "^1.9.6",
-                "pimcore/pimcore": "^11.2.0",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+                "phpoffice/phpspreadsheet": "^1.24 || ^2.1",
+                "pimcore/pimcore": "^11.3.0",
                 "symfony/webpack-encore-bundle": "^1.13.2"
             },
             "require-dev": {
@@ -6903,9 +7197,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.4.4"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.5.0-RC2"
             },
-            "time": "2024-06-17T13:20:30+00:00"
+            "time": "2024-06-25T15:04:14+00:00"
         },
         {
             "name": "pimcore/generic-data-index-bundle",
@@ -6971,16 +7265,16 @@
         },
         {
             "name": "pimcore/google-marketing-bundle",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/google-marketing-bundle.git",
-                "reference": "ac66ccbb55ac2dbb8da331e851caae5d29b59313"
+                "reference": "76666f52884d00092aa33a9a0e6b56493b87b1ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/google-marketing-bundle/zipball/ac66ccbb55ac2dbb8da331e851caae5d29b59313",
-                "reference": "ac66ccbb55ac2dbb8da331e851caae5d29b59313",
+                "url": "https://api.github.com/repos/pimcore/google-marketing-bundle/zipball/76666f52884d00092aa33a9a0e6b56493b87b1ca",
+                "reference": "76666f52884d00092aa33a9a0e6b56493b87b1ca",
                 "shasum": ""
             },
             "require": {
@@ -7017,22 +7311,22 @@
             "description": "Pimcore Google Marketing Bundle provides additional tools for integrating google marketing tools.",
             "support": {
                 "issues": "https://github.com/pimcore/google-marketing-bundle/issues",
-                "source": "https://github.com/pimcore/google-marketing-bundle/tree/v1.1.0"
+                "source": "https://github.com/pimcore/google-marketing-bundle/tree/v1.1.1"
             },
-            "time": "2024-06-18T08:26:32+00:00"
+            "time": "2024-06-28T07:44:14+00:00"
         },
         {
             "name": "pimcore/newsletter-bundle",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/newsletter-bundle.git",
-                "reference": "403ec3a5d173cd9aee9a9145f2652e3329e4da8f"
+                "reference": "90893d35c31e249209a082a781874b30028982f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/newsletter-bundle/zipball/403ec3a5d173cd9aee9a9145f2652e3329e4da8f",
-                "reference": "403ec3a5d173cd9aee9a9145f2652e3329e4da8f",
+                "url": "https://api.github.com/repos/pimcore/newsletter-bundle/zipball/90893d35c31e249209a082a781874b30028982f5",
+                "reference": "90893d35c31e249209a082a781874b30028982f5",
                 "shasum": ""
             },
             "require": {
@@ -7063,9 +7357,9 @@
             "description": "Pimcore Newsletter Bundle",
             "support": {
                 "issues": "https://github.com/pimcore/newsletter-bundle/issues",
-                "source": "https://github.com/pimcore/newsletter-bundle/tree/v1.1.2"
+                "source": "https://github.com/pimcore/newsletter-bundle/tree/v1.1.3"
             },
-            "time": "2024-04-05T08:12:01+00:00"
+            "time": "2024-06-07T12:26:25+00:00"
         },
         {
             "name": "pimcore/opensearch-client",
@@ -7128,12 +7422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "0a3f73d3c92e7db62ead9ad4644b259bd9a05f3f"
+                "reference": "267a9ee0be85e2b9ca552b0457fdb55895d4c0a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/0a3f73d3c92e7db62ead9ad4644b259bd9a05f3f",
-                "reference": "0a3f73d3c92e7db62ead9ad4644b259bd9a05f3f",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/267a9ee0be85e2b9ca552b0457fdb55895d4c0a5",
+                "reference": "267a9ee0be85e2b9ca552b0457fdb55895d4c0a5",
                 "shasum": ""
             },
             "require": {
@@ -7239,6 +7533,7 @@
                 "umpirsky/country-list": "^2.0.6"
             },
             "conflict": {
+                "pimcore/admin-ui-classic-bundle": "<1.5",
                 "sabre/dav": "4.2.2",
                 "symfony/symfony": "*",
                 "thecodingmachine/safe": "<2.0",
@@ -7332,7 +7627,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-07-01T16:34:32+00:00"
+            "time": "2024-07-02T12:27:48+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7340,12 +7635,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "f2213000b4c180c337104264a93b032f314952c2"
+                "reference": "7e98d23e946c448cb2a00310efb00563cf4d5a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/f2213000b4c180c337104264a93b032f314952c2",
-                "reference": "f2213000b4c180c337104264a93b032f314952c2",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/7e98d23e946c448cb2a00310efb00563cf4d5a62",
+                "reference": "7e98d23e946c448cb2a00310efb00563cf4d5a62",
                 "shasum": ""
             },
             "require": {
@@ -7386,7 +7681,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-06-26T06:56:59+00:00"
+            "time": "2024-07-02T06:18:34+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7394,12 +7689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "2b3e4cb9fe9979c7533815df30734b38e2c2fb5f"
+                "reference": "21105003ae620645900a393b845dad40798f44b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/2b3e4cb9fe9979c7533815df30734b38e2c2fb5f",
-                "reference": "2b3e4cb9fe9979c7533815df30734b38e2c2fb5f",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/21105003ae620645900a393b845dad40798f44b8",
+                "reference": "21105003ae620645900a393b845dad40798f44b8",
                 "shasum": ""
             },
             "require": {
@@ -7451,7 +7746,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-01T08:38:27+00:00"
+            "time": "2024-07-02T14:10:02+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7459,12 +7754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "c0180ffc0fe4b279012bc0c10dc7428638e531f2"
+                "reference": "66a4cf601e8954c9bfc3c4b76373508869197e19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/c0180ffc0fe4b279012bc0c10dc7428638e531f2",
-                "reference": "c0180ffc0fe4b279012bc0c10dc7428638e531f2",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/66a4cf601e8954c9bfc3c4b76373508869197e19",
+                "reference": "66a4cf601e8954c9bfc3c4b76373508869197e19",
                 "shasum": ""
             },
             "require": {
@@ -7509,7 +7804,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-06-28T12:00:25+00:00"
+            "time": "2024-07-02T09:04:37+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -8044,6 +8339,57 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+            },
+            "time": "2021-10-29T13:26:27+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8641,16 +8987,16 @@
         },
         {
             "name": "sabre/vobject",
-            "version": "4.5.4",
+            "version": "4.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/vobject.git",
-                "reference": "a6d53a3e5bec85ed3dd78868b7de0f5b4e12f772"
+                "reference": "7148cf57d25aaba0a49f6656d37c35e8175b3087"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/a6d53a3e5bec85ed3dd78868b7de0f5b4e12f772",
-                "reference": "a6d53a3e5bec85ed3dd78868b7de0f5b4e12f772",
+                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/7148cf57d25aaba0a49f6656d37c35e8175b3087",
+                "reference": "7148cf57d25aaba0a49f6656d37c35e8175b3087",
                 "shasum": ""
             },
             "require": {
@@ -8741,7 +9087,7 @@
                 "issues": "https://github.com/sabre-io/vobject/issues",
                 "source": "https://github.com/fruux/sabre-vobject"
             },
-            "time": "2023-11-09T12:54:37+00:00"
+            "time": "2024-07-02T08:48:52+00:00"
         },
         {
             "name": "sabre/xml",
