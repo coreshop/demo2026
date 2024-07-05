@@ -7422,12 +7422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "19ccfdf6004e8230300a3760a921179a08a7cc41"
+                "reference": "a96a60244d7d9bb26a0d69500a7075efc6fac686"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/19ccfdf6004e8230300a3760a921179a08a7cc41",
-                "reference": "19ccfdf6004e8230300a3760a921179a08a7cc41",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/a96a60244d7d9bb26a0d69500a7075efc6fac686",
+                "reference": "a96a60244d7d9bb26a0d69500a7075efc6fac686",
                 "shasum": ""
             },
             "require": {
@@ -7628,7 +7628,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-07-03T08:00:57+00:00"
+            "time": "2024-07-05T09:03:29+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7690,12 +7690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "a7894b318a024f4ab26ca0fbe2c7d11b1a8758c1"
+                "reference": "c64c87e91bd3efcb57b0cc6cdbed41b9654bb4d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/a7894b318a024f4ab26ca0fbe2c7d11b1a8758c1",
-                "reference": "a7894b318a024f4ab26ca0fbe2c7d11b1a8758c1",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c64c87e91bd3efcb57b0cc6cdbed41b9654bb4d8",
+                "reference": "c64c87e91bd3efcb57b0cc6cdbed41b9654bb4d8",
                 "shasum": ""
             },
             "require": {
@@ -7747,7 +7747,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-04T13:48:24+00:00"
+            "time": "2024-07-05T09:31:44+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
