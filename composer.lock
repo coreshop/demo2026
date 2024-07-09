@@ -7690,12 +7690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "b94632e61b752fee18576e57d8734a61d03552b3"
+                "reference": "83e5e617955f8790e5678fb9c7986463925f691d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/b94632e61b752fee18576e57d8734a61d03552b3",
-                "reference": "b94632e61b752fee18576e57d8734a61d03552b3",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/83e5e617955f8790e5678fb9c7986463925f691d",
+                "reference": "83e5e617955f8790e5678fb9c7986463925f691d",
                 "shasum": ""
             },
             "require": {
@@ -7747,7 +7747,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-08T08:45:53+00:00"
+            "time": "2024-07-09T11:37:23+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7755,16 +7755,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "e913a78b05bbcae4dfd275fa9aeb17db9ef5d51e"
+                "reference": "602f73ef031c5cc24a540dc84619c1b5bceea196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e913a78b05bbcae4dfd275fa9aeb17db9ef5d51e",
-                "reference": "e913a78b05bbcae4dfd275fa9aeb17db9ef5d51e",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/602f73ef031c5cc24a540dc84619c1b5bceea196",
+                "reference": "602f73ef031c5cc24a540dc84619c1b5bceea196",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.2.0",
+                "php": "~8.2.0 || ~8.3.0",
                 "pimcore/pimcore": "^11.0",
                 "pimcore/studio-backend-bundle": "1.x-dev"
             },
@@ -7805,7 +7805,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-04T12:46:29+00:00"
+            "time": "2024-07-09T07:34:39+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
