@@ -7690,12 +7690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "fbf512ec4f6cab087e208887f5a19a14679c11a4"
+                "reference": "80c119d616f9fa7903d1d91f54fedc0eff322528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/fbf512ec4f6cab087e208887f5a19a14679c11a4",
-                "reference": "fbf512ec4f6cab087e208887f5a19a14679c11a4",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/80c119d616f9fa7903d1d91f54fedc0eff322528",
+                "reference": "80c119d616f9fa7903d1d91f54fedc0eff322528",
                 "shasum": ""
             },
             "require": {
@@ -7747,7 +7747,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-10T14:45:05+00:00"
+            "time": "2024-07-11T15:29:37+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7755,12 +7755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "b22bee2d68e44bd33612d0417b4d62b9c9d77131"
+                "reference": "90a3ef33b162cc121ac8840cebbd166e16334ce7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/b22bee2d68e44bd33612d0417b4d62b9c9d77131",
-                "reference": "b22bee2d68e44bd33612d0417b4d62b9c9d77131",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/90a3ef33b162cc121ac8840cebbd166e16334ce7",
+                "reference": "90a3ef33b162cc121ac8840cebbd166e16334ce7",
                 "shasum": ""
             },
             "require": {
@@ -7805,7 +7805,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-10T13:21:42+00:00"
+            "time": "2024-07-11T13:11:20+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -16238,16 +16238,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.10.3",
+            "version": "4.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "ad3f913d39b2a4dfb6e59ee4babb35a6b4a2b998"
+                "reference": "88895afcfaac955ed061489a2b19a431bf58b3e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/ad3f913d39b2a4dfb6e59ee4babb35a6b4a2b998",
-                "reference": "ad3f913d39b2a4dfb6e59ee4babb35a6b4a2b998",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/88895afcfaac955ed061489a2b19a431bf58b3e2",
+                "reference": "88895afcfaac955ed061489a2b19a431bf58b3e2",
                 "shasum": ""
             },
             "require": {
@@ -16313,9 +16313,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.10.3"
+                "source": "https://github.com/zircote/swagger-php/tree/4.10.4"
             },
-            "time": "2024-07-04T07:53:11+00:00"
+            "time": "2024-07-10T02:06:32+00:00"
         }
     ],
     "packages-dev": [],
