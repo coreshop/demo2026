@@ -62,6 +62,7 @@ services:
     App\EventListener\:
         resource: '../src/EventListener/'
 
+    Twig\DeferredExtension\DeferredExtension: ~
     # Example custom templating helper
     # App\Templating\Helper\Example:
     #     # templating helpers need to be public as they

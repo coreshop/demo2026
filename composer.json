@@ -13,7 +13,8 @@
     "pimcore/generic-data-index-bundle": "1.x-dev",
     "pimcore/pimcore": "^11.0",
     "pimcore/studio-backend-bundle": "1.x-dev",
-    "pimcore/studio-ui-bundle": "1.x-dev"
+    "pimcore/studio-ui-bundle": "1.x-dev",
+    "rybakit/twig-deferred-extension": "^3.0"
   },
   "autoload": {
     "psr-4": {
