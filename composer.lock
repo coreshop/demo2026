@@ -443,12 +443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "6d93aa8fe3b20adb4e722c372c5473b5b582885e"
+                "reference": "77c5dd9751376196830edaec1a21c1fa58b52b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/6d93aa8fe3b20adb4e722c372c5473b5b582885e",
-                "reference": "6d93aa8fe3b20adb4e722c372c5473b5b582885e",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/77c5dd9751376196830edaec1a21c1fa58b52b77",
+                "reference": "77c5dd9751376196830edaec1a21c1fa58b52b77",
                 "shasum": ""
             },
             "require": {
@@ -487,6 +487,7 @@
             },
             "conflict": {
                 "jms/serializer-bundle": "4.1.0",
+                "pimcore/pimcore": "11.3.1",
                 "twig/twig": "^3.9.0"
             },
             "replace": {
@@ -629,7 +630,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-11T15:12:38+00:00"
+            "time": "2024-07-18T14:39:29+00:00"
         },
         {
             "name": "dachcom-digital/emailizr",
@@ -3202,22 +3203,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.8.1",
+            "version": "7.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "41042bc7ab002487b876a0683fc8dce04ddce104"
+                "reference": "84ac2b2afc44e40d3e8e658a45d68d6d20437612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/41042bc7ab002487b876a0683fc8dce04ddce104",
-                "reference": "41042bc7ab002487b876a0683fc8dce04ddce104",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/84ac2b2afc44e40d3e8e658a45d68d6d20437612",
+                "reference": "84ac2b2afc44e40d3e8e658a45d68d6d20437612",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.5.3 || ^2.0.1",
-                "guzzlehttp/psr7": "^1.9.1 || ^2.5.1",
+                "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
+                "guzzlehttp/psr7": "^2.7.0",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
@@ -3228,9 +3229,9 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "ext-curl": "*",
-                "php-http/client-integration-tests": "dev-master#2c025848417c1135031fdf9c728ee53d0a7ceaee as 3.0.999",
+                "guzzle/client-integration-tests": "3.0.2",
                 "php-http/message-factory": "^1.1",
-                "phpunit/phpunit": "^8.5.36 || ^9.6.15",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20",
                 "psr/log": "^1.1 || ^2.0 || ^3.0"
             },
             "suggest": {
@@ -3308,7 +3309,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.8.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.0"
             },
             "funding": [
                 {
@@ -3324,20 +3325,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-03T20:35:24+00:00"
+            "time": "2024-07-18T11:52:56+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "bbff78d96034045e58e13dedd6ad91b5d1253223"
+                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/bbff78d96034045e58e13dedd6ad91b5d1253223",
-                "reference": "bbff78d96034045e58e13dedd6ad91b5d1253223",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
                 "shasum": ""
             },
             "require": {
@@ -3345,7 +3346,7 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.36 || ^9.6.15"
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
             },
             "type": "library",
             "extra": {
@@ -3391,7 +3392,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.2"
+                "source": "https://github.com/guzzle/promises/tree/2.0.3"
             },
             "funding": [
                 {
@@ -3407,20 +3408,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-03T20:19:20+00:00"
+            "time": "2024-07-18T10:29:17+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221"
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/45b30f99ac27b5ca93cb4831afe16285f57b8221",
-                "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
                 "shasum": ""
             },
             "require": {
@@ -3435,8 +3436,8 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "http-interop/http-factory-tests": "^0.9",
-                "phpunit/phpunit": "^8.5.36 || ^9.6.15"
+                "http-interop/http-factory-tests": "0.9.0",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -3507,7 +3508,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.6.2"
+                "source": "https://github.com/guzzle/psr7/tree/2.7.0"
             },
             "funding": [
                 {
@@ -3523,7 +3524,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-03T20:05:35+00:00"
+            "time": "2024-07-18T11:15:46+00:00"
         },
         {
             "name": "http-interop/http-factory-guzzle",
@@ -7207,12 +7208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "da6512712810c4f7dc52034104fd2e6c38849377"
+                "reference": "3a117b37badefd9d419fb30e376da3d51a015623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/da6512712810c4f7dc52034104fd2e6c38849377",
-                "reference": "da6512712810c4f7dc52034104fd2e6c38849377",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/3a117b37badefd9d419fb30e376da3d51a015623",
+                "reference": "3a117b37badefd9d419fb30e376da3d51a015623",
                 "shasum": ""
             },
             "require": {
@@ -7261,7 +7262,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
             },
-            "time": "2024-06-26T12:07:04+00:00"
+            "time": "2024-07-18T15:16:52+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
