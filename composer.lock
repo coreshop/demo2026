@@ -3203,16 +3203,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.9.0",
+            "version": "7.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "84ac2b2afc44e40d3e8e658a45d68d6d20437612"
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/84ac2b2afc44e40d3e8e658a45d68d6d20437612",
-                "reference": "84ac2b2afc44e40d3e8e658a45d68d6d20437612",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
                 "shasum": ""
             },
             "require": {
@@ -3309,7 +3309,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.9.0"
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.1"
             },
             "funding": [
                 {
@@ -3325,7 +3325,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-18T11:52:56+00:00"
+            "time": "2024-07-19T16:19:57+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -7208,12 +7208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "3a117b37badefd9d419fb30e376da3d51a015623"
+                "reference": "efd38ab301e179dede84d3c4e64a1a8e7742c1f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/3a117b37badefd9d419fb30e376da3d51a015623",
-                "reference": "3a117b37badefd9d419fb30e376da3d51a015623",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/efd38ab301e179dede84d3c4e64a1a8e7742c1f5",
+                "reference": "efd38ab301e179dede84d3c4e64a1a8e7742c1f5",
                 "shasum": ""
             },
             "require": {
@@ -7262,7 +7262,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
             },
-            "time": "2024-07-18T15:16:52+00:00"
+            "time": "2024-07-19T12:05:33+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7755,12 +7755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "6cb26e819964f077ca31961f84409053d6f91352"
+                "reference": "d6d627ec3b4de33c8f9f230489e2bfd70634de30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/6cb26e819964f077ca31961f84409053d6f91352",
-                "reference": "6cb26e819964f077ca31961f84409053d6f91352",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/d6d627ec3b4de33c8f9f230489e2bfd70634de30",
+                "reference": "d6d627ec3b4de33c8f9f230489e2bfd70634de30",
                 "shasum": ""
             },
             "require": {
@@ -7805,7 +7805,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-17T14:45:04+00:00"
+            "time": "2024-07-19T09:33:03+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -9564,48 +9564,48 @@
         },
         {
             "name": "sylius/theme-bundle",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusThemeBundle.git",
-                "reference": "b167b1b6b223c02ff9e819f36f57709ba1dfee43"
+                "reference": "aff44bac460ca62a3b8116787becb4cdd1fd5295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/b167b1b6b223c02ff9e819f36f57709ba1dfee43",
-                "reference": "b167b1b6b223c02ff9e819f36f57709ba1dfee43",
+                "url": "https://api.github.com/repos/Sylius/SyliusThemeBundle/zipball/aff44bac460ca62a3b8116787becb4cdd1fd5295",
+                "reference": "aff44bac460ca62a3b8116787becb4cdd1fd5295",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0",
-                "symfony/asset": "^5.4 || ^6.0",
-                "symfony/config": "^5.4 || ^6.0",
-                "symfony/console": "^5.4 || ^6.0",
-                "symfony/dependency-injection": "^5.4 || ^6.0",
-                "symfony/filesystem": "^5.4 || ^6.0",
-                "symfony/finder": "^5.4 || ^6.0",
-                "symfony/form": "^4.4 || ^5.4 || ^6.0",
-                "symfony/framework-bundle": "^5.4 || ^6.0",
-                "symfony/http-foundation": "^5.4 || ^6.0",
-                "symfony/http-kernel": "^5.4 || ^6.0",
-                "symfony/options-resolver": "^5.4 || ^6.0",
+                "php": "^8.1",
+                "symfony/asset": "^5.4 || ^6.4 || ^7.0",
+                "symfony/config": "^5.4 || ^6.4 || ^7.0",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.4 || ^7.0",
+                "symfony/filesystem": "^5.4 || ^6.4 || ^7.0",
+                "symfony/finder": "^5.4 || ^6.4 || ^7.0",
+                "symfony/form": "^4.4 || ^5.4 || ^6.4 || ^7.0",
+                "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.0",
+                "symfony/http-foundation": "^5.4 || ^6.4 || ^7.0",
+                "symfony/http-kernel": "^5.4 || ^6.4 || ^7.0",
+                "symfony/options-resolver": "^5.4 || ^6.4 || ^7.0",
                 "symfony/service-contracts": "^1.1 || ^2.0 || ^3.0",
-                "symfony/translation": "^5.4 || ^6.0",
+                "symfony/translation": "^5.4 || ^6.4 || ^7.0",
                 "symfony/translation-contracts": "^1.1 || ^2.0 || ^3.0"
             },
             "require-dev": {
-                "matthiasnoback/symfony-config-test": "^4.2",
-                "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+                "matthiasnoback/symfony-config-test": "^4.2 || ^5.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.2 || ^5.0",
                 "mikey179/vfsstream": "^1.6",
                 "phpspec/phpspec": "^7.0",
                 "phpunit/phpunit": "^9.4",
-                "rector/rector": "^0.11.57",
+                "rector/rector": "^1.0",
                 "sylius-labs/coding-standard": "^4.0.2",
-                "symfony/browser-kit": "^5.4 || ^6.0",
-                "symfony/security-csrf": "^5.4 || ^6.0",
-                "symfony/twig-bundle": "^5.4 || ^6.0",
+                "symfony/browser-kit": "^5.4 || ^6.4 || ^7.0",
+                "symfony/security-csrf": "^5.4 || ^6.4 || ^7.0",
+                "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.0",
                 "twig/twig": "^2.0 || ^3.0",
-                "vimeo/psalm": "4.23.0"
+                "vimeo/psalm": "5.20.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -9644,9 +9644,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Sylius/SyliusThemeBundle/issues",
-                "source": "https://github.com/Sylius/SyliusThemeBundle/tree/v2.3.0"
+                "source": "https://github.com/Sylius/SyliusThemeBundle/tree/v2.4.0"
             },
-            "time": "2022-09-04T09:43:42+00:00"
+            "time": "2024-07-19T08:08:48+00:00"
         },
         {
             "name": "symfony-cmf/routing",
