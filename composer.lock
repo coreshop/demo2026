@@ -7426,12 +7426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "0432752703286be076d8e2b1a8490c4aeafc1a06"
+                "reference": "923b9d3498add44036592c723fa2ef714e3da695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/0432752703286be076d8e2b1a8490c4aeafc1a06",
-                "reference": "0432752703286be076d8e2b1a8490c4aeafc1a06",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/923b9d3498add44036592c723fa2ef714e3da695",
+                "reference": "923b9d3498add44036592c723fa2ef714e3da695",
                 "shasum": ""
             },
             "require": {
@@ -7573,6 +7573,11 @@
                 "bin/pimcore-install"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "11.x-dev": "11.4.x-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "lib/helper-functions.php"
@@ -7631,7 +7636,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-07-24T09:41:02+00:00"
+            "time": "2024-07-25T12:20:45+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7693,12 +7698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "55801f9bd3afcffd6c64f31ba1e3b3914e57e985"
+                "reference": "b945dfbf9da60fb3ed2932edaaa6c2058cf0946d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/55801f9bd3afcffd6c64f31ba1e3b3914e57e985",
-                "reference": "55801f9bd3afcffd6c64f31ba1e3b3914e57e985",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/b945dfbf9da60fb3ed2932edaaa6c2058cf0946d",
+                "reference": "b945dfbf9da60fb3ed2932edaaa6c2058cf0946d",
                 "shasum": ""
             },
             "require": {
@@ -7750,7 +7755,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-24T13:53:06+00:00"
+            "time": "2024-07-25T12:29:26+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7758,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "9c38b5c01595864aa01867730a3657c7bf82ed49"
+                "reference": "b1f2b8b004f1436dd4172df621611b1da6091f24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/9c38b5c01595864aa01867730a3657c7bf82ed49",
-                "reference": "9c38b5c01595864aa01867730a3657c7bf82ed49",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/b1f2b8b004f1436dd4172df621611b1da6091f24",
+                "reference": "b1f2b8b004f1436dd4172df621611b1da6091f24",
                 "shasum": ""
             },
             "require": {
@@ -7808,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-24T09:43:28+00:00"
+            "time": "2024-07-25T13:07:32+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -8859,16 +8864,16 @@
         },
         {
             "name": "sabre/event",
-            "version": "5.1.4",
+            "version": "5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/event.git",
-                "reference": "d7da22897125d34d7eddf7977758191c06a74497"
+                "reference": "934a1fa89b588a5448cb56937741b4bece29f403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/event/zipball/d7da22897125d34d7eddf7977758191c06a74497",
-                "reference": "d7da22897125d34d7eddf7977758191c06a74497",
+                "url": "https://api.github.com/repos/sabre-io/event/zipball/934a1fa89b588a5448cb56937741b4bece29f403",
+                "reference": "934a1fa89b588a5448cb56937741b4bece29f403",
                 "shasum": ""
             },
             "require": {
@@ -8877,7 +8882,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "~2.17.1",
                 "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.0"
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6"
             },
             "type": "library",
             "autoload": {
@@ -8921,7 +8926,7 @@
                 "issues": "https://github.com/sabre-io/event/issues",
                 "source": "https://github.com/fruux/sabre-event"
             },
-            "time": "2021-11-04T06:51:17+00:00"
+            "time": "2024-07-25T08:09:23+00:00"
         },
         {
             "name": "sabre/http",
