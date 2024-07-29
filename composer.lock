@@ -3102,7 +3102,7 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.365.0",
+            "version": "v0.366.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
@@ -3140,7 +3140,7 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.365.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.366.0"
             },
             "time": "2024-07-11T01:08:44+00:00"
         },
@@ -6893,16 +6893,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "b0993b7e4d9c860133365d115b176bc6e0f57022"
+                "reference": "a3c5c9e7ce3a2a8577bfa9e69960fbccbd2d4a9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/b0993b7e4d9c860133365d115b176bc6e0f57022",
-                "reference": "b0993b7e4d9c860133365d115b176bc6e0f57022",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/a3c5c9e7ce3a2a8577bfa9e69960fbccbd2d4a9e",
+                "reference": "a3c5c9e7ce3a2a8577bfa9e69960fbccbd2d4a9e",
                 "shasum": ""
             },
             "require": {
@@ -6991,9 +6991,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.2.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.2.1"
             },
-            "time": "2024-07-24T13:21:18+00:00"
+            "time": "2024-07-29T07:56:06+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -7644,12 +7644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "61a593fbab9ff1d289e6933bc05466672acd139f"
+                "reference": "b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/61a593fbab9ff1d289e6933bc05466672acd139f",
-                "reference": "61a593fbab9ff1d289e6933bc05466672acd139f",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b",
+                "reference": "b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b",
                 "shasum": ""
             },
             "require": {
@@ -7690,7 +7690,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-07-10T10:50:41+00:00"
+            "time": "2024-07-29T08:26:52+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7698,12 +7698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "08a77ba865dab871c68159d5b0303478820473a0"
+                "reference": "2b72539db59977841f66901619af91889cb4ff1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/08a77ba865dab871c68159d5b0303478820473a0",
-                "reference": "08a77ba865dab871c68159d5b0303478820473a0",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/2b72539db59977841f66901619af91889cb4ff1e",
+                "reference": "2b72539db59977841f66901619af91889cb4ff1e",
                 "shasum": ""
             },
             "require": {
@@ -7755,7 +7755,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-26T10:06:52+00:00"
+            "time": "2024-07-29T10:08:59+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7763,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "4d0cf0bfe853434913a724347d84c0b0ce47e646"
+                "reference": "4f434accc36a5b8e2a47e1eea84df8e83b9b0655"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/4d0cf0bfe853434913a724347d84c0b0ce47e646",
-                "reference": "4d0cf0bfe853434913a724347d84c0b0ce47e646",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/4f434accc36a5b8e2a47e1eea84df8e83b9b0655",
+                "reference": "4f434accc36a5b8e2a47e1eea84df8e83b9b0655",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-26T13:10:58+00:00"
+            "time": "2024-07-29T05:55:12+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
