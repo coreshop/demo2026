@@ -7211,12 +7211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "630a550cd9de8aa06e1b5a6f8244f98339a7a30c"
+                "reference": "9a97e5d6be0547c6239d49d41fc69bbdc617ad9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/630a550cd9de8aa06e1b5a6f8244f98339a7a30c",
-                "reference": "630a550cd9de8aa06e1b5a6f8244f98339a7a30c",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/9a97e5d6be0547c6239d49d41fc69bbdc617ad9e",
+                "reference": "9a97e5d6be0547c6239d49d41fc69bbdc617ad9e",
                 "shasum": ""
             },
             "require": {
@@ -7265,7 +7265,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
             },
-            "time": "2024-07-30T14:07:21+00:00"
+            "time": "2024-07-31T14:14:34+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7698,12 +7698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "968ddf18ac90842d86e4ed700506dc30828d14fe"
+                "reference": "1b71fc961b511a8e9b500b086d0d2918eee95521"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/968ddf18ac90842d86e4ed700506dc30828d14fe",
-                "reference": "968ddf18ac90842d86e4ed700506dc30828d14fe",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/1b71fc961b511a8e9b500b086d0d2918eee95521",
+                "reference": "1b71fc961b511a8e9b500b086d0d2918eee95521",
                 "shasum": ""
             },
             "require": {
@@ -7755,7 +7755,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-07-30T08:47:27+00:00"
+            "time": "2024-07-31T11:09:42+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
