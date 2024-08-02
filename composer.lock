@@ -7426,12 +7426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "fd553d5837353ad2d5aa8ca01a33c77d9827a4c6"
+                "reference": "9f901b1d3056239258a0416cc2506348bf2f743a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/fd553d5837353ad2d5aa8ca01a33c77d9827a4c6",
-                "reference": "fd553d5837353ad2d5aa8ca01a33c77d9827a4c6",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/9f901b1d3056239258a0416cc2506348bf2f743a",
+                "reference": "9f901b1d3056239258a0416cc2506348bf2f743a",
                 "shasum": ""
             },
             "require": {
@@ -7636,7 +7636,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-07-30T11:46:45+00:00"
+            "time": "2024-08-02T12:49:04+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7763,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "3e0dbaeb5b45c3fe6093f9dde804225c48f65e06"
+                "reference": "88bbb9bb06c77854f6d93256acaa75fae3e293cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/3e0dbaeb5b45c3fe6093f9dde804225c48f65e06",
-                "reference": "3e0dbaeb5b45c3fe6093f9dde804225c48f65e06",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/88bbb9bb06c77854f6d93256acaa75fae3e293cd",
+                "reference": "88bbb9bb06c77854f6d93256acaa75fae3e293cd",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-07-30T14:23:25+00:00"
+            "time": "2024-08-02T08:31:53+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
