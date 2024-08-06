@@ -2322,16 +2322,16 @@
         },
         {
             "name": "doctrine/sql-formatter",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/sql-formatter.git",
-                "reference": "d1ac84aef745c69ea034929eb6d65a6908b675cc"
+                "reference": "7f83911cc5eba870de7ebb11283972483f7e2891"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/d1ac84aef745c69ea034929eb6d65a6908b675cc",
-                "reference": "d1ac84aef745c69ea034929eb6d65a6908b675cc",
+                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/7f83911cc5eba870de7ebb11283972483f7e2891",
+                "reference": "7f83911cc5eba870de7ebb11283972483f7e2891",
                 "shasum": ""
             },
             "require": {
@@ -2371,9 +2371,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/sql-formatter/issues",
-                "source": "https://github.com/doctrine/sql-formatter/tree/1.4.0"
+                "source": "https://github.com/doctrine/sql-formatter/tree/1.4.1"
             },
-            "time": "2024-05-08T08:12:09+00:00"
+            "time": "2024-08-05T20:32:22+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -7698,12 +7698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "481d47da3946e6e86f9defd4f030551f972879a3"
+                "reference": "7aa5f36f999a33b55d1c0841259b873c5d1b6be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/481d47da3946e6e86f9defd4f030551f972879a3",
-                "reference": "481d47da3946e6e86f9defd4f030551f972879a3",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/7aa5f36f999a33b55d1c0841259b873c5d1b6be6",
+                "reference": "7aa5f36f999a33b55d1c0841259b873c5d1b6be6",
                 "shasum": ""
             },
             "require": {
@@ -7755,7 +7755,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-08-05T09:27:57+00:00"
+            "time": "2024-08-06T13:47:08+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7763,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "ac587eb005a67266c9dc58a122572db9ec5070bc"
+                "reference": "e1e119b9b41e9a61be8c083a8b34d325a682c300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/ac587eb005a67266c9dc58a122572db9ec5070bc",
-                "reference": "ac587eb005a67266c9dc58a122572db9ec5070bc",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e1e119b9b41e9a61be8c083a8b34d325a682c300",
+                "reference": "e1e119b9b41e9a61be8c083a8b34d325a682c300",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-05T14:03:02+00:00"
+            "time": "2024-08-06T11:45:59+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
