@@ -1233,16 +1233,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.8.6",
+            "version": "3.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "b7411825cf7efb7e51f9791dea19d86e43b399a1"
+                "reference": "2093d670ca17f634f3c095ec10a20687eccebd99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/b7411825cf7efb7e51f9791dea19d86e43b399a1",
-                "reference": "b7411825cf7efb7e51f9791dea19d86e43b399a1",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2093d670ca17f634f3c095ec10a20687eccebd99",
+                "reference": "2093d670ca17f634f3c095ec10a20687eccebd99",
                 "shasum": ""
             },
             "require": {
@@ -1258,12 +1258,12 @@
                 "doctrine/coding-standard": "12.0.0",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.1",
-                "phpstan/phpstan": "1.11.5",
+                "phpstan/phpstan": "1.11.7",
                 "phpstan/phpstan-strict-rules": "^1.6",
-                "phpunit/phpunit": "9.6.19",
+                "phpunit/phpunit": "9.6.20",
                 "psalm/plugin-phpunit": "0.18.4",
                 "slevomat/coding-standard": "8.13.1",
-                "squizlabs/php_codesniffer": "3.10.1",
+                "squizlabs/php_codesniffer": "3.10.2",
                 "symfony/cache": "^5.4|^6.0|^7.0",
                 "symfony/console": "^4.4|^5.4|^6.0|^7.0",
                 "vimeo/psalm": "4.30.0"
@@ -1326,7 +1326,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.8.6"
+                "source": "https://github.com/doctrine/dbal/tree/3.8.7"
             },
             "funding": [
                 {
@@ -1342,7 +1342,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-19T10:38:17+00:00"
+            "time": "2024-08-07T11:57:25+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -7644,12 +7644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b"
+                "reference": "54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b",
-                "reference": "b1a3a9bad0a390d7a0e51b4bcefba42c9db2105b",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a",
+                "reference": "54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a",
                 "shasum": ""
             },
             "require": {
@@ -7690,7 +7690,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-07-29T08:26:52+00:00"
+            "time": "2024-08-07T13:41:31+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7698,12 +7698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "7aa5f36f999a33b55d1c0841259b873c5d1b6be6"
+                "reference": "c3220c9ecb078cb70beddf504697863d77a744a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/7aa5f36f999a33b55d1c0841259b873c5d1b6be6",
-                "reference": "7aa5f36f999a33b55d1c0841259b873c5d1b6be6",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c3220c9ecb078cb70beddf504697863d77a744a0",
+                "reference": "c3220c9ecb078cb70beddf504697863d77a744a0",
                 "shasum": ""
             },
             "require": {
@@ -7755,7 +7755,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-08-06T13:47:08+00:00"
+            "time": "2024-08-07T14:28:33+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7763,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "e1e119b9b41e9a61be8c083a8b34d325a682c300"
+                "reference": "a3a19e878abf66f0d0783aa72926062bce0e3ee5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e1e119b9b41e9a61be8c083a8b34d325a682c300",
-                "reference": "e1e119b9b41e9a61be8c083a8b34d325a682c300",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/a3a19e878abf66f0d0783aa72926062bce0e3ee5",
+                "reference": "a3a19e878abf66f0d0783aa72926062bce0e3ee5",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-06T11:45:59+00:00"
+            "time": "2024-08-07T10:31:03+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
