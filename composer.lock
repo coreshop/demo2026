@@ -702,23 +702,23 @@
         },
         {
             "name": "dasprid/enum",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DASPRiD/Enum.git",
-                "reference": "6faf451159fb8ba4126b925ed2d78acfce0dc016"
+                "reference": "8dfd07c6d2cf31c8da90c53b83c026c7696dda90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/6faf451159fb8ba4126b925ed2d78acfce0dc016",
-                "reference": "6faf451159fb8ba4126b925ed2d78acfce0dc016",
+                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/8dfd07c6d2cf31c8da90c53b83c026c7696dda90",
+                "reference": "8dfd07c6d2cf31c8da90c53b83c026c7696dda90",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1 <9.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7 | ^8 | ^9",
+                "phpunit/phpunit": "^7 || ^8 || ^9 || ^10 || ^11",
                 "squizlabs/php_codesniffer": "*"
             },
             "type": "library",
@@ -746,9 +746,9 @@
             ],
             "support": {
                 "issues": "https://github.com/DASPRiD/Enum/issues",
-                "source": "https://github.com/DASPRiD/Enum/tree/1.0.5"
+                "source": "https://github.com/DASPRiD/Enum/tree/1.0.6"
             },
-            "time": "2023-08-25T16:18:39+00:00"
+            "time": "2024-08-09T14:30:48+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -7426,12 +7426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "9f901b1d3056239258a0416cc2506348bf2f743a"
+                "reference": "381465f1c7236573b787f3a0b3b8ba21bd8ecf07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/9f901b1d3056239258a0416cc2506348bf2f743a",
-                "reference": "9f901b1d3056239258a0416cc2506348bf2f743a",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/381465f1c7236573b787f3a0b3b8ba21bd8ecf07",
+                "reference": "381465f1c7236573b787f3a0b3b8ba21bd8ecf07",
                 "shasum": ""
             },
             "require": {
@@ -7636,7 +7636,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-08-02T12:49:04+00:00"
+            "time": "2024-08-09T09:10:09+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7763,12 +7763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "5be0e7a1cf50b8c8496657ae77f46e6c9b6d179c"
+                "reference": "d7e110f97f378f9e61eca76174c0694ee779f445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/5be0e7a1cf50b8c8496657ae77f46e6c9b6d179c",
-                "reference": "5be0e7a1cf50b8c8496657ae77f46e6c9b6d179c",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/d7e110f97f378f9e61eca76174c0694ee779f445",
+                "reference": "d7e110f97f378f9e61eca76174c0694ee779f445",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7813,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-08T08:47:02+00:00"
+            "time": "2024-08-09T09:44:51+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
