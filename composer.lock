@@ -443,12 +443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "0dfeb4686007948864c34893708a1e57aaa5e1df"
+                "reference": "86bf75bad709c6ffa132aba8ff1cbae912367203"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/0dfeb4686007948864c34893708a1e57aaa5e1df",
-                "reference": "0dfeb4686007948864c34893708a1e57aaa5e1df",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/86bf75bad709c6ffa132aba8ff1cbae912367203",
+                "reference": "86bf75bad709c6ffa132aba8ff1cbae912367203",
                 "shasum": ""
             },
             "require": {
@@ -479,6 +479,7 @@
                 "stof/doctrine-extensions-bundle": "^1.6",
                 "sylius/theme-bundle": "^2.2",
                 "symfony/dotenv": "^6.3",
+                "symfony/form": "^6.3",
                 "symfony/http-client": "^6.3",
                 "symfony/intl": "^6.3",
                 "symfony/notifier": "^6.3",
@@ -633,7 +634,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-22T11:33:26+00:00"
+            "time": "2024-08-19T11:58:04+00:00"
         },
         {
             "name": "dachcom-digital/emailizr",
@@ -3102,16 +3103,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.368.0",
+            "version": "v0.369.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "edc08087aa3ca63d3b74f24d59f1d2caab39b5d9"
+                "reference": "002f610e4c3acf0636b4fb1f46314a2097e1c8b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/edc08087aa3ca63d3b74f24d59f1d2caab39b5d9",
-                "reference": "edc08087aa3ca63d3b74f24d59f1d2caab39b5d9",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/002f610e4c3acf0636b4fb1f46314a2097e1c8b4",
+                "reference": "002f610e4c3acf0636b4fb1f46314a2097e1c8b4",
                 "shasum": ""
             },
             "require": {
@@ -3140,9 +3141,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.368.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.369.0"
             },
-            "time": "2024-07-11T01:08:44+00:00"
+            "time": "2024-08-14T20:31:16+00:00"
         },
         {
             "name": "google/auth",
@@ -7211,12 +7212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "383170523d2d459a894afc61019fc46b5b5a39b1"
+                "reference": "1fce524f10f25b17223f5884d04bbdbb1fb2f979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/383170523d2d459a894afc61019fc46b5b5a39b1",
-                "reference": "383170523d2d459a894afc61019fc46b5b5a39b1",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/1fce524f10f25b17223f5884d04bbdbb1fb2f979",
+                "reference": "1fce524f10f25b17223f5884d04bbdbb1fb2f979",
                 "shasum": ""
             },
             "require": {
@@ -7265,7 +7266,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
             },
-            "time": "2024-08-12T06:32:49+00:00"
+            "time": "2024-08-19T09:11:36+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7644,12 +7645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/static-resolver-bundle.git",
-                "reference": "54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a"
+                "reference": "d8f2fba0ab54bdb92421a6ba754380a0848bce52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a",
-                "reference": "54d55e0cf6c1a679e3b7f7a352ce4e5761366b7a",
+                "url": "https://api.github.com/repos/pimcore/static-resolver-bundle/zipball/d8f2fba0ab54bdb92421a6ba754380a0848bce52",
+                "reference": "d8f2fba0ab54bdb92421a6ba754380a0848bce52",
                 "shasum": ""
             },
             "require": {
@@ -7690,7 +7691,7 @@
                 "issues": "https://github.com/pimcore/static-resolver-bundle/issues",
                 "source": "https://github.com/pimcore/static-resolver-bundle/tree/1.x"
             },
-            "time": "2024-08-07T13:41:31+00:00"
+            "time": "2024-08-19T07:35:45+00:00"
         },
         {
             "name": "pimcore/studio-backend-bundle",
@@ -7698,12 +7699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "b629e3f9342607894b88284404b6420260d47296"
+                "reference": "488506d862272df577488ae4bc317e1922a479a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/b629e3f9342607894b88284404b6420260d47296",
-                "reference": "b629e3f9342607894b88284404b6420260d47296",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/488506d862272df577488ae4bc317e1922a479a0",
+                "reference": "488506d862272df577488ae4bc317e1922a479a0",
                 "shasum": ""
             },
             "require": {
@@ -7755,7 +7756,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-08-14T14:03:04+00:00"
+            "time": "2024-08-19T13:25:11+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7763,12 +7764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "9c4b9748f8db52ed1ee2c498adb07204d25518ca"
+                "reference": "91c01b2983196cc3382ed3c8dbc458ddf68b8a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/9c4b9748f8db52ed1ee2c498adb07204d25518ca",
-                "reference": "9c4b9748f8db52ed1ee2c498adb07204d25518ca",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/91c01b2983196cc3382ed3c8dbc458ddf68b8a6d",
+                "reference": "91c01b2983196cc3382ed3c8dbc458ddf68b8a6d",
                 "shasum": ""
             },
             "require": {
@@ -7813,7 +7814,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-14T09:59:32+00:00"
+            "time": "2024-08-19T13:31:09+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",

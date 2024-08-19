@@ -64,14 +64,14 @@
  * - attributes [fieldcollections]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => 'cs_order_item',
    'name' => 'CoreShopOrderItem',
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1718112843,
+   'modificationDate' => 1724078164,
    'userOwner' => 0,
    'userModification' => 0,
    'parentClass' => 'CoreShop\\Component\\Core\\Model\\OrderItem',
@@ -87,7 +87,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -101,7 +101,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -115,7 +115,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
+          \Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -129,7 +129,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+              \Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'name' => 'informations',
                  'type' => NULL,
                  'region' => NULL,
@@ -143,7 +143,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
                      'name' => 'localizedfields',
                      'title' => NULL,
                      'tooltip' => '',
@@ -164,7 +164,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'children' => 
                     array (
                       0 => 
-                      Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                      \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                          'name' => 'name',
                          'title' => 'coreshop.order_item.name',
                          'tooltip' => '',
@@ -213,7 +213,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'fieldDefinitionsCache' => NULL,
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                      'name' => 'isGiftItem',
                      'title' => 'coreshop.order_item.is_gift_item',
                      'tooltip' => '',
@@ -235,7 +235,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   2 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                      'name' => 'digitalProduct',
                      'title' => 'coreshop.order_item.digital_product',
                      'tooltip' => '',
@@ -257,7 +257,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   3 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'name' => 'unitIdentifier',
                      'title' => 'coreshop.order_item.unit_identifier',
                      'tooltip' => '',
@@ -287,7 +287,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   4 => 
-                  CoreShop\Bundle\ProductBundle\CoreExtension\ProductUnit::__set_state(array(
+                  \CoreShop\Bundle\ProductBundle\CoreExtension\ProductUnit::__set_state(array(
                      'name' => 'unit',
                      'title' => 'coreshop.order_item.unit',
                      'tooltip' => '',
@@ -308,7 +308,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'allowEmpty' => true,
                   )),
                   5 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'customItemDiscount',
                      'title' => 'coreshop.order_item.custom_item_discount',
                      'tooltip' => '',
@@ -338,7 +338,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   6 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'quantity',
                      'title' => 'coreshop.order_item.quantity',
                      'tooltip' => '',
@@ -368,7 +368,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   7 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'defaultUnitQuantity',
                      'title' => 'coreshop.order_item.default_unit_quantity',
                      'tooltip' => '',
@@ -398,7 +398,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   8 => 
-                  CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
+                  \CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
                      'name' => 'product',
                      'title' => 'coreshop.order_item.product',
                      'tooltip' => NULL,
@@ -441,7 +441,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'returnConcrete' => false,
                   )),
                   9 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'objectId',
                      'title' => 'coreshop.order_item.object_id',
                      'tooltip' => '',
@@ -471,7 +471,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   10 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'mainObjectId',
                      'title' => 'coreshop.order_item.main_object_id',
                      'tooltip' => '',
@@ -501,7 +501,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   11 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'itemWeight',
                      'title' => 'coreshop.order_item.item_weight',
                      'tooltip' => '',
@@ -531,7 +531,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   12 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'name' => 'totalWeight',
                      'title' => 'coreshop.order_item.total_weight',
                      'tooltip' => '',
@@ -561,7 +561,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   13 => 
-                  CoreShop\Bundle\ProductBundle\CoreExtension\ProductUnitDefinition::__set_state(array(
+                  \CoreShop\Bundle\ProductBundle\CoreExtension\ProductUnitDefinition::__set_state(array(
                      'name' => 'unitDefinition',
                      'title' => 'coreshop.order_item.unit_definition',
                      'tooltip' => '',
@@ -583,7 +583,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'allowEmpty' => false,
                   )),
                   14 => 
-                  CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
+                  \CoreShop\Bundle\ResourceBundle\CoreExtension\CoreShopRelation::__set_state(array(
                      'name' => 'order',
                      'title' => 'coreshop.order_item.order',
                      'tooltip' => '',
@@ -626,7 +626,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'returnConcrete' => false,
                   )),
                   15 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\BooleanSelect::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\BooleanSelect::__set_state(array(
                      'name' => 'immutable',
                      'title' => 'coreshop.order_item.immutable',
                      'tooltip' => '',
@@ -677,7 +677,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelAlign' => 'left',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
+              \Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
                  'name' => 'numbers',
                  'type' => NULL,
                  'region' => NULL,
@@ -691,7 +691,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'numbers_store',
                      'type' => NULL,
                      'region' => NULL,
@@ -705,7 +705,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'children' => 
                     array (
                       0 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemWholesalePrice',
                          'title' => 'coreshop.order_item.item_wholesale_price',
                          'tooltip' => '',
@@ -731,7 +731,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       1 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'customItemPrice',
                          'title' => 'coreshop.order_item.custom_item_price',
                          'tooltip' => '',
@@ -757,7 +757,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       2 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemDiscountNet',
                          'title' => 'coreshop.order_item.item_discount_net',
                          'tooltip' => '',
@@ -783,7 +783,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       3 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemDiscountGross',
                          'title' => 'coreshop.order_item.item_discount_gross',
                          'tooltip' => '',
@@ -809,7 +809,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       4 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemDiscountPriceNet',
                          'title' => 'coreshop.order_item.item_discount_price_net',
                          'tooltip' => '',
@@ -835,7 +835,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       5 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemDiscountPriceGross',
                          'title' => 'coreshop.order_item.item_discount_price_gross',
                          'tooltip' => '',
@@ -861,7 +861,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       6 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemPriceNet',
                          'title' => 'coreshop.order_item.item_price_net',
                          'tooltip' => '',
@@ -887,7 +887,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       7 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemPriceGross',
                          'title' => 'coreshop.order_item.item_price_gross',
                          'tooltip' => '',
@@ -913,7 +913,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       8 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemRetailPriceNet',
                          'title' => 'coreshop.order_item.item_retail_price_net',
                          'tooltip' => '',
@@ -939,7 +939,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       9 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemRetailPriceGross',
                          'title' => 'coreshop.order_item.item_retail_price_gross',
                          'tooltip' => '',
@@ -965,7 +965,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       10 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'subtotalNet',
                          'title' => 'coreshop.order_item.subtotal_net',
                          'tooltip' => '',
@@ -991,7 +991,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       11 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'subtotalGross',
                          'title' => 'coreshop.order_item.subtotal_gross',
                          'tooltip' => '',
@@ -1017,7 +1017,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       12 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'totalNet',
                          'title' => 'coreshop.order_item.total_net',
                          'tooltip' => '',
@@ -1043,7 +1043,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       13 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'totalGross',
                          'title' => 'coreshop.order_item.total_gross',
                          'tooltip' => '',
@@ -1069,7 +1069,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       14 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'itemTax',
                          'title' => 'coreshop.order_item.item_tax',
                          'tooltip' => '',
@@ -1095,7 +1095,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       15 => 
-                      Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                      \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'taxes',
                          'title' => 'coreshop.order_item.taxes',
                          'tooltip' => '',
@@ -1126,7 +1126,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'border' => false,
                       )),
                       16 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'pimcoreAdjustmentTotalNet',
                          'title' => 'coreshop.order_item.adjustments_total_net',
                          'tooltip' => '',
@@ -1152,7 +1152,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       17 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'pimcoreAdjustmentTotalGross',
                          'title' => 'coreshop.order_item.adjustments_total_gross',
                          'tooltip' => '',
@@ -1178,7 +1178,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       18 => 
-                      Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                      \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'adjustmentItems',
                          'title' => 'coreshop.order_item.adjustments',
                          'tooltip' => '',
@@ -1221,7 +1221,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'labelAlign' => 'left',
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                      'name' => 'numbers_converted',
                      'type' => NULL,
                      'region' => NULL,
@@ -1235,7 +1235,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'children' => 
                     array (
                       0 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemWholesalePrice',
                          'title' => 'coreshop.order_item.converted_item_wholesale_price',
                          'tooltip' => '',
@@ -1261,7 +1261,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       1 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedCustomItemPrice',
                          'title' => 'coreshop.order_item.converted_custom_item_price',
                          'tooltip' => '',
@@ -1287,7 +1287,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       2 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemDiscountNet',
                          'title' => 'coreshop.order_item.converted_item_discount_net',
                          'tooltip' => '',
@@ -1313,7 +1313,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       3 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemDiscountGross',
                          'title' => 'coreshop.order_item.converted_item_discount_gross',
                          'tooltip' => '',
@@ -1339,7 +1339,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       4 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemDiscountPriceNet',
                          'title' => 'coreshop.order_item.converted_item_discount_price_net',
                          'tooltip' => '',
@@ -1365,7 +1365,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       5 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemDiscountPriceGross',
                          'title' => 'coreshop.order_item.converted_item_discount_price_gross',
                          'tooltip' => '',
@@ -1391,7 +1391,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       6 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemPriceNet',
                          'title' => 'coreshop.order_item.converted_item_price_net',
                          'tooltip' => '',
@@ -1417,7 +1417,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       7 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemPriceGross',
                          'title' => 'coreshop.order_item.converted_item_price_gross',
                          'tooltip' => '',
@@ -1443,7 +1443,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       8 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemRetailPriceNet',
                          'title' => 'coreshop.order_item.converted_item_retail_price_net',
                          'tooltip' => '',
@@ -1469,7 +1469,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       9 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemRetailPriceGross',
                          'title' => 'coreshop.order_item.converted_item_retail_price_gross',
                          'tooltip' => '',
@@ -1495,7 +1495,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       10 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedTotalNet',
                          'title' => 'coreshop.order_item.converted_total_net',
                          'tooltip' => '',
@@ -1521,7 +1521,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       11 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedTotalGross',
                          'title' => 'coreshop.order_item.converted_total_gross',
                          'tooltip' => '',
@@ -1547,7 +1547,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       12 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedSubtotalNet',
                          'title' => 'coreshop.order_item.converted_subtotal_net',
                          'tooltip' => '',
@@ -1573,7 +1573,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       13 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedSubtotalGross',
                          'title' => 'coreshop.order_item.converted_subtotal_gross',
                          'tooltip' => '',
@@ -1599,7 +1599,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       14 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedItemTax',
                          'title' => 'coreshop.order_item.converted_item_tax',
                          'tooltip' => '',
@@ -1625,7 +1625,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       15 => 
-                      Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                      \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'convertedTaxes',
                          'title' => 'coreshop.order_item.converted_taxes',
                          'tooltip' => '',
@@ -1656,7 +1656,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'border' => false,
                       )),
                       16 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedPimcoreAdjustmentTotalNet',
                          'title' => 'coreshop.order_item.converted_adjustments',
                          'tooltip' => '',
@@ -1682,7 +1682,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       17 => 
-                      CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
+                      \CoreShop\Bundle\MoneyBundle\CoreExtension\Money::__set_state(array(
                          'name' => 'convertedPimcoreAdjustmentTotalGross',
                          'title' => 'coreshop.order_item.converted_adjustments_total_gross',
                          'tooltip' => '',
@@ -1708,7 +1708,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                          'nullable' => false,
                       )),
                       18 => 
-                      Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                      \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                          'name' => 'convertedAdjustmentItems',
                          'title' => 'coreshop.order_item.converted_adjustments_total_net',
                          'tooltip' => '',
@@ -1760,7 +1760,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'tabPosition' => 'top',
               )),
               2 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+              \Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'price_rules',
                  'type' => NULL,
                  'region' => NULL,
@@ -1774,7 +1774,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                      'name' => 'priceRuleItems',
                      'title' => 'coreshop.order.price_rules',
                      'tooltip' => '',
@@ -1805,7 +1805,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'border' => false,
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                  \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
                      'name' => 'attributes',
                      'title' => 'coreshop.order.attributes',
                      'tooltip' => '',
