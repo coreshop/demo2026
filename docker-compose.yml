@@ -78,7 +78,6 @@ services:
         networks:
             - coreshop_coreshop4_demo
 
-
     opensearch:
         image: opensearchproject/opensearch:${OPENSEARCH_VERSION:-2.11.1}
         container_name: opensearch
@@ -102,6 +101,8 @@ services:
     mercure:
         image: dunglas/mercure:latest
         container_name: mercure
+        networks:
+            - coreshop_coreshop4_demo
         environment:
             # Uncomment the following line to disable HTTPS
             SERVER_NAME: ':80'
@@ -119,7 +120,6 @@ services:
         volumes:
             - coreshop-demo-mercure-data:/data
             - coreshop-demo-mercure-config:/config
-
 
 volumes:
     coreshop-coreshop4-demo-database:
