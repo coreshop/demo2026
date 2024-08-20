@@ -7212,12 +7212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "1fce524f10f25b17223f5884d04bbdbb1fb2f979"
+                "reference": "3186ac10330820c73c3e112ed05fe79a64a3082a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/1fce524f10f25b17223f5884d04bbdbb1fb2f979",
-                "reference": "1fce524f10f25b17223f5884d04bbdbb1fb2f979",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/3186ac10330820c73c3e112ed05fe79a64a3082a",
+                "reference": "3186ac10330820c73c3e112ed05fe79a64a3082a",
                 "shasum": ""
             },
             "require": {
@@ -7266,7 +7266,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/1.x"
             },
-            "time": "2024-08-19T09:11:36+00:00"
+            "time": "2024-08-20T07:53:18+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7699,12 +7699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "488506d862272df577488ae4bc317e1922a479a0"
+                "reference": "db6e5c06b7ac6686bfd302a55804c18bde793d8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/488506d862272df577488ae4bc317e1922a479a0",
-                "reference": "488506d862272df577488ae4bc317e1922a479a0",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/db6e5c06b7ac6686bfd302a55804c18bde793d8e",
+                "reference": "db6e5c06b7ac6686bfd302a55804c18bde793d8e",
                 "shasum": ""
             },
             "require": {
@@ -7756,7 +7756,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-08-19T13:25:11+00:00"
+            "time": "2024-08-20T12:30:42+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7764,12 +7764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "91c01b2983196cc3382ed3c8dbc458ddf68b8a6d"
+                "reference": "719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/91c01b2983196cc3382ed3c8dbc458ddf68b8a6d",
-                "reference": "91c01b2983196cc3382ed3c8dbc458ddf68b8a6d",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3",
+                "reference": "719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3",
                 "shasum": ""
             },
             "require": {
@@ -7814,7 +7814,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-19T13:31:09+00:00"
+            "time": "2024-08-20T16:01:31+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
