@@ -16,6 +16,6 @@ class NoIndexListener implements EventSubscriberInterface
     public function onKernelResponse($event)
     {
         $response = $event->getResponse();
-        $response->headers->set('X-Robots-Tag', 'noindex follow');
+        $response->headers->set('X-Robots-Tag', 'none');
     }
 }
