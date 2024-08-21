@@ -7427,12 +7427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "22176e9fc15e4c0dfa345da4d8ba04d8321c9773"
+                "reference": "3ffaeac8d9f07f877ea4f469015be1774de447b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/22176e9fc15e4c0dfa345da4d8ba04d8321c9773",
-                "reference": "22176e9fc15e4c0dfa345da4d8ba04d8321c9773",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/3ffaeac8d9f07f877ea4f469015be1774de447b9",
+                "reference": "3ffaeac8d9f07f877ea4f469015be1774de447b9",
                 "shasum": ""
             },
             "require": {
@@ -7637,7 +7637,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-08-16T07:37:40+00:00"
+            "time": "2024-08-21T09:00:50+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7699,12 +7699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "db6e5c06b7ac6686bfd302a55804c18bde793d8e"
+                "reference": "df5a9c367d0cf93b23fbaaed2ec1e99fe26ebf2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/db6e5c06b7ac6686bfd302a55804c18bde793d8e",
-                "reference": "db6e5c06b7ac6686bfd302a55804c18bde793d8e",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/df5a9c367d0cf93b23fbaaed2ec1e99fe26ebf2a",
+                "reference": "df5a9c367d0cf93b23fbaaed2ec1e99fe26ebf2a",
                 "shasum": ""
             },
             "require": {
@@ -7756,7 +7756,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-08-20T12:30:42+00:00"
+            "time": "2024-08-21T13:12:19+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7764,12 +7764,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3"
+                "reference": "cbfa50af80d62eb3353158eaedefbf9c729ed441"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3",
-                "reference": "719ab1137cc4d9bbf1c44d5af040f8e9de97c4e3",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/cbfa50af80d62eb3353158eaedefbf9c729ed441",
+                "reference": "cbfa50af80d62eb3353158eaedefbf9c729ed441",
                 "shasum": ""
             },
             "require": {
@@ -7814,7 +7814,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-08-20T16:01:31+00:00"
+            "time": "2024-08-21T13:52:17+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -8359,16 +8359,16 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/79dff0b268932c640297f5208d6298f71855c03e",
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e",
                 "shasum": ""
             },
             "require": {
@@ -8403,9 +8403,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
+                "source": "https://github.com/php-fig/log/tree/3.0.1"
             },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2024-08-21T13:31:24+00:00"
         },
         {
             "name": "psr/simple-cache",
