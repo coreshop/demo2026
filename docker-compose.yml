@@ -41,7 +41,7 @@ services:
             - traefik.docker.network=cors_dev
 
     php:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm:8.2-5.1.7
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-fpm:8.2-5.2.0
         container_name: coreshop-coreshop4-demo-php
         networks:
             - coreshop_coreshop4_demo
@@ -53,7 +53,7 @@ services:
             - .:/var/www/html:cached
 
     php-debug:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-fpm-debug:8.2-5.1.7
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-fpm-debug:8.2-5.2.0
         container_name: coreshop-coreshop4-demo-php-debug
         networks:
             - coreshop_coreshop4_demo
@@ -68,7 +68,7 @@ services:
             XDEBUG_TRIGGER: PHPSTORM
 
     supervisord:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.19-supervisord:8.2-5.1.7
+        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-supervisord:8.2-5.2.0
         depends_on:
             - db
         volumes:
