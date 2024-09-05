@@ -820,16 +820,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f"
+                "reference": "901c2ee5d26eb64ff43c47976e114bf00843acf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f",
-                "reference": "e157ef3f3124bbf6fe7ce0ffd109e8a8ef284e7f",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/901c2ee5d26eb64ff43c47976e114bf00843acf7",
+                "reference": "901c2ee5d26eb64ff43c47976e114bf00843acf7",
                 "shasum": ""
             },
             "require": {
@@ -841,10 +841,10 @@
             "require-dev": {
                 "doctrine/cache": "^2.0",
                 "doctrine/coding-standard": "^10",
-                "phpstan/phpstan": "^1.8.0",
+                "phpstan/phpstan": "^1.10.28",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "symfony/cache": "^5.4 || ^6",
-                "vimeo/psalm": "^4.10"
+                "symfony/cache": "^5.4 || ^6.4 || ^7",
+                "vimeo/psalm": "^4.30 || ^5.14"
             },
             "suggest": {
                 "php": "PHP 8.0 or higher comes with attributes, a native replacement for annotations"
@@ -890,9 +890,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/2.0.1"
+                "source": "https://github.com/doctrine/annotations/tree/2.0.2"
             },
-            "time": "2023-02-02T22:02:53+00:00"
+            "time": "2024-09-05T10:17:24+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -7701,12 +7701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "9583c6e7fe3e088379824a972720956bf0d2d7a4"
+                "reference": "c62406cef270830fce0698f6c469524068a9df42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/9583c6e7fe3e088379824a972720956bf0d2d7a4",
-                "reference": "9583c6e7fe3e088379824a972720956bf0d2d7a4",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c62406cef270830fce0698f6c469524068a9df42",
+                "reference": "c62406cef270830fce0698f6c469524068a9df42",
                 "shasum": ""
             },
             "require": {
@@ -7759,7 +7759,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-09-04T11:38:18+00:00"
+            "time": "2024-09-05T15:15:42+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7767,12 +7767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "3a05dc0300c7b15caec9d464ceab795914e7794f"
+                "reference": "7bb2bfa49390accaa42e19abe155f025ac9eae3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/3a05dc0300c7b15caec9d464ceab795914e7794f",
-                "reference": "3a05dc0300c7b15caec9d464ceab795914e7794f",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/7bb2bfa49390accaa42e19abe155f025ac9eae3a",
+                "reference": "7bb2bfa49390accaa42e19abe155f025ac9eae3a",
                 "shasum": ""
             },
             "require": {
@@ -7817,7 +7817,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-09-04T10:25:16+00:00"
+            "time": "2024-09-05T15:45:34+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
