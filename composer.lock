@@ -7701,12 +7701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "c62406cef270830fce0698f6c469524068a9df42"
+                "reference": "57f95cdf7f804258618807b058a901a6607f4416"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/c62406cef270830fce0698f6c469524068a9df42",
-                "reference": "c62406cef270830fce0698f6c469524068a9df42",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/57f95cdf7f804258618807b058a901a6607f4416",
+                "reference": "57f95cdf7f804258618807b058a901a6607f4416",
                 "shasum": ""
             },
             "require": {
@@ -7759,7 +7759,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-09-05T15:15:42+00:00"
+            "time": "2024-09-06T05:16:35+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7767,12 +7767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "7bb2bfa49390accaa42e19abe155f025ac9eae3a"
+                "reference": "39b65ea293607eb6ad7ba72f4784da21e3fecd89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/7bb2bfa49390accaa42e19abe155f025ac9eae3a",
-                "reference": "7bb2bfa49390accaa42e19abe155f025ac9eae3a",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/39b65ea293607eb6ad7ba72f4784da21e3fecd89",
+                "reference": "39b65ea293607eb6ad7ba72f4784da21e3fecd89",
                 "shasum": ""
             },
             "require": {
@@ -7817,7 +7817,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-09-05T15:45:34+00:00"
+            "time": "2024-09-06T14:35:35+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -9161,16 +9161,16 @@
         },
         {
             "name": "sabre/xml",
-            "version": "2.2.10",
+            "version": "2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/xml.git",
-                "reference": "0734b7af7f045d9ffb0018929750c492698a1536"
+                "reference": "01a7927842abf3e10df3d9c2d9b0cc9d813a3fcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/xml/zipball/0734b7af7f045d9ffb0018929750c492698a1536",
-                "reference": "0734b7af7f045d9ffb0018929750c492698a1536",
+                "url": "https://api.github.com/repos/sabre-io/xml/zipball/01a7927842abf3e10df3d9c2d9b0cc9d813a3fcc",
+                "reference": "01a7927842abf3e10df3d9c2d9b0cc9d813a3fcc",
                 "shasum": ""
             },
             "require": {
@@ -9182,7 +9182,7 @@
                 "sabre/uri": ">=1.0,<3.0.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.17.1||^3.63",
+                "friendsofphp/php-cs-fixer": "~2.17.1||3.63.2",
                 "phpstan/phpstan": "^0.12",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6"
             },
@@ -9226,7 +9226,7 @@
                 "issues": "https://github.com/sabre-io/xml/issues",
                 "source": "https://github.com/fruux/sabre-xml"
             },
-            "time": "2024-08-27T15:55:05+00:00"
+            "time": "2024-09-06T07:37:46+00:00"
         },
         {
             "name": "scheb/2fa-bundle",
