@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ec69c9b26de24f0c2436b02b9fa0b71",
+    "content-hash": "6683c901eb17978cfb94259a51de76b2",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -7564,12 +7564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "e9a6f9ef0e7c7a078d52bca8fac30233cb740cf4"
+                "reference": "46cd9a2f25ddc52609a2a70ebcf25c7d89415d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e9a6f9ef0e7c7a078d52bca8fac30233cb740cf4",
-                "reference": "e9a6f9ef0e7c7a078d52bca8fac30233cb740cf4",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/46cd9a2f25ddc52609a2a70ebcf25c7d89415d87",
+                "reference": "46cd9a2f25ddc52609a2a70ebcf25c7d89415d87",
                 "shasum": ""
             },
             "require": {
@@ -7613,7 +7613,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-10-31T16:21:11+00:00"
+            "time": "2024-11-04T11:32:41+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -16128,7 +16128,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "coreshop/core-shop": 20,
-        "pimcore/generic-data-index-bundle": 20,
         "pimcore/studio-backend-bundle": 20,
         "pimcore/studio-ui-bundle": 20
     },
