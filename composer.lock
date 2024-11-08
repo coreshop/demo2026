@@ -443,12 +443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "5d0fa2f6a0f5b82690973371ada5438282a54066"
+                "reference": "b5b2532dc399581cabc93acd1d1abe3f674b53e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/5d0fa2f6a0f5b82690973371ada5438282a54066",
-                "reference": "5d0fa2f6a0f5b82690973371ada5438282a54066",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/b5b2532dc399581cabc93acd1d1abe3f674b53e3",
+                "reference": "b5b2532dc399581cabc93acd1d1abe3f674b53e3",
                 "shasum": ""
             },
             "require": {
@@ -629,7 +629,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-30T14:12:30+00:00"
+            "time": "2024-11-08T08:51:25+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -3082,23 +3082,23 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.42.0",
+            "version": "v1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "0c25599a91530b5847f129b271c536f75a7563f5"
+                "reference": "b6a80acd906492086db59aada9196dcfb9c512fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/0c25599a91530b5847f129b271c536f75a7563f5",
-                "reference": "0c25599a91530b5847f129b271c536f75a7563f5",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/b6a80acd906492086db59aada9196dcfb9c512fe",
+                "reference": "b6a80acd906492086db59aada9196dcfb9c512fe",
                 "shasum": ""
             },
             "require": {
                 "firebase/php-jwt": "^6.0",
                 "guzzlehttp/guzzle": "^7.4.5",
                 "guzzlehttp/psr7": "^2.4.5",
-                "php": "^8.0",
+                "php": "^8.1",
                 "psr/cache": "^2.0||^3.0",
                 "psr/http-message": "^1.1||^2.0"
             },
@@ -3136,9 +3136,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.42.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.43.0"
             },
-            "time": "2024-08-26T18:33:48+00:00"
+            "time": "2024-11-07T19:35:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5561,16 +5561,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c"
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
                 "shasum": ""
             },
             "require": {
@@ -5609,7 +5609,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
             },
             "funding": [
                 {
@@ -5617,7 +5617,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-12T14:39:25+00:00"
+            "time": "2024-11-08T17:47:46+00:00"
         },
         {
             "name": "neitanod/forceutf8",
@@ -7228,12 +7228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "08493c773f65f2d839d8607be6e072ea7d2f54e0"
+                "reference": "a46de00494db8a1b8a46c71c39ca513d9b30d682"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/08493c773f65f2d839d8607be6e072ea7d2f54e0",
-                "reference": "08493c773f65f2d839d8607be6e072ea7d2f54e0",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/a46de00494db8a1b8a46c71c39ca513d9b30d682",
+                "reference": "a46de00494db8a1b8a46c71c39ca513d9b30d682",
                 "shasum": ""
             },
             "require": {
@@ -7438,7 +7438,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-11-07T10:56:28+00:00"
+            "time": "2024-11-08T06:59:28+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7500,12 +7500,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "180ad5b641ae18ce3dddf29fcf7d72d54676f9a0"
+                "reference": "0ca298e2cb3da989197a1b7d0d80a01a3c596448"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/180ad5b641ae18ce3dddf29fcf7d72d54676f9a0",
-                "reference": "180ad5b641ae18ce3dddf29fcf7d72d54676f9a0",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/0ca298e2cb3da989197a1b7d0d80a01a3c596448",
+                "reference": "0ca298e2cb3da989197a1b7d0d80a01a3c596448",
                 "shasum": ""
             },
             "require": {
@@ -7558,7 +7558,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-07T13:05:05+00:00"
+            "time": "2024-11-08T10:04:07+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7566,12 +7566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "55879ff326f9847bc93f062421eb02eec96cf4c6"
+                "reference": "b6d346b8ef0929e6276bc3f036022946a5fa2461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/55879ff326f9847bc93f062421eb02eec96cf4c6",
-                "reference": "55879ff326f9847bc93f062421eb02eec96cf4c6",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/b6d346b8ef0929e6276bc3f036022946a5fa2461",
+                "reference": "b6d346b8ef0929e6276bc3f036022946a5fa2461",
                 "shasum": ""
             },
             "require": {
@@ -7615,7 +7615,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-07T16:16:50+00:00"
+            "time": "2024-11-08T16:37:07+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
