@@ -2379,6 +2379,122 @@
             "time": "2023-06-01T07:04:22+00:00"
         },
         {
+            "name": "elastic/transport",
+            "version": "v8.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elastic/elastic-transport-php.git",
+                "reference": "8be37d679637545e50b1cea9f8ee903888783021"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elastic/elastic-transport-php/zipball/8be37d679637545e50b1cea9f8ee903888783021",
+                "reference": "8be37d679637545e50b1cea9f8ee903888783021",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.0",
+                "open-telemetry/api": "^1.0",
+                "php": "^7.4 || ^8.0",
+                "php-http/discovery": "^1.14",
+                "php-http/httplug": "^2.3",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0 || ^2.0",
+                "psr/log": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.5",
+                "open-telemetry/sdk": "^1.0",
+                "php-http/mock-client": "^1.5",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.5",
+                "symfony/http-client": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Elastic\\Transport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTTP transport PHP library for Elastic products",
+            "keywords": [
+                "PSR_17",
+                "elastic",
+                "http",
+                "psr-18",
+                "psr-7",
+                "transport"
+            ],
+            "support": {
+                "issues": "https://github.com/elastic/elastic-transport-php/issues",
+                "source": "https://github.com/elastic/elastic-transport-php/tree/v8.10.0"
+            },
+            "time": "2024-08-14T08:55:07+00:00"
+        },
+        {
+            "name": "elasticsearch/elasticsearch",
+            "version": "v8.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elastic/elasticsearch-php.git",
+                "reference": "ab0fdb43f9e69f0d0539028d8b0b56cdf3328d85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/ab0fdb43f9e69f0d0539028d8b0b56cdf3328d85",
+                "reference": "ab0fdb43f9e69f0d0539028d8b0b56cdf3328d85",
+                "shasum": ""
+            },
+            "require": {
+                "elastic/transport": "^8.10",
+                "guzzlehttp/guzzle": "^7.0",
+                "php": "^7.4 || ^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/log": "^1|^2|^3"
+            },
+            "require-dev": {
+                "ext-yaml": "*",
+                "ext-zip": "*",
+                "mockery/mockery": "^1.5",
+                "nyholm/psr7": "^1.5",
+                "php-http/message-factory": "^1.0",
+                "php-http/mock-client": "^1.5",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.5",
+                "psr/http-factory": "^1.0",
+                "symfony/finder": "~4.0",
+                "symfony/http-client": "^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Elastic\\Elasticsearch\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP Client for Elasticsearch",
+            "keywords": [
+                "client",
+                "elastic",
+                "elasticsearch",
+                "search"
+            ],
+            "support": {
+                "issues": "https://github.com/elastic/elasticsearch-php/issues",
+                "source": "https://github.com/elastic/elasticsearch-php/tree/v8.16.0"
+            },
+            "time": "2024-11-14T22:23:33+00:00"
+        },
+        {
             "name": "endroid/qr-code",
             "version": "4.8.5",
             "source": {
@@ -5834,6 +5950,135 @@
             "time": "2021-01-04T14:29:34+00:00"
         },
         {
+            "name": "open-telemetry/api",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opentelemetry-php/api.git",
+                "reference": "542064815d38a6df55af7957cd6f1d7d967c99c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/542064815d38a6df55af7957cd6f1d7d967c99c6",
+                "reference": "542064815d38a6df55af7957cd6f1d7d967c99c6",
+                "shasum": ""
+            },
+            "require": {
+                "open-telemetry/context": "^1.0",
+                "php": "^8.1",
+                "psr/log": "^1.1|^2.0|^3.0",
+                "symfony/polyfill-php82": "^1.26"
+            },
+            "conflict": {
+                "open-telemetry/sdk": "<=1.0.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1.x-dev"
+                },
+                "spi": {
+                    "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\HookManagerInterface": [
+                        "OpenTelemetry\\API\\Instrumentation\\AutoInstrumentation\\ExtensionHookManager"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Trace/functions.php"
+                ],
+                "psr-4": {
+                    "OpenTelemetry\\API\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "opentelemetry-php contributors",
+                    "homepage": "https://github.com/open-telemetry/opentelemetry-php/graphs/contributors"
+                }
+            ],
+            "description": "API for OpenTelemetry PHP.",
+            "keywords": [
+                "Metrics",
+                "api",
+                "apm",
+                "logging",
+                "opentelemetry",
+                "otel",
+                "tracing"
+            ],
+            "support": {
+                "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
+                "docs": "https://opentelemetry.io/docs/php",
+                "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
+                "source": "https://github.com/open-telemetry/opentelemetry-php"
+            },
+            "time": "2024-10-15T22:42:37+00:00"
+        },
+        {
+            "name": "open-telemetry/context",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opentelemetry-php/context.git",
+                "reference": "0cba875ea1953435f78aec7f1d75afa87bdbf7f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opentelemetry-php/context/zipball/0cba875ea1953435f78aec7f1d75afa87bdbf7f3",
+                "reference": "0cba875ea1953435f78aec7f1d75afa87bdbf7f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "symfony/polyfill-php82": "^1.26"
+            },
+            "suggest": {
+                "ext-ffi": "To allow context switching in Fibers"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "fiber/initialize_fiber_handler.php"
+                ],
+                "psr-4": {
+                    "OpenTelemetry\\Context\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "opentelemetry-php contributors",
+                    "homepage": "https://github.com/open-telemetry/opentelemetry-php/graphs/contributors"
+                }
+            ],
+            "description": "Context implementation for OpenTelemetry PHP.",
+            "keywords": [
+                "Context",
+                "opentelemetry",
+                "otel"
+            ],
+            "support": {
+                "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
+                "docs": "https://opentelemetry.io/docs/php",
+                "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
+                "source": "https://github.com/open-telemetry/opentelemetry-php"
+            },
+            "time": "2024-08-21T00:29:20+00:00"
+        },
+        {
             "name": "opensearch-project/opensearch-php",
             "version": "2.3.1",
             "source": {
@@ -6399,6 +6644,85 @@
             "time": "2017-08-25T06:16:11+00:00"
         },
         {
+            "name": "php-http/discovery",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/discovery.git",
+                "reference": "82fe4c73ef3363caed49ff8dd1539ba06044910d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/82fe4c73ef3363caed49ff8dd1539ba06044910d",
+                "reference": "82fe4c73ef3363caed49ff8dd1539ba06044910d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0|^2.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "nyholm/psr7": "<1.0",
+                "zendframework/zend-diactoros": "*"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/http-client-implementation": "*",
+                "psr/http-factory-implementation": "*",
+                "psr/http-message-implementation": "*"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0.2|^2.0",
+                "graham-campbell/phpspec-skip-example-extension": "^5.0",
+                "php-http/httplug": "^1.0 || ^2.0",
+                "php-http/message-factory": "^1.0",
+                "phpspec/phpspec": "^5.1 || ^6.1 || ^7.3",
+                "sebastian/comparator": "^3.0.5 || ^4.0.8",
+                "symfony/phpunit-bridge": "^6.4.4 || ^7.0.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Http\\Discovery\\Composer\\Plugin",
+                "plugin-optional": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Discovery\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "src/Composer/Plugin.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Finds and installs PSR-7, PSR-17, PSR-18 and HTTPlug implementations",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "adapter",
+                "client",
+                "discovery",
+                "factory",
+                "http",
+                "message",
+                "psr17",
+                "psr7"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/discovery/issues",
+                "source": "https://github.com/php-http/discovery/tree/1.20.0"
+            },
+            "time": "2024-10-02T11:20:13+00:00"
+        },
+        {
             "name": "php-http/guzzle7-adapter",
             "version": "1.0.0",
             "source": {
@@ -6956,16 +7280,16 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.6.1",
+            "version": "v1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "db75bc242a4b3e0a067fb42f09e234142e0547a9"
+                "reference": "cda3c500f0f1deaefb5313345f33a60ccc7d62dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/db75bc242a4b3e0a067fb42f09e234142e0547a9",
-                "reference": "db75bc242a4b3e0a067fb42f09e234142e0547a9",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/cda3c500f0f1deaefb5313345f33a60ccc7d62dd",
+                "reference": "cda3c500f0f1deaefb5313345f33a60ccc7d62dd",
                 "shasum": ""
             },
             "require": {
@@ -7006,9 +7330,49 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.6.1"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.6.2"
             },
-            "time": "2024-10-08T10:54:57+00:00"
+            "time": "2024-11-19T10:26:47+00:00"
+        },
+        {
+            "name": "pimcore/elasticsearch-client",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pimcore/elasticsearch-client.git",
+                "reference": "f631f05ee5abae8fc8bea1129bd83e40e7f72d8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pimcore/elasticsearch-client/zipball/f631f05ee5abae8fc8bea1129bd83e40e7f72d8f",
+                "reference": "f631f05ee5abae8fc8bea1129bd83e40e7f72d8f",
+                "shasum": ""
+            },
+            "require": {
+                "elasticsearch/elasticsearch": "^8.0",
+                "php": "^8.1",
+                "pimcore/pimcore": "^11.x-dev",
+                "psr/log": "*"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Pimcore\\Bundle\\ElasticsearchClientBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "support": {
+                "issues": "https://github.com/pimcore/elasticsearch-client/issues",
+                "source": "https://github.com/pimcore/elasticsearch-client/tree/1.x"
+            },
+            "time": "2024-11-07T13:32:42+00:00"
         },
         {
             "name": "pimcore/generic-data-index-bundle",
@@ -7016,19 +7380,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "975ba434d6a93694748894df936d079d95f5cd24"
+                "reference": "f997a03429e23545904f8f7acf8ee636c14119aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/975ba434d6a93694748894df936d079d95f5cd24",
-                "reference": "975ba434d6a93694748894df936d079d95f5cd24",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/f997a03429e23545904f8f7acf8ee636c14119aa",
+                "reference": "f997a03429e23545904f8f7acf8ee636c14119aa",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": "^2.17.2",
                 "php": "~8.2.0 || ~8.3.0 ",
-                "pimcore/opensearch-client": "^1.0.0",
-                "pimcore/pimcore": "^11.3.0",
+                "pimcore/elasticsearch-client": "^1.x-dev",
+                "pimcore/opensearch-client": "^1.x-dev",
+                "pimcore/pimcore": "^11.x-dev",
                 "pimcore/static-resolver-bundle": "^1.4.0",
                 "symfony/messenger": "^6.4",
                 "symfony/scheduler": "^6.4"
@@ -7056,6 +7421,9 @@
                 }
             },
             "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
                 "psr-4": {
                     "Pimcore\\Bundle\\GenericDataIndexBundle\\": "src/"
                 }
@@ -7069,7 +7437,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/2.x"
             },
-            "time": "2024-11-15T07:08:07+00:00"
+            "time": "2024-11-19T13:18:20+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7171,22 +7539,22 @@
         },
         {
             "name": "pimcore/opensearch-client",
-            "version": "v1.0.0",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/opensearch-client.git",
-                "reference": "0f3229dbeb98ce4ae23ccb8e775933ff173d7d23"
+                "reference": "cd7750a118dc49cfb4f0519356ee18ac9eb30116"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/opensearch-client/zipball/0f3229dbeb98ce4ae23ccb8e775933ff173d7d23",
-                "reference": "0f3229dbeb98ce4ae23ccb8e775933ff173d7d23",
+                "url": "https://api.github.com/repos/pimcore/opensearch-client/zipball/cd7750a118dc49cfb4f0519356ee18ac9eb30116",
+                "reference": "cd7750a118dc49cfb4f0519356ee18ac9eb30116",
                 "shasum": ""
             },
             "require": {
                 "opensearch-project/opensearch-php": "^2.2.0",
-                "php": "^8.0",
-                "pimcore/pimcore": "^10.6 || ^11.0"
+                "php": "^8.1",
+                "pimcore/pimcore": "^11.x-dev"
             },
             "require-dev": {
                 "codeception/codeception": "^4.1.12 || ^5.0.10",
@@ -7200,6 +7568,7 @@
                 "phpunit/phpunit": "^9.3 || 10.2.7",
                 "symfony/phpunit-bridge": "^6"
             },
+            "default-branch": true,
             "type": "pimcore-bundle",
             "extra": {
                 "pimcore": {
@@ -7220,9 +7589,9 @@
             "description": "Pimcore Opensearch Client",
             "support": {
                 "issues": "https://github.com/pimcore/opensearch-client/issues",
-                "source": "https://github.com/pimcore/opensearch-client/tree/v1.0.0"
+                "source": "https://github.com/pimcore/opensearch-client/tree/1.x"
             },
-            "time": "2024-02-27T13:45:49+00:00"
+            "time": "2024-11-07T13:35:17+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -7502,12 +7871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "d4c35eb938e13a3a1cd8a554d404cec7b52424ee"
+                "reference": "963d930ec191de1fdbd674dfc9f64971e685212d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/d4c35eb938e13a3a1cd8a554d404cec7b52424ee",
-                "reference": "d4c35eb938e13a3a1cd8a554d404cec7b52424ee",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/963d930ec191de1fdbd674dfc9f64971e685212d",
+                "reference": "963d930ec191de1fdbd674dfc9f64971e685212d",
                 "shasum": ""
             },
             "require": {
@@ -7560,7 +7929,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-18T15:38:13+00:00"
+            "time": "2024-11-19T08:37:31+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7568,12 +7937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "3ed4bf342fe3c432c8be860d0c301659d2175661"
+                "reference": "525a53d630358629df4c13c9a0218a9ae53ee237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/3ed4bf342fe3c432c8be860d0c301659d2175661",
-                "reference": "3ed4bf342fe3c432c8be860d0c301659d2175661",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/525a53d630358629df4c13c9a0218a9ae53ee237",
+                "reference": "525a53d630358629df4c13c9a0218a9ae53ee237",
                 "shasum": ""
             },
             "require": {
@@ -7617,20 +7986,20 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-18T08:45:53+00:00"
+            "time": "2024-11-19T08:30:46+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
-            "version": "v1.3.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/web-to-print-bundle.git",
-                "reference": "e4330085c7d090ee1e40f3e9f405f1b93d8f8ed3"
+                "reference": "0d6a21506f2aef1170348a654477095872418739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/web-to-print-bundle/zipball/e4330085c7d090ee1e40f3e9f405f1b93d8f8ed3",
-                "reference": "e4330085c7d090ee1e40f3e9f405f1b93d8f8ed3",
+                "url": "https://api.github.com/repos/pimcore/web-to-print-bundle/zipball/0d6a21506f2aef1170348a654477095872418739",
+                "reference": "0d6a21506f2aef1170348a654477095872418739",
                 "shasum": ""
             },
             "require": {
@@ -7672,9 +8041,9 @@
             "description": "Pimcore WebToPrint Bundle",
             "support": {
                 "issues": "https://github.com/pimcore/web-to-print-bundle/issues",
-                "source": "https://github.com/pimcore/web-to-print-bundle/tree/v1.3.1"
+                "source": "https://github.com/pimcore/web-to-print-bundle/tree/v1.3.2"
             },
-            "time": "2024-08-28T09:29:15+00:00"
+            "time": "2024-11-18T07:32:49+00:00"
         },
         {
             "name": "presta/sitemap-bundle",
@@ -13231,6 +13600,82 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-php81/tree/v1.31.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php82",
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php82.git",
+                "reference": "5d2ed36f7734637dacc025f179698031951b1692"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php82/zipball/5d2ed36f7734637dacc025f179698031951b1692",
+                "reference": "5d2ed36f7734637dacc025f179698031951b1692",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php82\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php82/tree/v1.31.0"
             },
             "funding": [
                 {
