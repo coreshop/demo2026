@@ -2681,16 +2681,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.24.0",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "a136842a532bac9ecd8a1c723852b09915d7db50"
+                "reference": "e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/a136842a532bac9ecd8a1c723852b09915d7db50",
-                "reference": "a136842a532bac9ecd8a1c723852b09915d7db50",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5",
+                "reference": "e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5",
                 "shasum": ""
             },
             "require": {
@@ -2738,9 +2738,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.24.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.24.1"
             },
-            "time": "2024-11-07T15:11:20+00:00"
+            "time": "2024-11-21T13:46:39+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -7380,12 +7380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "6a560f2525e564d93c9fdfaa520ea53e9735371f"
+                "reference": "286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/6a560f2525e564d93c9fdfaa520ea53e9735371f",
-                "reference": "6a560f2525e564d93c9fdfaa520ea53e9735371f",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d",
+                "reference": "286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d",
                 "shasum": ""
             },
             "require": {
@@ -7437,7 +7437,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/2.x"
             },
-            "time": "2024-11-20T12:58:01+00:00"
+            "time": "2024-11-21T15:00:33+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7599,12 +7599,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "ee9bc5b162e68c25428963c693dfe980884d5ceb"
+                "reference": "7e9a8a966e0edb95c2e5b9fc362ca54ea046693e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/ee9bc5b162e68c25428963c693dfe980884d5ceb",
-                "reference": "ee9bc5b162e68c25428963c693dfe980884d5ceb",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/7e9a8a966e0edb95c2e5b9fc362ca54ea046693e",
+                "reference": "7e9a8a966e0edb95c2e5b9fc362ca54ea046693e",
                 "shasum": ""
             },
             "require": {
@@ -7809,7 +7809,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-11-15T12:29:14+00:00"
+            "time": "2024-11-21T16:05:30+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7871,12 +7871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "04e5665766b38c171f4938f9779f48f2a7492e0a"
+                "reference": "47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/04e5665766b38c171f4938f9779f48f2a7492e0a",
-                "reference": "04e5665766b38c171f4938f9779f48f2a7492e0a",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01",
+                "reference": "47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01",
                 "shasum": ""
             },
             "require": {
@@ -7929,7 +7929,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-20T14:23:03+00:00"
+            "time": "2024-11-21T11:24:23+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7937,12 +7937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "e41e428c435b88ae1ffc4fc7b895c447440218bf"
+                "reference": "45f20c174ef8ef4d112f7b5bfbdc9ececd93b803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e41e428c435b88ae1ffc4fc7b895c447440218bf",
-                "reference": "e41e428c435b88ae1ffc4fc7b895c447440218bf",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/45f20c174ef8ef4d112f7b5bfbdc9ececd93b803",
+                "reference": "45f20c174ef8ef4d112f7b5bfbdc9ececd93b803",
                 "shasum": ""
             },
             "require": {
@@ -7986,7 +7986,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-20T15:09:33+00:00"
+            "time": "2024-11-21T17:59:08+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
