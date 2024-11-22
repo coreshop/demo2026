@@ -70,28 +70,28 @@
         },
         {
             "name": "bacon/bacon-qr-code",
-            "version": "2.0.8",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22"
+                "reference": "f9cc1f52b5a463062251d666761178dbdb6b544f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/8674e51bb65af933a5ffaf1c308a660387c35c22",
-                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/f9cc1f52b5a463062251d666761178dbdb6b544f",
+                "reference": "f9cc1f52b5a463062251d666761178dbdb6b544f",
                 "shasum": ""
             },
             "require": {
                 "dasprid/enum": "^1.0.3",
                 "ext-iconv": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "phly/keep-a-changelog": "^2.1",
-                "phpunit/phpunit": "^7 | ^8 | ^9",
-                "spatie/phpunit-snapshot-assertions": "^4.2.9",
-                "squizlabs/php_codesniffer": "^3.4"
+                "phly/keep-a-changelog": "^2.12",
+                "phpunit/phpunit": "^10.5.11 || 11.0.4",
+                "spatie/phpunit-snapshot-assertions": "^5.1.5",
+                "squizlabs/php_codesniffer": "^3.9"
             },
             "suggest": {
                 "ext-imagick": "to generate QR code images"
@@ -118,9 +118,9 @@
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "support": {
                 "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.8"
+                "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.1"
             },
-            "time": "2022-12-07T17:46:57+00:00"
+            "time": "2024-10-01T13:55:55+00:00"
         },
         {
             "name": "behat/transliterator",
@@ -919,32 +919,34 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "1.8.0",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "2b44dd4cbca8b5744327de78bafef5945c7e7b5e"
+                "reference": "d8af7f248c74f195f7347424600fd9e17b57af59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/2b44dd4cbca8b5744327de78bafef5945c7e7b5e",
-                "reference": "2b44dd4cbca8b5744327de78bafef5945c7e7b5e",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/d8af7f248c74f195f7347424600fd9e17b57af59",
+                "reference": "d8af7f248c74f195f7347424600fd9e17b57af59",
                 "shasum": ""
             },
             "require": {
-                "doctrine/deprecations": "^0.5.3 || ^1",
-                "php": "^7.1.3 || ^8.0"
+                "doctrine/deprecations": "^1",
+                "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9.0 || ^10.0",
-                "phpstan/phpstan": "^1.4.8",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.1.5",
-                "vimeo/psalm": "^4.22"
+                "doctrine/coding-standard": "^12",
+                "ext-json": "*",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.5",
+                "vimeo/psalm": "^5.11"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
+                    "Doctrine\\Common\\Collections\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -983,9 +985,23 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/collections/issues",
-                "source": "https://github.com/doctrine/collections/tree/1.8.0"
+                "source": "https://github.com/doctrine/collections/tree/2.2.2"
             },
-            "time": "2022-09-01T20:12:10+00:00"
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcollections",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-04-18T06:56:21+00:00"
         },
         {
             "name": "doctrine/common",
@@ -1877,28 +1893,27 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "2.1.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6"
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
                 "shasum": ""
             },
             "require": {
-                "doctrine/deprecations": "^1.0",
-                "php": "^7.1 || ^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12",
-                "phpstan/phpstan": "^1.3",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
+                "doctrine/coding-standard": "^12",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5",
                 "psalm/plugin-phpunit": "^0.18.3",
-                "vimeo/psalm": "^4.11 || ^5.21"
+                "vimeo/psalm": "^5.21"
             },
             "type": "library",
             "autoload": {
@@ -1935,7 +1950,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/2.1.1"
+                "source": "https://github.com/doctrine/lexer/tree/3.0.1"
             },
             "funding": [
                 {
@@ -1951,7 +1966,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-05T11:35:39+00:00"
+            "time": "2024-02-05T11:56:58+00:00"
         },
         {
             "name": "doctrine/migrations",
@@ -2313,26 +2328,26 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.2.6",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7"
+                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
-                "reference": "e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ebaaf5be6c0286928352e054f2d5125608e5405e",
+                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^1.2|^2",
-                "php": ">=7.2",
-                "symfony/polyfill-intl-idn": "^1.15"
+                "doctrine/lexer": "^2.0 || ^3.0",
+                "php": ">=8.1",
+                "symfony/polyfill-intl-idn": "^1.26"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.8|^9.3.3",
-                "vimeo/psalm": "^4"
+                "phpunit/phpunit": "^10.2",
+                "vimeo/psalm": "^5.12"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -2340,7 +2355,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -2368,7 +2383,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/3.2.6"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
             },
             "funding": [
                 {
@@ -2376,7 +2391,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-01T07:04:22+00:00"
+            "time": "2023-10-06T06:47:41+00:00"
         },
         {
             "name": "elastic/transport",
@@ -2496,29 +2511,26 @@
         },
         {
             "name": "endroid/qr-code",
-            "version": "4.8.5",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/qr-code.git",
-                "reference": "0db25b506a8411a5e1644ebaa67123a6eb7b6a77"
+                "reference": "393fec6c4cbdc1bd65570ac9d245704428010122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/qr-code/zipball/0db25b506a8411a5e1644ebaa67123a6eb7b6a77",
-                "reference": "0db25b506a8411a5e1644ebaa67123a6eb7b6a77",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/393fec6c4cbdc1bd65570ac9d245704428010122",
+                "reference": "393fec6c4cbdc1bd65570ac9d245704428010122",
                 "shasum": ""
             },
             "require": {
-                "bacon/bacon-qr-code": "^2.0.5",
+                "bacon/bacon-qr-code": "^3.0",
                 "php": "^8.1"
             },
-            "conflict": {
-                "khanamiryan/qrcode-detector-decoder": "^1.0.6"
-            },
             "require-dev": {
-                "endroid/quality": "dev-master",
+                "endroid/quality": "dev-main",
                 "ext-gd": "*",
-                "khanamiryan/qrcode-detector-decoder": "^1.0.4||^2.0.2",
+                "khanamiryan/qrcode-detector-decoder": "^2.0.2",
                 "setasign/fpdf": "^1.8.2"
             },
             "suggest": {
@@ -2530,7 +2542,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-main": "5.x-dev"
                 }
             },
             "autoload": {
@@ -2559,7 +2571,7 @@
             ],
             "support": {
                 "issues": "https://github.com/endroid/qr-code/issues",
-                "source": "https://github.com/endroid/qr-code/tree/4.8.5"
+                "source": "https://github.com/endroid/qr-code/tree/5.1.0"
             },
             "funding": [
                 {
@@ -2567,7 +2579,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-29T14:03:20+00:00"
+            "time": "2024-09-08T08:52:55+00:00"
         },
         {
             "name": "ezimuel/guzzlestreams",
@@ -2889,16 +2901,16 @@
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "571de55de958d02655561cfe295b4ede2ef3669e"
+                "reference": "57ba412d813bb150b8a4ff9b65d4513725e31a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/571de55de958d02655561cfe295b4ede2ef3669e",
-                "reference": "571de55de958d02655561cfe295b4ede2ef3669e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/57ba412d813bb150b8a4ff9b65d4513725e31a1d",
+                "reference": "57ba412d813bb150b8a4ff9b65d4513725e31a1d",
                 "shasum": ""
             },
             "require": {
@@ -2949,9 +2961,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/issues",
-                "source": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/tree/3.5.0"
+                "source": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle/tree/3.5.1"
             },
-            "time": "2024-01-23T21:30:47+00:00"
+            "time": "2024-11-22T10:11:52+00:00"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -6148,24 +6160,24 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v2.7.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105"
+                "reference": "df1e7fde177501eee2037dd159cf04f5f301a512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/52a0d99e69f56b9ec27ace92ba56897fe6993105",
-                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/df1e7fde177501eee2037dd159cf04f5f301a512",
+                "reference": "df1e7fde177501eee2037dd159cf04f5f301a512",
                 "shasum": ""
             },
             "require": {
-                "php": "^7|^8"
+                "php": "^8"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6|^7|^8|^9",
-                "vimeo/psalm": "^1|^2|^3|^4"
+                "phpunit/phpunit": "^9",
+                "vimeo/psalm": "^4|^5"
             },
             "type": "library",
             "autoload": {
@@ -6211,7 +6223,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "time": "2024-05-08T12:18:48+00:00"
+            "time": "2024-05-08T12:36:18+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7019,16 +7031,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "08d4e08cf0c7e6182750cef7958b860b8c7f10ad"
+                "reference": "91a4b42e41976a0b2f839720c3e20a12a84f6852"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/08d4e08cf0c7e6182750cef7958b860b8c7f10ad",
-                "reference": "08d4e08cf0c7e6182750cef7958b860b8c7f10ad",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/91a4b42e41976a0b2f839720c3e20a12a84f6852",
+                "reference": "91a4b42e41976a0b2f839720c3e20a12a84f6852",
                 "shasum": ""
             },
             "require": {
@@ -7117,9 +7129,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.2"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.3"
             },
-            "time": "2024-11-10T09:35:47+00:00"
+            "time": "2024-11-22T06:11:37+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -7599,12 +7611,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "7e9a8a966e0edb95c2e5b9fc362ca54ea046693e"
+                "reference": "e55b9c0b3799b564f0e04b1af42a0f22b9bacc50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/7e9a8a966e0edb95c2e5b9fc362ca54ea046693e",
-                "reference": "7e9a8a966e0edb95c2e5b9fc362ca54ea046693e",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/e55b9c0b3799b564f0e04b1af42a0f22b9bacc50",
+                "reference": "e55b9c0b3799b564f0e04b1af42a0f22b9bacc50",
                 "shasum": ""
             },
             "require": {
@@ -7612,15 +7624,14 @@
                 "composer/ca-bundle": "^1.2",
                 "defuse/php-encryption": "^2.2.0",
                 "doctrine/annotations": "^1.13.1 || ^2.0",
-                "doctrine/collections": "^1.6.8",
                 "doctrine/dbal": "^3.8",
                 "doctrine/doctrine-bundle": "^2.6.3",
                 "doctrine/doctrine-migrations-bundle": "^3.2.2",
                 "doctrine/inflector": "^2.0.2",
                 "doctrine/orm": "^2.15",
                 "doctrine/persistence": "^3.0.3",
-                "egulias/email-validator": "^3.0.0",
-                "endroid/qr-code": "^4",
+                "egulias/email-validator": "^3.0 || ^4.0",
+                "endroid/qr-code": "^4 || ^5.1",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-exif": "*",
@@ -7648,14 +7659,14 @@
                 "mpratt/embera": "^2.0.14",
                 "myclabs/deep-copy": "^1.11",
                 "neitanod/forceutf8": "^2.0.4",
-                "nesbot/carbon": "^2.65",
+                "nesbot/carbon": "^2.72",
                 "onnov/detect-encoding": "^2.0",
                 "pear/net_url2": "^2.2",
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-                "presta/sitemap-bundle": "^3.3",
+                "presta/sitemap-bundle": "^3.3 || ^4.1",
                 "sabre/dav": "^4.1.2",
-                "scheb/2fa-bundle": "^6.0",
-                "scheb/2fa-google-authenticator": "^6.0",
+                "scheb/2fa-bundle": "^6.0 || ^7.5",
+                "scheb/2fa-google-authenticator": "^6.0 || ^7.5",
                 "spatie/image-optimizer": "^1.6.2",
                 "symfony-cmf/routing-bundle": "^3.0",
                 "symfony/cache": "^6.4.12",
@@ -7809,7 +7820,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-11-21T16:05:30+00:00"
+            "time": "2024-11-22T07:09:23+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7871,12 +7882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01"
+                "reference": "ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01",
-                "reference": "47dec90c358e1a8ab3051a2ff2cf7c18aeeb1b01",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca",
+                "reference": "ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca",
                 "shasum": ""
             },
             "require": {
@@ -7929,7 +7940,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-21T11:24:23+00:00"
+            "time": "2024-11-22T10:58:11+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7937,12 +7948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "45f20c174ef8ef4d112f7b5bfbdc9ececd93b803"
+                "reference": "bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/45f20c174ef8ef4d112f7b5bfbdc9ececd93b803",
-                "reference": "45f20c174ef8ef4d112f7b5bfbdc9ececd93b803",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e",
+                "reference": "bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e",
                 "shasum": ""
             },
             "require": {
@@ -7986,7 +7997,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-21T17:59:08+00:00"
+            "time": "2024-11-22T16:11:00+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -8047,38 +8058,38 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v3.3.1",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "29f14e0fb97ae4cb1b37dce7cee828871ad9be19"
+                "reference": "28f6c146d600258099bfae959c2f04d94c71b26d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/29f14e0fb97ae4cb1b37dce7cee828871ad9be19",
-                "reference": "29f14e0fb97ae4cb1b37dce7cee828871ad9be19",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/28f6c146d600258099bfae959c2f04d94c71b26d",
+                "reference": "28f6c146d600258099bfae959c2f04d94c71b26d",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
-                "php": ">=7.1.3",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/framework-bundle": "^4.4|^5.0|^6.0"
+                "php": ">=7.2.5|>=8.0.2",
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.0",
                 "phpstan/phpstan": "^1.4",
                 "phpunit/phpunit": "^7.5|^8.0",
-                "sensio/framework-extra-bundle": "^5.5|^6.1",
                 "squizlabs/php_codesniffer": "^3.5",
-                "symfony/browser-kit": "^4.4|^5.0|^6.0",
-                "symfony/messenger": "^4.4|^5.0|^6.0",
-                "symfony/phpunit-bridge": "^4.4|^5.0|^6.0",
-                "symfony/yaml": "^4.4|^5.0|^6.0"
+                "symfony/browser-kit": "^5.4|^6.0|^7.0",
+                "symfony/messenger": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
+                "symfony/yaml": "^5.4|^6.0|^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
+                    "4.x": "4.x-dev",
                     "3.x": "3.x-dev",
                     "2.x": "2.x-dev",
                     "1.x": "1.x-dev"
@@ -8109,9 +8120,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v3.3.1"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.1.1"
             },
-            "time": "2023-04-24T07:19:47+00:00"
+            "time": "2024-03-19T15:38:28+00:00"
         },
         {
             "name": "psr/cache",
@@ -9334,34 +9345,33 @@
         },
         {
             "name": "scheb/2fa-bundle",
-            "version": "v6.12.0",
+            "version": "v7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-bundle.git",
-                "reference": "6e51477c53070f27ac3e3d36be1a991870db415a"
+                "reference": "3011e0b8242e12cdcd64ed12a95ddb2e5899ba37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/6e51477c53070f27ac3e3d36be1a991870db415a",
-                "reference": "6e51477c53070f27ac3e3d36be1a991870db415a",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/3011e0b8242e12cdcd64ed12a95ddb2e5899ba37",
+                "reference": "3011e0b8242e12cdcd64ed12a95ddb2e5899ba37",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
-                "symfony/config": "^5.4 || ^6.0",
-                "symfony/dependency-injection": "^5.4 || ^6.0",
-                "symfony/event-dispatcher": "^5.4 || ^6.0",
-                "symfony/framework-bundle": "^5.4 || ^6.0",
-                "symfony/http-foundation": "^5.4 || ^6.0",
-                "symfony/http-kernel": "^5.4 || ^6.0",
-                "symfony/property-access": "^5.4 || ^6.0",
-                "symfony/security-bundle": "^5.4 || ^6.0",
-                "symfony/twig-bundle": "^5.4 || ^6.0"
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+                "symfony/config": "^6.4 || ^7.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0",
+                "symfony/event-dispatcher": "^6.4 || ^7.0",
+                "symfony/framework-bundle": "^6.4 || ^7.0",
+                "symfony/http-foundation": "^6.4 || ^7.0",
+                "symfony/http-kernel": "^6.4 || ^7.0",
+                "symfony/property-access": "^6.4 || ^7.0",
+                "symfony/security-bundle": "^6.4 || ^7.0",
+                "symfony/twig-bundle": "^6.4 || ^7.0"
             },
             "conflict": {
-                "scheb/two-factor-bundle": "*",
-                "symfony/security-core": "^7"
+                "scheb/two-factor-bundle": "*"
             },
             "suggest": {
                 "scheb/2fa-backup-code": "Emergency codes when you have no access to other methods",
@@ -9396,29 +9406,28 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-bundle/tree/v6.12.0"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v7.6.0"
             },
-            "time": "2023-12-03T16:02:15+00:00"
+            "time": "2024-10-20T10:14:58+00:00"
         },
         {
             "name": "scheb/2fa-google-authenticator",
-            "version": "v6.12.0",
+            "version": "v7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scheb/2fa-google-authenticator.git",
-                "reference": "2c43bbe432fdc465d8f1d1b2d73ca9ea5276fe34"
+                "reference": "c9a06ea7c4450b695a2ccfa43d2e344ce6d6ba0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/2c43bbe432fdc465d8f1d1b2d73ca9ea5276fe34",
-                "reference": "2c43bbe432fdc465d8f1d1b2d73ca9ea5276fe34",
+                "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/c9a06ea7c4450b695a2ccfa43d2e344ce6d6ba0a",
+                "reference": "c9a06ea7c4450b695a2ccfa43d2e344ce6d6ba0a",
                 "shasum": ""
             },
             "require": {
-                "paragonie/constant_time_encoding": "^2.4",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
                 "scheb/2fa-bundle": "self.version",
-                "spomky-labs/otphp": "^10.0 || ^11.0"
+                "spomky-labs/otphp": "^11.0"
             },
             "type": "library",
             "autoload": {
@@ -9447,9 +9456,9 @@
                 "two-step"
             ],
             "support": {
-                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v6.12.0"
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v7.6.0"
             },
-            "time": "2023-12-03T15:44:26+00:00"
+            "time": "2024-10-20T10:14:58+00:00"
         },
         {
             "name": "sebastian/diff",
