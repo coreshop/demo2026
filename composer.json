@@ -5,7 +5,10 @@
   "config": {
     "optimize-autoloader": true,
     "sort-packages": true,
-    "process-timeout": 0
+    "process-timeout": 0,
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
   },
   "require": {
     "coreshop/core-shop": "4.1.x-dev",
