@@ -64,8 +64,6 @@ services:
         environment:
             PHP_IDE_CONFIG: "serverName=localhost"
             COMPOSER_AUTH: ${COMPOSER_AUTH}
-            XDEBUG_HOST: 198.19.248.254
-            XDEBUG_TRIGGER: PHPSTORM
 
     supervisord:
         image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-supervisord:8.2-5.2.4
