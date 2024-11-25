@@ -3166,16 +3166,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.382.0",
+            "version": "v0.383.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "9d9d154c8fc3c4b300c27e492f0e917d8ac35124"
+                "reference": "0da092376837d363ef0cfa5ef56e43308f7c3763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/9d9d154c8fc3c4b300c27e492f0e917d8ac35124",
-                "reference": "9d9d154c8fc3c4b300c27e492f0e917d8ac35124",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/0da092376837d363ef0cfa5ef56e43308f7c3763",
+                "reference": "0da092376837d363ef0cfa5ef56e43308f7c3763",
                 "shasum": ""
             },
             "require": {
@@ -3204,9 +3204,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.382.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.383.0"
             },
-            "time": "2024-11-15T01:10:24+00:00"
+            "time": "2024-11-20T01:10:23+00:00"
         },
         {
             "name": "google/auth",
@@ -7352,12 +7352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/elasticsearch-client.git",
-                "reference": "f631f05ee5abae8fc8bea1129bd83e40e7f72d8f"
+                "reference": "1042f8523d32f0af0348aff73bb3d784240f41a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/elasticsearch-client/zipball/f631f05ee5abae8fc8bea1129bd83e40e7f72d8f",
-                "reference": "f631f05ee5abae8fc8bea1129bd83e40e7f72d8f",
+                "url": "https://api.github.com/repos/pimcore/elasticsearch-client/zipball/1042f8523d32f0af0348aff73bb3d784240f41a9",
+                "reference": "1042f8523d32f0af0348aff73bb3d784240f41a9",
                 "shasum": ""
             },
             "require": {
@@ -7384,7 +7384,7 @@
                 "issues": "https://github.com/pimcore/elasticsearch-client/issues",
                 "source": "https://github.com/pimcore/elasticsearch-client/tree/1.x"
             },
-            "time": "2024-11-07T13:32:42+00:00"
+            "time": "2024-11-25T07:50:53+00:00"
         },
         {
             "name": "pimcore/generic-data-index-bundle",
@@ -7392,12 +7392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d"
+                "reference": "0cdfc089b1f2e858ac69e4e2ce00f0a6ef63439e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d",
-                "reference": "286f5200645e3ea7d0a4e3f3dcadbf727c76ec0d",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/0cdfc089b1f2e858ac69e4e2ce00f0a6ef63439e",
+                "reference": "0cdfc089b1f2e858ac69e4e2ce00f0a6ef63439e",
                 "shasum": ""
             },
             "require": {
@@ -7449,7 +7449,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/2.x"
             },
-            "time": "2024-11-21T15:00:33+00:00"
+            "time": "2024-11-25T15:15:36+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
@@ -7882,12 +7882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca"
+                "reference": "09259fc069c239ad5a49f70a0d44c7cfafe7ffe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca",
-                "reference": "ea13cd81d2cc3e4f37e54b54a34a1e85b60420ca",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/09259fc069c239ad5a49f70a0d44c7cfafe7ffe7",
+                "reference": "09259fc069c239ad5a49f70a0d44c7cfafe7ffe7",
                 "shasum": ""
             },
             "require": {
@@ -7940,7 +7940,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-22T10:58:11+00:00"
+            "time": "2024-11-25T15:20:36+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7948,12 +7948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e"
+                "reference": "3cc9c3a69549b8efbdf2591865298e6ebab69502"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e",
-                "reference": "bc2fea8d08bd45c896a35a6405a8bb0e3cbda87e",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/3cc9c3a69549b8efbdf2591865298e6ebab69502",
+                "reference": "3cc9c3a69549b8efbdf2591865298e6ebab69502",
                 "shasum": ""
             },
             "require": {
@@ -7997,7 +7997,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-22T16:11:00+00:00"
+            "time": "2024-11-25T16:41:35+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
