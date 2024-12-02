@@ -3166,16 +3166,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.383.0",
+            "version": "v0.384.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "0da092376837d363ef0cfa5ef56e43308f7c3763"
+                "reference": "fcb190bb02cea2c939e67867bf9122fd8d02c351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/0da092376837d363ef0cfa5ef56e43308f7c3763",
-                "reference": "0da092376837d363ef0cfa5ef56e43308f7c3763",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/fcb190bb02cea2c939e67867bf9122fd8d02c351",
+                "reference": "fcb190bb02cea2c939e67867bf9122fd8d02c351",
                 "shasum": ""
             },
             "require": {
@@ -3204,9 +3204,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.383.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.384.0"
             },
-            "time": "2024-11-20T01:10:23+00:00"
+            "time": "2024-11-27T01:08:46+00:00"
         },
         {
             "name": "google/auth",
@@ -7028,16 +7028,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "2.3.3",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "91a4b42e41976a0b2f839720c3e20a12a84f6852"
+                "reference": "fb74dcdfa5b538763ab980e977529bc783039aec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/91a4b42e41976a0b2f839720c3e20a12a84f6852",
-                "reference": "91a4b42e41976a0b2f839720c3e20a12a84f6852",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/fb74dcdfa5b538763ab980e977529bc783039aec",
+                "reference": "fb74dcdfa5b538763ab980e977529bc783039aec",
                 "shasum": ""
             },
             "require": {
@@ -7126,9 +7126,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/2.3.3"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/3.5.0"
             },
-            "time": "2024-11-22T06:11:37+00:00"
+            "time": "2024-11-22T06:41:00+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -7289,24 +7289,25 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.6.2",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "cda3c500f0f1deaefb5313345f33a60ccc7d62dd"
+                "reference": "26b8ea6f46f6c2976cad310c3afeaf35806fa856"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/cda3c500f0f1deaefb5313345f33a60ccc7d62dd",
-                "reference": "cda3c500f0f1deaefb5313345f33a60ccc7d62dd",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/26b8ea6f46f6c2976cad310c3afeaf35806fa856",
+                "reference": "26b8ea6f46f6c2976cad310c3afeaf35806fa856",
                 "shasum": ""
             },
             "require": {
                 "cbschuld/browser.php": "^1.9.6",
+                "endroid/qr-code": "^4 || ^5.1",
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-                "phpoffice/phpspreadsheet": "^1.24 || ^2.2",
-                "pimcore/pimcore": "^11.3.1",
-                "symfony/webpack-encore-bundle": "^1.13.2"
+                "phpoffice/phpspreadsheet": "^2.2 || ^3.3",
+                "pimcore/pimcore": "^11.5.0",
+                "symfony/webpack-encore-bundle": "^1.17 || ^2.0"
             },
             "require-dev": {
                 "codeception/codeception": "^5.0.11",
@@ -7325,7 +7326,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "1.x-dev": "1.6.x-dev"
+                    "1.x-dev": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -7339,9 +7340,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.6.2"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.7.0"
             },
-            "time": "2024-11-19T10:26:47+00:00"
+            "time": "2024-12-02T09:23:15+00:00"
         },
         {
             "name": "pimcore/elasticsearch-client",
@@ -7349,18 +7350,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/elasticsearch-client.git",
-                "reference": "1042f8523d32f0af0348aff73bb3d784240f41a9"
+                "reference": "422334af115bfbc5d0f414a6f5ddb5527cc4723c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/elasticsearch-client/zipball/1042f8523d32f0af0348aff73bb3d784240f41a9",
-                "reference": "1042f8523d32f0af0348aff73bb3d784240f41a9",
+                "url": "https://api.github.com/repos/pimcore/elasticsearch-client/zipball/422334af115bfbc5d0f414a6f5ddb5527cc4723c",
+                "reference": "422334af115bfbc5d0f414a6f5ddb5527cc4723c",
                 "shasum": ""
             },
             "require": {
                 "elasticsearch/elasticsearch": "^8.0",
                 "php": "^8.1",
-                "pimcore/pimcore": "^11.x-dev",
+                "pimcore/pimcore": "^11.5",
                 "psr/log": "*"
             },
             "require-dev": {
@@ -7379,9 +7380,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/elasticsearch-client/issues",
-                "source": "https://github.com/pimcore/elasticsearch-client/tree/1.x"
+                "source": "https://github.com/pimcore/elasticsearch-client/tree/v1.1.0-RC1"
             },
-            "time": "2024-11-25T07:50:53+00:00"
+            "time": "2024-12-02T10:37:10+00:00"
         },
         {
             "name": "pimcore/generic-data-index-bundle",
@@ -7502,16 +7503,16 @@
         },
         {
             "name": "pimcore/newsletter-bundle",
-            "version": "v1.1.4",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/newsletter-bundle.git",
-                "reference": "8b1779bd98762e76d0222a4d63460cfd69e3429d"
+                "reference": "4e49467df6353eb1f6e86b9fccf9273520f4428e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/newsletter-bundle/zipball/8b1779bd98762e76d0222a4d63460cfd69e3429d",
-                "reference": "8b1779bd98762e76d0222a4d63460cfd69e3429d",
+                "url": "https://api.github.com/repos/pimcore/newsletter-bundle/zipball/4e49467df6353eb1f6e86b9fccf9273520f4428e",
+                "reference": "4e49467df6353eb1f6e86b9fccf9273520f4428e",
                 "shasum": ""
             },
             "require": {
@@ -7542,9 +7543,9 @@
             "description": "Pimcore Newsletter Bundle",
             "support": {
                 "issues": "https://github.com/pimcore/newsletter-bundle/issues",
-                "source": "https://github.com/pimcore/newsletter-bundle/tree/v1.1.4"
+                "source": "https://github.com/pimcore/newsletter-bundle/tree/v1.1.5"
             },
-            "time": "2024-08-26T06:27:08+00:00"
+            "time": "2024-11-22T07:02:43+00:00"
         },
         {
             "name": "pimcore/opensearch-client",
@@ -7552,18 +7553,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/opensearch-client.git",
-                "reference": "cd7750a118dc49cfb4f0519356ee18ac9eb30116"
+                "reference": "6afb22abe6e6c94ef5322b2b95248d0b1402830c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/opensearch-client/zipball/cd7750a118dc49cfb4f0519356ee18ac9eb30116",
-                "reference": "cd7750a118dc49cfb4f0519356ee18ac9eb30116",
+                "url": "https://api.github.com/repos/pimcore/opensearch-client/zipball/6afb22abe6e6c94ef5322b2b95248d0b1402830c",
+                "reference": "6afb22abe6e6c94ef5322b2b95248d0b1402830c",
                 "shasum": ""
             },
             "require": {
                 "opensearch-project/opensearch-php": "^2.2.0",
                 "php": "^8.1",
-                "pimcore/pimcore": "^11.x-dev"
+                "pimcore/pimcore": "^11.5"
             },
             "require-dev": {
                 "codeception/codeception": "^4.1.12 || ^5.0.10",
@@ -7598,9 +7599,9 @@
             "description": "Pimcore Opensearch Client",
             "support": {
                 "issues": "https://github.com/pimcore/opensearch-client/issues",
-                "source": "https://github.com/pimcore/opensearch-client/tree/1.x"
+                "source": "https://github.com/pimcore/opensearch-client/tree/v1.1.0-RC1"
             },
-            "time": "2024-11-07T13:35:17+00:00"
+            "time": "2024-12-02T10:24:23+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -7608,12 +7609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "789f26fea3605f6d7cd23e3d210f2ef4e1d33147"
+                "reference": "679e2f23243c8544e754b3cde3da59b7b07c5ce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/789f26fea3605f6d7cd23e3d210f2ef4e1d33147",
-                "reference": "789f26fea3605f6d7cd23e3d210f2ef4e1d33147",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/679e2f23243c8544e754b3cde3da59b7b07c5ce9",
+                "reference": "679e2f23243c8544e754b3cde3da59b7b07c5ce9",
                 "shasum": ""
             },
             "require": {
@@ -7718,6 +7719,7 @@
                 "umpirsky/country-list": "^2.0.6"
             },
             "conflict": {
+                "phpstan/phpdoc-parser": ">=2.0",
                 "pimcore/admin-ui-classic-bundle": "<1.5",
                 "sabre/dav": "4.2.2",
                 "symfony/symfony": "*",
@@ -7731,7 +7733,7 @@
                 "composer/composer": "*",
                 "ergebnis/phpstan-rules": "^2.0",
                 "gotenberg/gotenberg-php": "^1.1 || ^2.4",
-                "phpstan/phpstan": "1.12.7",
+                "phpstan/phpstan": "1.12.11",
                 "phpstan/phpstan-symfony": "^1.3.5",
                 "phpunit/phpunit": "^9.3",
                 "symfony/dotenv": "^6.4",
@@ -7745,8 +7747,10 @@
                 "ext-redis": "*",
                 "ext-sockets": "*",
                 "gotenberg/gotenberg-php": "^2.0 - Required for generating pdf via Gotenberg in assets preview (LibreOffice), page preview, version diff and web2print",
+                "phpdocumentor/reflection-docblock": "^5.2 - Required for Pimcore Generic Execution Engine Bundle",
                 "pimcore/admin-ui-classic-bundle": "^1.5.0",
                 "symfony/dotenv": "Required for loading environment vars from .env files",
+                "symfony/property-info": "^6.3 - Required for Pimcore Generic Execution Engine Bundle",
                 "webmozarts/console-parallelization": "Required for parallelization of console commands"
             },
             "default-branch": true,
@@ -7817,7 +7821,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-11-29T09:20:43+00:00"
+            "time": "2024-12-02T09:55:36+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7879,12 +7883,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "1071effdef37d6b7c7b48d89ac1e43f07f290027"
+                "reference": "6f557dd75da7f5c88651d570c8eb41e8e6d38a4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/1071effdef37d6b7c7b48d89ac1e43f07f290027",
-                "reference": "1071effdef37d6b7c7b48d89ac1e43f07f290027",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/6f557dd75da7f5c88651d570c8eb41e8e6d38a4b",
+                "reference": "6f557dd75da7f5c88651d570c8eb41e8e6d38a4b",
                 "shasum": ""
             },
             "require": {
@@ -7937,7 +7941,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-11-29T15:24:49+00:00"
+            "time": "2024-12-02T14:03:59+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7945,12 +7949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "2477b6823196aa29286ee919bbb70b903c9cfc1f"
+                "reference": "033188c3c929963f401fa18ce4b0bfcae126f5ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/2477b6823196aa29286ee919bbb70b903c9cfc1f",
-                "reference": "2477b6823196aa29286ee919bbb70b903c9cfc1f",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/033188c3c929963f401fa18ce4b0bfcae126f5ad",
+                "reference": "033188c3c929963f401fa18ce4b0bfcae126f5ad",
                 "shasum": ""
             },
             "require": {
@@ -7994,7 +7998,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-11-29T15:59:11+00:00"
+            "time": "2024-12-02T10:50:12+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -8055,16 +8059,16 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "28f6c146d600258099bfae959c2f04d94c71b26d"
+                "reference": "62bf18acdf81220bd79c1114166bffa9173f2fff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/28f6c146d600258099bfae959c2f04d94c71b26d",
-                "reference": "28f6c146d600258099bfae959c2f04d94c71b26d",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/62bf18acdf81220bd79c1114166bffa9173f2fff",
+                "reference": "62bf18acdf81220bd79c1114166bffa9173f2fff",
                 "shasum": ""
             },
             "require": {
@@ -8086,10 +8090,10 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "4.x": "4.x-dev",
-                    "3.x": "3.x-dev",
+                    "1.x": "1.x-dev",
                     "2.x": "2.x-dev",
-                    "1.x": "1.x-dev"
+                    "3.x": "3.x-dev",
+                    "4.x": "4.x-dev"
                 }
             },
             "autoload": {
@@ -8117,9 +8121,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.1.1"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.1.2"
             },
-            "time": "2024-03-19T15:38:28+00:00"
+            "time": "2024-06-11T08:26:31+00:00"
         },
         {
             "name": "psr/cache",
@@ -9970,28 +9974,28 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v6.4.13",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
-                "reference": "2466c17d61d14539cddf77e57ebb9cc971185302"
+                "reference": "cb926cd59fefa1f9b4900b3695f0f846797ba5c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset/zipball/2466c17d61d14539cddf77e57ebb9cc971185302",
-                "reference": "2466c17d61d14539cddf77e57ebb9cc971185302",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/cb926cd59fefa1f9b4900b3695f0f846797ba5c0",
+                "reference": "cb926cd59fefa1f9b4900b3695f0f846797ba5c0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "conflict": {
-                "symfony/http-foundation": "<5.4"
+                "symfony/http-foundation": "<6.4"
             },
             "require-dev": {
-                "symfony/http-client": "^5.4|^6.0|^7.0",
-                "symfony/http-foundation": "^5.4|^6.0|^7.0",
-                "symfony/http-kernel": "^5.4|^6.0|^7.0"
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/http-foundation": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -10019,7 +10023,7 @@
             "description": "Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and image files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/asset/tree/v6.4.13"
+                "source": "https://github.com/symfony/asset/tree/v7.2.0"
             },
             "funding": [
                 {
@@ -10035,7 +10039,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-25T15:07:50+00:00"
+            "time": "2024-10-25T15:15:23+00:00"
         },
         {
             "name": "symfony/cache",
@@ -15844,39 +15848,38 @@
         },
         {
             "name": "symfony/webpack-encore-bundle",
-            "version": "v1.17.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/webpack-encore-bundle.git",
-                "reference": "471ebbc03072dad6e31840dc317bc634a32785f5"
+                "reference": "e335394b68a775a9b2bd173a8ba4fd2001f3870c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/471ebbc03072dad6e31840dc317bc634a32785f5",
-                "reference": "471ebbc03072dad6e31840dc317bc634a32785f5",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/e335394b68a775a9b2bd173a8ba4fd2001f3870c",
+                "reference": "e335394b68a775a9b2bd173a8ba4fd2001f3870c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.3",
-                "symfony/asset": "^4.4 || ^5.0 || ^6.0",
-                "symfony/config": "^4.4 || ^5.0 || ^6.0",
-                "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
-                "symfony/deprecation-contracts": "^2.1 || ^3.0",
-                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
-                "symfony/polyfill-php80": "^1.25.0",
-                "symfony/service-contracts": "^1.0 || ^2.0 || ^3.0"
+                "php": ">=8.1.0",
+                "symfony/asset": "^5.4 || ^6.2 || ^7.0",
+                "symfony/config": "^5.4 || ^6.2 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.2 || ^7.0",
+                "symfony/http-kernel": "^5.4 || ^6.2 || ^7.0",
+                "symfony/service-contracts": "^1.1.9 || ^2.1.3 || ^3.0"
             },
             "require-dev": {
-                "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0",
-                "symfony/phpunit-bridge": "^5.3 || ^6.0",
-                "symfony/twig-bundle": "^4.4 || ^5.0 || ^6.0",
-                "symfony/web-link": "^4.4 || ^5.0 || ^6.0"
+                "symfony/framework-bundle": "^5.4 || ^6.2 || ^7.0",
+                "symfony/http-client": "^5.4 || ^6.2 || ^7.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.2 || ^7.0",
+                "symfony/twig-bundle": "^5.4 || ^6.2 || ^7.0",
+                "symfony/web-link": "^5.4 || ^6.2 || ^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "thanks": {
-                    "name": "symfony/webpack-encore",
-                    "url": "https://github.com/symfony/webpack-encore"
+                    "url": "https://github.com/symfony/webpack-encore",
+                    "name": "symfony/webpack-encore"
                 }
             },
             "autoload": {
@@ -15894,10 +15897,10 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Integration with your Symfony app & Webpack Encore!",
+            "description": "Integration of your Symfony app with Webpack Encore",
             "support": {
                 "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
-                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v1.17.2"
+                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v2.2.0"
             },
             "funding": [
                 {
@@ -15913,7 +15916,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-26T14:36:28+00:00"
+            "time": "2024-10-02T07:27:19+00:00"
         },
         {
             "name": "symfony/workflow",
