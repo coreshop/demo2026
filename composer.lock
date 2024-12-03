@@ -7289,16 +7289,16 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "26b8ea6f46f6c2976cad310c3afeaf35806fa856"
+                "reference": "252e17cf9d8c20a1a1bfe56baf26e8350f41cb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/26b8ea6f46f6c2976cad310c3afeaf35806fa856",
-                "reference": "26b8ea6f46f6c2976cad310c3afeaf35806fa856",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/252e17cf9d8c20a1a1bfe56baf26e8350f41cb5e",
+                "reference": "252e17cf9d8c20a1a1bfe56baf26e8350f41cb5e",
                 "shasum": ""
             },
             "require": {
@@ -7340,9 +7340,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.7.0"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.7.1"
             },
-            "time": "2024-12-02T09:23:15+00:00"
+            "time": "2024-12-03T12:15:06+00:00"
         },
         {
             "name": "pimcore/elasticsearch-client",
@@ -7609,12 +7609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "679e2f23243c8544e754b3cde3da59b7b07c5ce9"
+                "reference": "b6768a136ebbb27c3e80db5796024fbf7ae1fd3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/679e2f23243c8544e754b3cde3da59b7b07c5ce9",
-                "reference": "679e2f23243c8544e754b3cde3da59b7b07c5ce9",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/b6768a136ebbb27c3e80db5796024fbf7ae1fd3b",
+                "reference": "b6768a136ebbb27c3e80db5796024fbf7ae1fd3b",
                 "shasum": ""
             },
             "require": {
@@ -7821,7 +7821,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-12-02T09:55:36+00:00"
+            "time": "2024-12-03T13:39:48+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7883,12 +7883,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "6f557dd75da7f5c88651d570c8eb41e8e6d38a4b"
+                "reference": "4f570dfe20f0c05b302687953df72ca607dc4df8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/6f557dd75da7f5c88651d570c8eb41e8e6d38a4b",
-                "reference": "6f557dd75da7f5c88651d570c8eb41e8e6d38a4b",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/4f570dfe20f0c05b302687953df72ca607dc4df8",
+                "reference": "4f570dfe20f0c05b302687953df72ca607dc4df8",
                 "shasum": ""
             },
             "require": {
@@ -7914,7 +7914,6 @@
                 "phpstan/phpstan-symfony": "^1.2.20",
                 "phpunit/phpunit": "10.2.7",
                 "pimcore/admin-ui-classic-bundle": "^v1.3",
-                "roave/security-advisories": "dev-latest",
                 "symfony/phpunit-bridge": "^6"
             },
             "default-branch": true,
@@ -7941,7 +7940,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-12-02T14:03:59+00:00"
+            "time": "2024-12-03T10:15:46+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7949,12 +7948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "033188c3c929963f401fa18ce4b0bfcae126f5ad"
+                "reference": "5ad7debf025ef21547875c615095d3088db6d3d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/033188c3c929963f401fa18ce4b0bfcae126f5ad",
-                "reference": "033188c3c929963f401fa18ce4b0bfcae126f5ad",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/5ad7debf025ef21547875c615095d3088db6d3d0",
+                "reference": "5ad7debf025ef21547875c615095d3088db6d3d0",
                 "shasum": ""
             },
             "require": {
@@ -7998,7 +7997,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-12-02T10:50:12+00:00"
+            "time": "2024-12-03T16:14:14+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -9833,16 +9832,16 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "4d6e40f8f91f5729e00e5a023640eb13fb359cbd"
+                "reference": "86c3e36a94f8e47a94f7b92ce09877ba3a0809fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/4d6e40f8f91f5729e00e5a023640eb13fb359cbd",
-                "reference": "4d6e40f8f91f5729e00e5a023640eb13fb359cbd",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/86c3e36a94f8e47a94f7b92ce09877ba3a0809fb",
+                "reference": "86c3e36a94f8e47a94f7b92ce09877ba3a0809fb",
                 "shasum": ""
             },
             "require": {
@@ -9884,9 +9883,9 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony-cmf/Routing/issues",
-                "source": "https://github.com/symfony-cmf/Routing/tree/3.0.3"
+                "source": "https://github.com/symfony-cmf/Routing/tree/3.0.4"
             },
-            "time": "2024-02-19T02:00:24+00:00"
+            "time": "2024-12-02T22:52:12+00:00"
         },
         {
             "name": "symfony-cmf/routing-bundle",
