@@ -3210,16 +3210,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.43.0",
+            "version": "v1.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "b6a80acd906492086db59aada9196dcfb9c512fe"
+                "reference": "5670e56307d7a2eac931f677c0e59a4f8abb2e43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/b6a80acd906492086db59aada9196dcfb9c512fe",
-                "reference": "b6a80acd906492086db59aada9196dcfb9c512fe",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/5670e56307d7a2eac931f677c0e59a4f8abb2e43",
+                "reference": "5670e56307d7a2eac931f677c0e59a4f8abb2e43",
                 "shasum": ""
             },
             "require": {
@@ -3264,9 +3264,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/main/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.43.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.44.0"
             },
-            "time": "2024-11-07T19:35:20+00:00"
+            "time": "2024-12-04T15:34:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7609,12 +7609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "b6768a136ebbb27c3e80db5796024fbf7ae1fd3b"
+                "reference": "11cefcdc9df66cf37b0d1e155155a4305b053346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/b6768a136ebbb27c3e80db5796024fbf7ae1fd3b",
-                "reference": "b6768a136ebbb27c3e80db5796024fbf7ae1fd3b",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/11cefcdc9df66cf37b0d1e155155a4305b053346",
+                "reference": "11cefcdc9df66cf37b0d1e155155a4305b053346",
                 "shasum": ""
             },
             "require": {
@@ -7821,7 +7821,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-12-03T13:39:48+00:00"
+            "time": "2024-12-04T11:39:34+00:00"
         },
         {
             "name": "pimcore/static-resolver-bundle",
@@ -7883,12 +7883,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "4f570dfe20f0c05b302687953df72ca607dc4df8"
+                "reference": "d15a9d81f72f542d6f809d1affa201f848dd9dfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/4f570dfe20f0c05b302687953df72ca607dc4df8",
-                "reference": "4f570dfe20f0c05b302687953df72ca607dc4df8",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/d15a9d81f72f542d6f809d1affa201f848dd9dfc",
+                "reference": "d15a9d81f72f542d6f809d1affa201f848dd9dfc",
                 "shasum": ""
             },
             "require": {
@@ -7914,6 +7914,7 @@
                 "phpstan/phpstan-symfony": "^1.2.20",
                 "phpunit/phpunit": "10.2.7",
                 "pimcore/admin-ui-classic-bundle": "^v1.3",
+                "roave/security-advisories": "dev-latest",
                 "symfony/phpunit-bridge": "^6"
             },
             "default-branch": true,
@@ -7940,7 +7941,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-12-03T10:15:46+00:00"
+            "time": "2024-12-04T12:03:59+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7948,12 +7949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "5ad7debf025ef21547875c615095d3088db6d3d0"
+                "reference": "94f89ef64e1e298bdb6f56a6620cfd929b991b98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/5ad7debf025ef21547875c615095d3088db6d3d0",
-                "reference": "5ad7debf025ef21547875c615095d3088db6d3d0",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/94f89ef64e1e298bdb6f56a6620cfd929b991b98",
+                "reference": "94f89ef64e1e298bdb6f56a6620cfd929b991b98",
                 "shasum": ""
             },
             "require": {
@@ -7997,7 +7998,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-12-03T16:14:14+00:00"
+            "time": "2024-12-04T08:50:07+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
