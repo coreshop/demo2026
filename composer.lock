@@ -7949,12 +7949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "0fa7b5e2313452057026ae805382b864b90e2330"
+                "reference": "2409fd437ee6c4053419d21ba50e405d06a745e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/0fa7b5e2313452057026ae805382b864b90e2330",
-                "reference": "0fa7b5e2313452057026ae805382b864b90e2330",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/2409fd437ee6c4053419d21ba50e405d06a745e3",
+                "reference": "2409fd437ee6c4053419d21ba50e405d06a745e3",
                 "shasum": ""
             },
             "require": {
@@ -7998,7 +7998,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-12-05T10:17:06+00:00"
+            "time": "2024-12-06T18:55:47+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
