@@ -4459,16 +4459,16 @@
         },
         {
             "name": "league/csv",
-            "version": "9.19.0",
+            "version": "9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "f81df48a012a9e86d077e74eaff666fd15bfab88"
+                "reference": "553579df208641ada6ffb450b3a151e2fcfa4f31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/f81df48a012a9e86d077e74eaff666fd15bfab88",
-                "reference": "f81df48a012a9e86d077e74eaff666fd15bfab88",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/553579df208641ada6ffb450b3a151e2fcfa4f31",
+                "reference": "553579df208641ada6ffb450b3a151e2fcfa4f31",
                 "shasum": ""
             },
             "require": {
@@ -4542,7 +4542,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-08T08:09:35+00:00"
+            "time": "2024-12-13T15:49:27+00:00"
         },
         {
             "name": "league/flysystem",
@@ -7882,12 +7882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "7cbcc42972a568bbf9b01019e1515f9e3a8399b9"
+                "reference": "4fa65e68bc022baabb3e65af60f8fd5b2abd4c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/7cbcc42972a568bbf9b01019e1515f9e3a8399b9",
-                "reference": "7cbcc42972a568bbf9b01019e1515f9e3a8399b9",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/4fa65e68bc022baabb3e65af60f8fd5b2abd4c93",
+                "reference": "4fa65e68bc022baabb3e65af60f8fd5b2abd4c93",
                 "shasum": ""
             },
             "require": {
@@ -7940,7 +7940,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-12-11T14:22:09+00:00"
+            "time": "2024-12-13T10:47:42+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7948,12 +7948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "797aa386f924cc8c45c051450d966af5457f07d1"
+                "reference": "c736a69a2569e453fbf8c655df4ad8c2f820d097"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/797aa386f924cc8c45c051450d966af5457f07d1",
-                "reference": "797aa386f924cc8c45c051450d966af5457f07d1",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/c736a69a2569e453fbf8c655df4ad8c2f820d097",
+                "reference": "c736a69a2569e453fbf8c655df4ad8c2f820d097",
                 "shasum": ""
             },
             "require": {
@@ -7997,7 +7997,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2024-12-12T14:39:42+00:00"
+            "time": "2024-12-13T10:08:17+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
