@@ -443,12 +443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "448de1c4c3358ae821e25d872b54a3fe6dccbc2e"
+                "reference": "79cd8a2c5f35c6decf6840a00be030d9e3e20f90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/448de1c4c3358ae821e25d872b54a3fe6dccbc2e",
-                "reference": "448de1c4c3358ae821e25d872b54a3fe6dccbc2e",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/79cd8a2c5f35c6decf6840a00be030d9e3e20f90",
+                "reference": "79cd8a2c5f35c6decf6840a00be030d9e3e20f90",
                 "shasum": ""
             },
             "require": {
@@ -629,7 +629,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-19T09:41:16+00:00"
+            "time": "2025-01-07T08:39:42+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -7880,12 +7880,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "05814a284749dd29ed84a2c547e2288edffec832"
+                "reference": "a8f05ac00ae479f75d5a97512870724cd0bc6742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/05814a284749dd29ed84a2c547e2288edffec832",
-                "reference": "05814a284749dd29ed84a2c547e2288edffec832",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/a8f05ac00ae479f75d5a97512870724cd0bc6742",
+                "reference": "a8f05ac00ae479f75d5a97512870724cd0bc6742",
                 "shasum": ""
             },
             "require": {
@@ -7938,7 +7938,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2024-12-19T08:11:02+00:00"
+            "time": "2025-01-07T14:23:53+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7946,12 +7946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "e5eb9a35ea01861cf55ae8e0fe79e0e4cd5b7ee9"
+                "reference": "18e983dcb1c7122162492b838dad1227d0e41a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/e5eb9a35ea01861cf55ae8e0fe79e0e4cd5b7ee9",
-                "reference": "e5eb9a35ea01861cf55ae8e0fe79e0e4cd5b7ee9",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/18e983dcb1c7122162492b838dad1227d0e41a5a",
+                "reference": "18e983dcb1c7122162492b838dad1227d0e41a5a",
                 "shasum": ""
             },
             "require": {
@@ -7995,7 +7995,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2025-01-06T15:39:49+00:00"
+            "time": "2025-01-07T15:32:02+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
@@ -9664,16 +9664,16 @@
         },
         {
             "name": "stof/doctrine-extensions-bundle",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
-                "reference": "473ae65598fa4160654c350e139e20ee75d9a91a"
+                "reference": "bf00701bff3f2b7c4bf6d963101c9ea6968d694f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/473ae65598fa4160654c350e139e20ee75d9a91a",
-                "reference": "473ae65598fa4160654c350e139e20ee75d9a91a",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/bf00701bff3f2b7c4bf6d963101c9ea6968d694f",
+                "reference": "bf00701bff3f2b7c4bf6d963101c9ea6968d694f",
                 "shasum": ""
             },
             "require": {
@@ -9738,9 +9738,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stof/StofDoctrineExtensionsBundle/issues",
-                "source": "https://github.com/stof/StofDoctrineExtensionsBundle/tree/v1.12.0"
+                "source": "https://github.com/stof/StofDoctrineExtensionsBundle/tree/v1.13.0"
             },
-            "time": "2024-06-10T12:27:27+00:00"
+            "time": "2025-01-07T08:10:54+00:00"
         },
         {
             "name": "sylius/theme-bundle",
