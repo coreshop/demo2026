@@ -4459,16 +4459,16 @@
         },
         {
             "name": "league/csv",
-            "version": "9.20.1",
+            "version": "9.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "491d1e79e973a7370c7571dc0fe4a7241f4936ee"
+                "reference": "72196d11ebba22d868954cb39c0c7346207430cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/491d1e79e973a7370c7571dc0fe4a7241f4936ee",
-                "reference": "491d1e79e973a7370c7571dc0fe4a7241f4936ee",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/72196d11ebba22d868954cb39c0c7346207430cc",
+                "reference": "72196d11ebba22d868954cb39c0c7346207430cc",
                 "shasum": ""
             },
             "require": {
@@ -4542,7 +4542,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-18T10:11:15+00:00"
+            "time": "2025-01-08T19:27:58+00:00"
         },
         {
             "name": "league/flysystem",
@@ -5963,16 +5963,16 @@
         },
         {
             "name": "open-telemetry/api",
-            "version": "1.1.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/api.git",
-                "reference": "04c85a1e41a3d59fa9bdc801a5de1df6624b95ed"
+                "reference": "351a30baa79699de3de3a814c8ccc7b52ccdfb1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/04c85a1e41a3d59fa9bdc801a5de1df6624b95ed",
-                "reference": "04c85a1e41a3d59fa9bdc801a5de1df6624b95ed",
+                "url": "https://api.github.com/repos/opentelemetry-php/api/zipball/351a30baa79699de3de3a814c8ccc7b52ccdfb1d",
+                "reference": "351a30baa79699de3de3a814c8ccc7b52ccdfb1d",
                 "shasum": ""
             },
             "require": {
@@ -6029,7 +6029,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-11-16T04:32:30+00:00"
+            "time": "2025-01-08T23:50:34+00:00"
         },
         {
             "name": "open-telemetry/context",
@@ -7880,12 +7880,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-backend-bundle.git",
-                "reference": "3d2b2b4932f7dbabe8b5d90e4a456d4d11084602"
+                "reference": "2310b01a3468d811873eca631799fc8d0d567ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/3d2b2b4932f7dbabe8b5d90e4a456d4d11084602",
-                "reference": "3d2b2b4932f7dbabe8b5d90e4a456d4d11084602",
+                "url": "https://api.github.com/repos/pimcore/studio-backend-bundle/zipball/2310b01a3468d811873eca631799fc8d0d567ab0",
+                "reference": "2310b01a3468d811873eca631799fc8d0d567ab0",
                 "shasum": ""
             },
             "require": {
@@ -7938,7 +7938,7 @@
                 "issues": "https://github.com/pimcore/studio-backend-bundle/issues",
                 "source": "https://github.com/pimcore/studio-backend-bundle/tree/1.x"
             },
-            "time": "2025-01-08T15:33:48+00:00"
+            "time": "2025-01-09T14:36:03+00:00"
         },
         {
             "name": "pimcore/studio-ui-bundle",
@@ -7946,12 +7946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/studio-ui-bundle.git",
-                "reference": "80ffe51b51a80a8c5ded9c2d8a3bf3cc1a51a009"
+                "reference": "8987fa5e6fd81d602b34ca2f510e53fd88a3e7a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/80ffe51b51a80a8c5ded9c2d8a3bf3cc1a51a009",
-                "reference": "80ffe51b51a80a8c5ded9c2d8a3bf3cc1a51a009",
+                "url": "https://api.github.com/repos/pimcore/studio-ui-bundle/zipball/8987fa5e6fd81d602b34ca2f510e53fd88a3e7a8",
+                "reference": "8987fa5e6fd81d602b34ca2f510e53fd88a3e7a8",
                 "shasum": ""
             },
             "require": {
@@ -7995,7 +7995,7 @@
                 "issues": "https://github.com/pimcore/studio-ui-bundle/issues",
                 "source": "https://github.com/pimcore/studio-ui-bundle/tree/1.x"
             },
-            "time": "2025-01-08T14:49:42+00:00"
+            "time": "2025-01-09T14:42:46+00:00"
         },
         {
             "name": "pimcore/web-to-print-bundle",
