@@ -71,6 +71,6 @@ COPY --from=cors_php /var/www/html /var/www/html
 ENTRYPOINT ["docker-entrypoint-supervisord"]
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 
-FROM ghcr.io/cors-gmbh/pimcore-docker/nginx:${NGINX_VERSION}-alpine-${DOCKER_BASE_VERSION} AS cors_nginx
+FROM ghcr.io/cors-gmbh/pimcore-docker/nginx:${NGINX_VERSION}-${DOCKER_BASE_VERSION} AS cors_nginx
 
 COPY --from=cors_php /var/www/html/public public/
