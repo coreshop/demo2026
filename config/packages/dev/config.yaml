@@ -4,7 +4,7 @@ imports:
 pimcore_open_search_client:
     clients:
         default:
-            hosts: ['opensearch']
+            hosts: ['os']
 
 framework:
     trusted_proxies: '192.0.0.1/8,10.0.0.0/8,172.0.0.0/8'

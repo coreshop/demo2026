@@ -3,7 +3,7 @@ ARG DOCKER_BASE_VERSION=6.0.0
 ARG NGINX_VERSION=1.26
 ARG ALPINE_VERSION=3.21
 
-FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/php-alpine-${ALPINE_VERSION}-fpm:${PHP_VERSION}-${DOCKER_BASE_VERSION} as cors_php
+FROM ghcr.io/cors-gmbh/pimcore-docker/php-fpm:${PHP_VERSION}-alpine${ALPINE_VERSION}-${DOCKER_BASE_VERSION} AS cors_php
 WORKDIR /var/www/html
 
 ARG APP_ENV=prod
@@ -50,7 +50,7 @@ RUN set -eux; \
 ENTRYPOINT ["docker-entrypoint"]
 CMD ["php-fpm"]
 
-FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/php-alpine-${ALPINE_VERSION}-supervisord:${PHP_VERSION}-${DOCKER_BASE_VERSION} as cors_php_supervisord
+FROM ghcr.io/cors-gmbh/pimcore-docker/php-supervisord:${PHP_VERSION}-alpine${ALPINE_VERSION}-${DOCKER_BASE_VERSION} AS cors_php_supervisord
 
 COPY .docker/php/docker-entrypoint-supervisord.sh /usr/local/bin/docker-entrypoint-supervisord
 
@@ -71,6 +71,6 @@ COPY --from=cors_php /var/www/html /var/www/html
 ENTRYPOINT ["docker-entrypoint-supervisord"]
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 
-FROM europe-west3-docker.pkg.dev/cors-wolke/cors/docker/nginx:${NGINX_VERSION}-${DOCKER_BASE_VERSION} AS cors_nginx
+FROM ghcr.io/cors-gmbh/pimcore-docker/nginx:${NGINX_VERSION}-alpine-${DOCKER_BASE_VERSION} AS cors_php_supervisord
 
 COPY --from=cors_php /var/www/html/public public/

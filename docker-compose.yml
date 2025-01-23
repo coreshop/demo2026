@@ -1,20 +1,20 @@
+name: coreshop5-demo
+
 networks:
     cors_dev:
         external: true
-    coreshop_coreshop4_demo:
-        external: false
 
 services:
     db:
         image: mysql:8
-        container_name: coreshop-coreshop4-demo
         networks:
-            - cors_dev
-            - coreshop_coreshop4_demo
+            cors_dev:
+                aliases:
+                    - coreshop5-demo
         working_dir: /application
         command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_general_ci]
         volumes:
-            - coreshop-coreshop4-demo-database:/var/lib/mysql
+            - database:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=ROOT
             - MYSQL_DATABASE=pimcore
@@ -29,36 +29,47 @@ services:
         depends_on:
             - php
             - php-debug
+        links:
+            - php:fpm
+            - php-debug:fpm-debug
         networks:
+            - default
             - cors_dev
-            - coreshop_coreshop4_demo
         labels:
             - traefik.enable=true
-            - traefik.http.routers.coreshop_coreshop4_demo.rule=Host(`coreshop-coreshop4-demo.localhost`)
-            - traefik.http.routers.coreshop_coreshop4_demo.entrypoints=cors_dev
-            - traefik.http.routers.coreshop_coreshop4_demo.tls=true
-            - traefik.http.services.coreshop_coreshop4_demo.loadbalancer.server.port=80
+            - traefik.http.routers.coreshop5_demo.rule=Host(`coreshop5-demo.localhost`)
+            - traefik.http.routers.coreshop5_demo.entrypoints=cors_dev
+            - traefik.http.routers.coreshop5_demo.tls=true
+            - traefik.http.services.coreshop5_demo.loadbalancer.server.port=80
             - traefik.docker.network=cors_dev
 
     php:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-fpm:8.2-5.2.4
-        container_name: coreshop-coreshop4-demo-php
+        image: ghcr.io/cors-gmbh/pimcore-docker/php-fpm:8.3-alpine3.21-7.1.0
         networks:
-            - coreshop_coreshop4_demo
+            - cors_dev
+            - default
         environment:
             - COMPOSER_AUTH=${COMPOSER_AUTH}
+        links:
+            - db:database
+            - opensearch:os
+            - mercure:mercure
         depends_on:
             - db
         volumes:
             - .:/var/www/html:cached
 
     php-debug:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-fpm-debug:8.2-5.2.4
-        container_name: coreshop-coreshop4-demo-php-debug
+        image: ghcr.io/cors-gmbh/pimcore-docker/php-fpm-debug:8.3-alpine3.21-7.1.0
         networks:
-            - coreshop_coreshop4_demo
+            - cors_dev
+            - default
         depends_on:
             - db
+        links:
+            - db:database
+            - opensearch:os
+            - mercure:mercure
         volumes:
             - .:/var/www/html:cached
         environment:
@@ -66,19 +77,23 @@ services:
             COMPOSER_AUTH: ${COMPOSER_AUTH}
 
     supervisord:
-        image: git.e-conomix.at:5050/cors/docker/php-alpine-3.20-supervisord:8.2-5.2.4
+        image: ghcr.io/cors-gmbh/pimcore-docker/php-supervisord:8.3-alpine3.21-7.1.0
         depends_on:
             - db
+        links:
+            - db:database
+            - opensearch:os
+            - mercure:mercure
         volumes:
             - ./:/var/www/html:cached
             - ./.docker/supervisord/coreshop.conf:/etc/supervisor/conf.d/coreshop.conf:ro
             - ./.docker/supervisord/pimcore.conf:/etc/supervisor/conf.d/pimcore.conf:ro
         networks:
-            - coreshop_coreshop4_demo
+            - cors_dev
+            - default
 
     opensearch:
         image: opensearchproject/opensearch:${OPENSEARCH_VERSION:-2.11.1}
-        container_name: opensearch
         environment:
             discovery.type: single-node
             node.name: opensearch
@@ -92,15 +107,16 @@ services:
                 soft: 65536 # maximum number of open files for the OpenSearch user, set to at least 65536 on modern systems
                 hard: 65536
         networks:
-            - coreshop_coreshop4_demo
+            - default
+            - cors_dev
         volumes:
             - opensearch-data:/usr/share/opensearch/data
 
     mercure:
         image: dunglas/mercure:latest
-        container_name: mercure
         networks:
-            - coreshop_coreshop4_demo
+            - cors_dev
+            - default
         environment:
             # Uncomment the following line to disable HTTPS
             SERVER_NAME: ':80'
@@ -116,11 +132,11 @@ services:
             - traefik.http.services.coreshop_coreshop4_demo_mecure.loadbalancer.server.port=80
             - traefik.docker.network=cors_dev
         volumes:
-            - coreshop-demo-mercure-data:/data
-            - coreshop-demo-mercure-config:/config
+            - mercure-data:/data
+            - mercure-config:/config
 
 volumes:
-    coreshop-coreshop4-demo-database:
-    coreshop-demo-mercure-data:
-    coreshop-demo-mercure-config:
+    database:
+    mercure-data:
+    mercure-config:
     opensearch-data:
