@@ -13,6 +13,7 @@
   "require": {
     "coreshop/core-shop": "^5.0",
     "pimcore/pimcore": "^12.0",
+    "pimcore/quill-bundle": "1.x-dev",
     "pimcore/studio-backend-bundle": "1.x-dev",
     "pimcore/studio-ui-bundle": "1.x-dev",
     "rybakit/twig-deferred-extension": "^3.0"
