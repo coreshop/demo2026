@@ -522,12 +522,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coreshop/CoreShop.git",
-                "reference": "8ac45c557f297a89bcaa99231e2a95d31ca0fd71"
+                "reference": "e4e7701a14d7ae604472a7dfb4e2af9db35d6257"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/8ac45c557f297a89bcaa99231e2a95d31ca0fd71",
-                "reference": "8ac45c557f297a89bcaa99231e2a95d31ca0fd71",
+                "url": "https://api.github.com/repos/coreshop/CoreShop/zipball/e4e7701a14d7ae604472a7dfb4e2af9db35d6257",
+                "reference": "e4e7701a14d7ae604472a7dfb4e2af9db35d6257",
                 "shasum": ""
             },
             "require": {
@@ -704,7 +704,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-18T12:23:22+00:00"
+            "time": "2025-02-19T07:43:54+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -7526,12 +7526,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/generic-data-index-bundle.git",
-                "reference": "8137e2d7f7a25714c539db96a5866c7323377675"
+                "reference": "6aa14039247c977e250e0b99c15eb61dcace2847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/8137e2d7f7a25714c539db96a5866c7323377675",
-                "reference": "8137e2d7f7a25714c539db96a5866c7323377675",
+                "url": "https://api.github.com/repos/pimcore/generic-data-index-bundle/zipball/6aa14039247c977e250e0b99c15eb61dcace2847",
+                "reference": "6aa14039247c977e250e0b99c15eb61dcace2847",
                 "shasum": ""
             },
             "require": {
@@ -7581,7 +7581,7 @@
                 "issues": "https://github.com/pimcore/generic-data-index-bundle/issues",
                 "source": "https://github.com/pimcore/generic-data-index-bundle/tree/2.x"
             },
-            "time": "2025-02-17T08:39:24+00:00"
+            "time": "2025-02-19T07:22:54+00:00"
         },
         {
             "name": "pimcore/google-marketing-bundle",
