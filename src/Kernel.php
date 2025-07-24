@@ -23,7 +23,7 @@ class Kernel extends PimcoreKernel
 {
     public function registerBundlesToCollection(BundleCollection $collection): void
     {
-        $collection->addBundle(new \CoreShop\Bundle\CoreBundle\CoreShopCoreBundle());
-        $collection->addBundle(new \CoreShop\Bundle\FrontendBundle\CoreShopFrontendBundle());
+        $collection->addBundle(new \CoreShop\Bundle\CoreBundle\CoreShopCoreBundle(), 10);
+        $collection->addBundle(new \CoreShop\Bundle\FrontendBundle\CoreShopFrontendBundle(), 1800);
     }
 }

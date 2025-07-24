@@ -19,3 +19,10 @@ pimcore_studio_backend:
         jwt_key: 'wrMZk0YSUABq3GuSGKcxmjAZXv9lJYB3'
         hub_url_client: 'https://coreshop-coreshop4-demo-mercure.localhost/.well-known/mercure'
         hub_url_server: 'http://mercure/.well-known/mercure'
+
+pimcore:
+    product_registration:
+        instance_identifier: ***REMOVED***
+        product_key: '***REMOVED***'
+    encryption:
+        secret: ***REMOVED***
