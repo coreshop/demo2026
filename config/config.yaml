@@ -13,6 +13,7 @@ doctrine:
                 host: '%env(DATABASE_HOST)%'
                 port: '%env(DATABASE_PORT)%'
                 server_version: '%env(DATABASE_VERSION)%'
+                mapping_types: { enum: enum, bit: boolean }
 
 pimcore_studio_backend:
     mercure_settings:
