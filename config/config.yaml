@@ -3,10 +3,6 @@ imports:
     - { resource: pimcore.yaml }
     - { resource: 'local/' }
 
-doctrine_migrations:
-    migrations_paths:
-        App\Migrations: '%kernel.project_dir%/src/Migrations'
-
 doctrine:
     dbal:
         connections:
