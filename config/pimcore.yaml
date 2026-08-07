@@ -1,3 +1,10 @@
 pimcore:
     general:
         language: en
+    documents:
+        # Studio backend (SystemSettingsProvider::getDocumentSettings) accesses
+        # documents.error_pages unguarded; the node has no defaults, so it must be
+        # declared explicitly or the settings endpoint fails with an undefined key.
+        error_pages:
+            default: null
+            localized: {}

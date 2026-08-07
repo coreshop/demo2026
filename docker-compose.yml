@@ -8,9 +8,7 @@ services:
     db:
         image: mysql:8
         networks:
-            cors_dev:
-                aliases:
-                    - coreshop5-demo
+            - default
         working_dir: /application
         command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_general_ci]
         volumes:
@@ -46,7 +44,6 @@ services:
     php:
         image: ghcr.io/cors-gmbh/pimcore-docker/php-fpm:8.3-alpine3.21-7.1.0
         networks:
-            - cors_dev
             - default
         environment:
             - COMPOSER_AUTH=${COMPOSER_AUTH}
@@ -62,7 +59,6 @@ services:
     php-debug:
         image: ghcr.io/cors-gmbh/pimcore-docker/php-fpm-debug:8.3-alpine3.21-7.1.0
         networks:
-            - cors_dev
             - default
         depends_on:
             - db
@@ -89,7 +85,6 @@ services:
             - ./.docker/supervisord/coreshop.conf:/etc/supervisor/conf.d/coreshop.conf:ro
             - ./.docker/supervisord/pimcore.conf:/etc/supervisor/conf.d/pimcore.conf:ro
         networks:
-            - cors_dev
             - default
 
     opensearch:
@@ -108,7 +103,6 @@ services:
                 hard: 65536
         networks:
             - default
-            - cors_dev
         volumes:
             - opensearch-data:/usr/share/opensearch/data
 
