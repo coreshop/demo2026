@@ -101,7 +101,7 @@ services:
             APP_ENV: dev
             COMPOSER_AUTH: ${COMPOSER_AUTH:-}
             DATABASE_URL: mysql://pimcore:pimcore@db:3306/pimcore?serverVersion=8.0.26
-        PIMCORE_OPENSEARCH_DSN: http://os:9200
+            PIMCORE_OPENSEARCH_DSN: http://os:9200
             PHP_IDE_CONFIG: "serverName=localhost"
         networks:
             - default
