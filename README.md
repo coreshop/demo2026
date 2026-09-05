@@ -13,22 +13,46 @@ Requirements: Docker. The images are built from `ghcr.io/cors-gmbh/pimcore-docke
 ```bash
 cp .env .env.local            # adjust if needed
 docker compose up -d
-docker compose logs -f php    # wait for "Pimcore installed"; first start installs Pimcore, CoreShop and the demo data
+docker compose logs -f php    # the first start installs Pimcore, CoreShop and the demo data
 ```
 
-Then open http://localhost (shop) and http://localhost/pimcore-studio (user `admin`, password from
-the installer output).
+Then open the shop and `/pimcore-studio` on the host configured for the nginx container (user and
+password from `PIMCORE_INSTALL_ADMIN_USERNAME` / `PIMCORE_INSTALL_ADMIN_PASSWORD`).
 
-The install script `.docker/php/docker-install.sh` reads its secrets from the environment:
+The first start installs Pimcore, CoreShop and the demo data in one go through the Pimcore 2026
+install profile `App\InstallProfile\DemoInstallProfile` (`src/InstallProfile`): it registers the
+Studio, Generic Data Index, Application Logger, SEO and Custom Reports bundles and runs
+`coreshop:install`, `generic-data-index:update:index -r` and `coreshop:install:demo` as post-install
+commands. The container entrypoint waits for the database and calls `.docker/php/docker-install.sh`,
+which skips the installation when the database already contains a Pimcore installation. The same
+thing by hand:
+
+```bash
+vendor/bin/pimcore-install --install-profile 'App\InstallProfile\DemoInstallProfile' --skip-validation --no-interaction
+```
+
+The installer reads everything from the environment (no `.env.local` is written):
 
 | Variable | Purpose |
 |---|---|
+| `DATABASE_URL` | Doctrine DSN of the app database (built from `DATABASE_*` in `.env`) |
+| `PIMCORE_OPENSEARCH_DSN` | OpenSearch endpoint; locally `config/packages/dev/config.yaml` points the client to the `os` container |
 | `PIMCORE_ENCRYPTION_SECRET` | defuse key for `pimcore.encryption.secret` (`vendor/bin/generate-defuse-key`) |
 | `PIMCORE_INSTANCE_IDENTIFIER` | Pimcore instance identifier |
-| `PIMCORE_PRODUCT_KEY` | Pimcore product key, optional for a demo |
+| `PIMCORE_PRODUCT_KEY` | Pimcore product key, **required**: Pimcore 2026 refuses to boot with a secret but without a registered key |
+| `PIMCORE_INSTALL_ADMIN_USERNAME`, `PIMCORE_INSTALL_ADMIN_PASSWORD` | admin user created by the installer |
 
-Set them in `.env.local` for docker compose; in Kubernetes they come from the `pimcore` secret of
-the manifest repository.
+Set them in `.env.local` for docker compose (plus `APP_ENV=dev` so the dev config is loaded); in
+Kubernetes they come from the `pimcore` secret of the manifest repository.
+
+### Studio frontend builds
+
+The CoreShop bundles ship their Studio frontend as a zip in `Resources/build-dist`, which Pimcore's
+`StudioBuildCacheWarmer` extracts into `Resources/public/studio` on `cache:warmup`. The extractor
+requires the parent directory `Resources/public` to exist, and CoreShop 2026.2.1 does not ship it
+for 21 of its 22 bundles with a build, so Studio answers 500 ("Cannot extract the Studio frontend
+build archive"). The Dockerfile and the install script create the missing directories before the
+warmup as a workaround; remove it once CoreShop ships the directories (or the extractor creates them).
 
 ## CI/CD
 

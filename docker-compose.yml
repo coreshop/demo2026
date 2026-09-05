@@ -1,4 +1,4 @@
-name: coreshop5-demo
+name: coreshop2026-demo
 
 networks:
     cors_dev:
@@ -35,10 +35,10 @@ services:
             - cors_dev
         labels:
             - traefik.enable=true
-            - traefik.http.routers.coreshop5_demo.rule=Host(`coreshop5-demo.localhost`)
-            - traefik.http.routers.coreshop5_demo.entrypoints=cors_dev
-            - traefik.http.routers.coreshop5_demo.tls=true
-            - traefik.http.services.coreshop5_demo.loadbalancer.server.port=80
+            - traefik.http.routers.coreshop2026_demo.rule=Host(`coreshop2026-demo.localhost`)
+            - traefik.http.routers.coreshop2026_demo.entrypoints=cors_dev
+            - traefik.http.routers.coreshop2026_demo.tls=true
+            - traefik.http.services.coreshop2026_demo.loadbalancer.server.port=80
             - traefik.docker.network=cors_dev
 
     php:

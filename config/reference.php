@@ -125,88 +125,69 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     ...<string, DefinitionType|AliasType|PrototypeType|StackType|ArgumentsType|null>
  * }
  * @psalm-type ExtensionType = array<string, mixed>
- * @psalm-type PimcoreSeoConfig = array{
- *     sitemaps?: array{
- *         generators?: array<string, Param|bool|string|array{ // Default: []
- *             enabled?: bool|Param, // Default: true
- *             generator_id?: scalar|Param|null,
- *             priority?: int|Param, // Default: 0
- *         }>,
- *     },
- *     redirects?: array{
- *         status_codes?: list<scalar|Param|null>,
- *         auto_create_redirects?: bool|Param, // Auto create redirects on moving documents & changing pretty url, updating Url slugs in Data Objects. // Default: false
+ * @psalm-type PimcoreGenericDataIndexConfig = array{
+ *     index_service?: array{
+ *         client_params?: array{
+ *             client_name?: scalar|Param|null, // Name of search client from to be used. // Default: "default"
+ *             client_type?: scalar|Param|null, // Type of search client to be used. Allowed values: openSearch, elasticsearch. Supports env vars. // Default: "openSearch"
+ *             index_prefix?: scalar|Param|null, // Default: "pimcore_"
+ *         },
+ *         search_settings?: array{
+ *             list_page_size?: scalar|Param|null, // Default: 60
+ *             list_max_filter_options?: scalar|Param|null, // Default: 500
+ *             search_analyzer_attributes?: array<string, array{ // Default: []
+ *                 fields?: mixed, // Default: []
+ *             }>,
+ *         },
+ *         index_settings?: mixed, // Default: []
+ *         reindex_settings?: array{
+ *             max_polls?: int|Param, // Maximum number of polling attempts when waiting for an async reindex task (default: 720 = 1 hour at 5-second intervals). // Default: 720
+ *             poll_interval?: int|Param, // Seconds to wait between reindex task status polls. // Default: 5
+ *         },
+ *         queue_settings?: array{
+ *             worker_count?: scalar|Param|null, // Default: 1
+ *             min_batch_size?: scalar|Param|null, // Default: 5
+ *             max_batch_size?: scalar|Param|null, // Default: 400
+ *         },
+ *         calculated_fields_index_mode?: "live"|"query_store"|Param, // Where index values of calculated fields come from: "live" executes the calculator during indexing (default), "query_store" reads the save-time value from the object query table and never executes the calculator while indexing. // Default: "live"
+ *         system_fields_settings?: array{
+ *             general?: array<string, array{ // Default: []
+ *                 type?: scalar|Param|null,
+ *                 analyzer?: scalar|Param|null,
+ *                 ignore_above?: scalar|Param|null,
+ *                 properties?: mixed, // Default: []
+ *                 fields?: mixed, // Default: []
+ *             }>,
+ *             document?: array<string, array{ // Default: []
+ *                 type?: scalar|Param|null,
+ *                 analyzer?: scalar|Param|null,
+ *                 ignore_above?: scalar|Param|null,
+ *                 properties?: mixed, // Default: []
+ *                 fields?: mixed, // Default: []
+ *             }>,
+ *             data_object?: array<string, array{ // Default: []
+ *                 type?: scalar|Param|null,
+ *                 analyzer?: scalar|Param|null,
+ *                 ignore_above?: scalar|Param|null,
+ *                 properties?: mixed, // Default: []
+ *                 fields?: mixed, // Default: []
+ *             }>,
+ *             asset?: array<string, array{ // Default: []
+ *                 type?: scalar|Param|null,
+ *                 analyzer?: scalar|Param|null,
+ *                 ignore_above?: scalar|Param|null,
+ *                 properties?: mixed, // Default: []
+ *                 fields?: mixed, // Default: []
+ *             }>,
+ *         },
  *     },
  * }
- * @psalm-type PimcoreCustomReportsConfig = array{
- *     definitions?: list<array{ // Default: []
- *         id?: scalar|Param|null,
- *         name?: scalar|Param|null,
- *         niceName?: scalar|Param|null,
- *         sql?: scalar|Param|null,
- *         group?: scalar|Param|null,
- *         groupIconClass?: scalar|Param|null,
- *         iconClass?: scalar|Param|null,
- *         menuShortcut?: bool|Param,
- *         reportClass?: scalar|Param|null,
- *         chartType?: scalar|Param|null,
- *         pieColumn?: scalar|Param|null,
- *         pieLabelColumn?: scalar|Param|null,
- *         xAxis?: mixed,
- *         yAxis?: mixed,
- *         modificationDate?: int|Param,
- *         creationDate?: int|Param,
- *         shareGlobally?: bool|Param,
- *         sharedUserNames?: mixed,
- *         sharedRoleNames?: mixed,
- *         dataSourceConfig?: list<mixed>,
- *         columnConfiguration?: list<mixed>,
- *         pagination?: bool|Param,
+ * @psalm-type PimcoreGenericExecutionEngineConfig = array{
+ *     error_handling?: "continue_on_error"|"stop_on_first_error"|Param, // Specifies how errors should be handled for all job run executions. // Default: "continue_on_error"
+ *     execution_context?: list<array{ // Default: []
+ *         translations_domain?: scalar|Param|null, // Translation domain which should be used by the job run. Default value is "admin". // Default: "admin"
+ *         error_handling?: "continue_on_error"|"stop_on_first_error"|Param, // Error handling behavior which should be used by the job run. Overrides the global value.
  *     }>,
- *     adapters?: array<string, scalar|Param|null>,
- *     enabled_adapters?: array<string, bool|Param>,
- *     config_location?: array{
- *         custom_reports?: array{
- *             write_target?: array{
- *                 type?: "symfony-config"|"settings-store"|"disabled"|Param, // Default: "symfony-config"
- *                 options?: list<mixed>,
- *             },
- *         },
- *     },
- * }
- * @psalm-type PimcoreStudioUiConfig = array{
- *     url_path?: scalar|Param|null, // Default: "/pimcore-studio"
- *     asset_upload?: array{
- *         max_parallel_uploads?: int|Param, // How many asset uploads a single browser tab sends at the same time. Lower this if bursts of uploads exhaust the PHP-FPM pool. // Default: 5
- *     },
- *     static_resources?: array{
- *         css?: list<scalar|Param|null>,
- *         js?: list<scalar|Param|null>,
- *         editmode?: array{
- *             css?: list<scalar|Param|null>,
- *             js?: list<scalar|Param|null>,
- *         },
- *     },
- *     wysiwyg?: array{
- *         defaultEditorConfig?: array{
- *             document?: mixed, // Default: []
- *             dataObject?: mixed, // Default: []
- *         },
- *     },
- *     csp_header?: bool|array{ // Can be used to enable or disable the Content Security Policy headers.
- *         enabled?: bool|Param, // Default: true
- *         exclude_paths?: list<scalar|Param|null>,
- *         additional_urls?: array{
- *             default-src?: list<scalar|Param|null>,
- *             img-src?: list<scalar|Param|null>,
- *             script-src?: list<scalar|Param|null>,
- *             style-src?: list<scalar|Param|null>,
- *             connect-src?: list<scalar|Param|null>,
- *             font-src?: list<scalar|Param|null>,
- *             media-src?: list<scalar|Param|null>,
- *             frame-src?: list<scalar|Param|null>,
- *         },
- *     },
  * }
  * @psalm-type PimcoreStudioBackendConfig = array{
  *     url_prefix?: scalar|Param|null, // Default: "/pimcore-studio/api"
@@ -403,60 +384,86 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  * }
- * @psalm-type PimcoreGenericDataIndexConfig = array{
- *     index_service?: array{
- *         client_params?: array{
- *             client_name?: scalar|Param|null, // Name of search client from to be used. // Default: "default"
- *             client_type?: scalar|Param|null, // Type of search client to be used. Allowed values: openSearch, elasticsearch. Supports env vars. // Default: "openSearch"
- *             index_prefix?: scalar|Param|null, // Default: "pimcore_"
+ * @psalm-type PimcoreStudioUiConfig = array{
+ *     url_path?: scalar|Param|null, // Default: "/pimcore-studio"
+ *     asset_upload?: array{
+ *         max_parallel_uploads?: int|Param, // How many asset uploads a single browser tab sends at the same time. Lower this if bursts of uploads exhaust the PHP-FPM pool. // Default: 5
+ *     },
+ *     static_resources?: array{
+ *         css?: list<scalar|Param|null>,
+ *         js?: list<scalar|Param|null>,
+ *         editmode?: array{
+ *             css?: list<scalar|Param|null>,
+ *             js?: list<scalar|Param|null>,
  *         },
- *         search_settings?: array{
- *             list_page_size?: scalar|Param|null, // Default: 60
- *             list_max_filter_options?: scalar|Param|null, // Default: 500
- *             search_analyzer_attributes?: array<string, array{ // Default: []
- *                 fields?: mixed, // Default: []
- *             }>,
+ *     },
+ *     wysiwyg?: array{
+ *         defaultEditorConfig?: array{
+ *             document?: mixed, // Default: []
+ *             dataObject?: mixed, // Default: []
  *         },
- *         index_settings?: mixed, // Default: []
- *         reindex_settings?: array{
- *             max_polls?: int|Param, // Maximum number of polling attempts when waiting for an async reindex task (default: 720 = 1 hour at 5-second intervals). // Default: 720
- *             poll_interval?: int|Param, // Seconds to wait between reindex task status polls. // Default: 5
+ *     },
+ *     csp_header?: bool|array{ // Can be used to enable or disable the Content Security Policy headers.
+ *         enabled?: bool|Param, // Default: true
+ *         exclude_paths?: list<scalar|Param|null>,
+ *         additional_urls?: array{
+ *             default-src?: list<scalar|Param|null>,
+ *             img-src?: list<scalar|Param|null>,
+ *             script-src?: list<scalar|Param|null>,
+ *             style-src?: list<scalar|Param|null>,
+ *             connect-src?: list<scalar|Param|null>,
+ *             font-src?: list<scalar|Param|null>,
+ *             media-src?: list<scalar|Param|null>,
+ *             frame-src?: list<scalar|Param|null>,
  *         },
- *         queue_settings?: array{
- *             worker_count?: scalar|Param|null, // Default: 1
- *             min_batch_size?: scalar|Param|null, // Default: 5
- *             max_batch_size?: scalar|Param|null, // Default: 400
- *         },
- *         calculated_fields_index_mode?: "live"|"query_store"|Param, // Where index values of calculated fields come from: "live" executes the calculator during indexing (default), "query_store" reads the save-time value from the object query table and never executes the calculator while indexing. // Default: "live"
- *         system_fields_settings?: array{
- *             general?: array<string, array{ // Default: []
- *                 type?: scalar|Param|null,
- *                 analyzer?: scalar|Param|null,
- *                 ignore_above?: scalar|Param|null,
- *                 properties?: mixed, // Default: []
- *                 fields?: mixed, // Default: []
- *             }>,
- *             document?: array<string, array{ // Default: []
- *                 type?: scalar|Param|null,
- *                 analyzer?: scalar|Param|null,
- *                 ignore_above?: scalar|Param|null,
- *                 properties?: mixed, // Default: []
- *                 fields?: mixed, // Default: []
- *             }>,
- *             data_object?: array<string, array{ // Default: []
- *                 type?: scalar|Param|null,
- *                 analyzer?: scalar|Param|null,
- *                 ignore_above?: scalar|Param|null,
- *                 properties?: mixed, // Default: []
- *                 fields?: mixed, // Default: []
- *             }>,
- *             asset?: array<string, array{ // Default: []
- *                 type?: scalar|Param|null,
- *                 analyzer?: scalar|Param|null,
- *                 ignore_above?: scalar|Param|null,
- *                 properties?: mixed, // Default: []
- *                 fields?: mixed, // Default: []
- *             }>,
+ *     },
+ * }
+ * @psalm-type PimcoreSeoConfig = array{
+ *     sitemaps?: array{
+ *         generators?: array<string, Param|bool|string|array{ // Default: []
+ *             enabled?: bool|Param, // Default: true
+ *             generator_id?: scalar|Param|null,
+ *             priority?: int|Param, // Default: 0
+ *         }>,
+ *     },
+ *     redirects?: array{
+ *         status_codes?: list<scalar|Param|null>,
+ *         auto_create_redirects?: bool|Param, // Auto create redirects on moving documents & changing pretty url, updating Url slugs in Data Objects. // Default: false
+ *     },
+ * }
+ * @psalm-type PimcoreCustomReportsConfig = array{
+ *     definitions?: list<array{ // Default: []
+ *         id?: scalar|Param|null,
+ *         name?: scalar|Param|null,
+ *         niceName?: scalar|Param|null,
+ *         sql?: scalar|Param|null,
+ *         group?: scalar|Param|null,
+ *         groupIconClass?: scalar|Param|null,
+ *         iconClass?: scalar|Param|null,
+ *         menuShortcut?: bool|Param,
+ *         reportClass?: scalar|Param|null,
+ *         chartType?: scalar|Param|null,
+ *         pieColumn?: scalar|Param|null,
+ *         pieLabelColumn?: scalar|Param|null,
+ *         xAxis?: mixed,
+ *         yAxis?: mixed,
+ *         modificationDate?: int|Param,
+ *         creationDate?: int|Param,
+ *         shareGlobally?: bool|Param,
+ *         sharedUserNames?: mixed,
+ *         sharedRoleNames?: mixed,
+ *         dataSourceConfig?: list<mixed>,
+ *         columnConfiguration?: list<mixed>,
+ *         pagination?: bool|Param,
+ *     }>,
+ *     adapters?: array<string, scalar|Param|null>,
+ *     enabled_adapters?: array<string, bool|Param>,
+ *     config_location?: array{
+ *         custom_reports?: array{
+ *             write_target?: array{
+ *                 type?: "symfony-config"|"settings-store"|"disabled"|Param, // Default: "symfony-config"
+ *                 options?: list<mixed>,
+ *             },
  *         },
  *     },
  * }
@@ -3835,27 +3842,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     intercept_redirects?: bool|Param, // Default: false
  *     excluded_ajax_paths?: scalar|Param|null, // Default: "^/((index|app(_[\\w]+)?)\\.php/)?_wdt"
  * }
- * @psalm-type PrestaSitemapConfig = array{
- *     generator?: scalar|Param|null, // Default: "presta_sitemap.generator_default"
- *     dumper?: scalar|Param|null, // Default: "presta_sitemap.dumper_default"
- *     timetolive?: int|Param, // Default: 3600
- *     sitemap_file_prefix?: scalar|Param|null, // Sets sitemap filename prefix defaults to "sitemap" -> sitemap.xml (for index); sitemap.<section>.xml(.gz) (for sitemaps) // Default: "sitemap"
- *     items_by_set?: int|Param, // The maximum number of items allowed in single sitemap. // Default: 50000
- *     route_annotation_listener?: scalar|Param|null, // Default: true
- *     dump_directory?: scalar|Param|null, // The directory to which the sitemap will be dumped. It can be either absolute, or relative (to the place where the command will be triggered). Default to Symfony's public dir. // Default: "%kernel.project_dir%/public"
- *     defaults?: array{
- *         priority?: scalar|Param|null, // Default: 0.5
- *         changefreq?: scalar|Param|null, // Default: "daily"
- *         lastmod?: scalar|Param|null, // Default: "now"
- *     },
- *     default_section?: scalar|Param|null, // The default section in which static routes are registered. // Default: "default"
- *     alternate?: bool|array{ // Automatically generate alternate (hreflang) urls with static routes. Requires route_annotation_listener config to be enabled.
- *         enabled?: bool|Param, // Default: false
- *         default_locale?: scalar|Param|null, // The default locale of your routes. // Default: "en"
- *         locales?: Param|string|list<scalar|Param|null>,
- *         i18n?: "symfony"|"jms"|Param, // Strategy used to create your i18n routes. // Default: "symfony"
- *     },
- * }
  * @psalm-type PimcoreElasticsearchClientConfig = array{
  *     es_clients?: array<string, array{ // Default: []
  *         dsn?: scalar|Param|null, // DSN string: elasticsearch://user:pass@host:port?ssl_verify=bool. When set, overrides hosts/username/password/ssl_verification. // Default: null
@@ -3914,12 +3900,26 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     default_cookie_lifetime?: int|Param, // Default lifetime of the cookie containing the JWT, in seconds. Defaults to the value of "framework.session.cookie_lifetime". // Default: null
  *     enable_profiler?: bool|Param, // Deprecated: The child node "enable_profiler" at path "mercure.enable_profiler" is deprecated. // Enable Symfony Web Profiler integration.
  * }
- * @psalm-type PimcoreGenericExecutionEngineConfig = array{
- *     error_handling?: "continue_on_error"|"stop_on_first_error"|Param, // Specifies how errors should be handled for all job run executions. // Default: "continue_on_error"
- *     execution_context?: list<array{ // Default: []
- *         translations_domain?: scalar|Param|null, // Translation domain which should be used by the job run. Default value is "admin". // Default: "admin"
- *         error_handling?: "continue_on_error"|"stop_on_first_error"|Param, // Error handling behavior which should be used by the job run. Overrides the global value.
- *     }>,
+ * @psalm-type PrestaSitemapConfig = array{
+ *     generator?: scalar|Param|null, // Default: "presta_sitemap.generator_default"
+ *     dumper?: scalar|Param|null, // Default: "presta_sitemap.dumper_default"
+ *     timetolive?: int|Param, // Default: 3600
+ *     sitemap_file_prefix?: scalar|Param|null, // Sets sitemap filename prefix defaults to "sitemap" -> sitemap.xml (for index); sitemap.<section>.xml(.gz) (for sitemaps) // Default: "sitemap"
+ *     items_by_set?: int|Param, // The maximum number of items allowed in single sitemap. // Default: 50000
+ *     route_annotation_listener?: scalar|Param|null, // Default: true
+ *     dump_directory?: scalar|Param|null, // The directory to which the sitemap will be dumped. It can be either absolute, or relative (to the place where the command will be triggered). Default to Symfony's public dir. // Default: "%kernel.project_dir%/public"
+ *     defaults?: array{
+ *         priority?: scalar|Param|null, // Default: 0.5
+ *         changefreq?: scalar|Param|null, // Default: "daily"
+ *         lastmod?: scalar|Param|null, // Default: "now"
+ *     },
+ *     default_section?: scalar|Param|null, // The default section in which static routes are registered. // Default: "default"
+ *     alternate?: bool|array{ // Automatically generate alternate (hreflang) urls with static routes. Requires route_annotation_listener config to be enabled.
+ *         enabled?: bool|Param, // Default: false
+ *         default_locale?: scalar|Param|null, // The default locale of your routes. // Default: "en"
+ *         locales?: Param|string|list<scalar|Param|null>,
+ *         i18n?: "symfony"|"jms"|Param, // Strategy used to create your i18n routes. // Default: "symfony"
+ *     },
  * }
  * @psalm-type KnpMenuConfig = array{
  *     providers?: array{
@@ -4596,11 +4596,12 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
  *     services?: ServicesConfig,
+ *     pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
+ *     pimcore_generic_execution_engine?: PimcoreGenericExecutionEngineConfig,
+ *     pimcore_studio_backend?: PimcoreStudioBackendConfig,
+ *     pimcore_studio_ui?: PimcoreStudioUiConfig,
  *     pimcore_seo?: PimcoreSeoConfig,
  *     pimcore_custom_reports?: PimcoreCustomReportsConfig,
- *     pimcore_studio_ui?: PimcoreStudioUiConfig,
- *     pimcore_studio_backend?: PimcoreStudioBackendConfig,
- *     pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
  *     core_shop_core?: CoreShopCoreConfig,
  *     core_shop_menu?: CoreShopMenuConfig,
  *     jms_serializer?: JmsSerializerConfig,
@@ -4655,22 +4656,22 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     webpack_encore?: WebpackEncoreConfig,
  *     debug?: DebugConfig,
  *     web_profiler?: WebProfilerConfig,
- *     presta_sitemap?: PrestaSitemapConfig,
  *     pimcore_elasticsearch_client?: PimcoreElasticsearchClientConfig,
  *     pimcore_open_search_client?: PimcoreOpenSearchClientConfig,
  *     mercure?: MercureConfig,
- *     pimcore_generic_execution_engine?: PimcoreGenericExecutionEngineConfig,
+ *     presta_sitemap?: PrestaSitemapConfig,
  *     knp_menu?: KnpMenuConfig,
  *     pimcore?: PimcoreConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
  *         services?: ServicesConfig,
+ *         pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
+ *         pimcore_generic_execution_engine?: PimcoreGenericExecutionEngineConfig,
+ *         pimcore_studio_backend?: PimcoreStudioBackendConfig,
+ *         pimcore_studio_ui?: PimcoreStudioUiConfig,
  *         pimcore_seo?: PimcoreSeoConfig,
  *         pimcore_custom_reports?: PimcoreCustomReportsConfig,
- *         pimcore_studio_ui?: PimcoreStudioUiConfig,
- *         pimcore_studio_backend?: PimcoreStudioBackendConfig,
- *         pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
  *         core_shop_core?: CoreShopCoreConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
