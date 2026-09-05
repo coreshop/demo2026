@@ -6,7 +6,9 @@ networks:
 
 # Environment of every PHP container: .env plus the developer's .env.local (registration values,
 # admin credentials), with the local stack running the dev environment. DATABASE_URL is set here
-# because the interpolated line in .env is only resolved by Symfony, not by docker compose.
+# because the interpolated line in .env is only resolved by Symfony, not by docker compose, and
+# PIMCORE_OPENSEARCH_DSN because pimcore-install re-reads .env with override (APP_ENV=prod) and
+# would otherwise fall back to localhost:9200 instead of the dev config's "os" host.
 x-php-env: &php-env
     env_file:
         - .env
@@ -16,6 +18,7 @@ x-php-env: &php-env
         APP_ENV: dev
         COMPOSER_AUTH: ${COMPOSER_AUTH:-}
         DATABASE_URL: mysql://pimcore:pimcore@db:3306/pimcore?serverVersion=8.0.26
+        PIMCORE_OPENSEARCH_DSN: http://os:9200
 
 services:
     db:
@@ -98,6 +101,7 @@ services:
             APP_ENV: dev
             COMPOSER_AUTH: ${COMPOSER_AUTH:-}
             DATABASE_URL: mysql://pimcore:pimcore@db:3306/pimcore?serverVersion=8.0.26
+        PIMCORE_OPENSEARCH_DSN: http://os:9200
             PHP_IDE_CONFIG: "serverName=localhost"
         networks:
             - default
