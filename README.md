@@ -8,16 +8,27 @@ Live: https://demo2026.coreshop.org (Studio: `/pimcore-studio`).
 
 ## Run locally
 
-Requirements: Docker. The images are built from `ghcr.io/cors-gmbh/pimcore-docker` (PHP 8.4).
+Requirements: Docker with Compose v2.24 or newer and the running cors dev traefik (network
+`cors_dev`, host names `*.localhost`). The images come from `ghcr.io/cors-gmbh/pimcore-docker`
+(PHP 8.4); the repository is bind-mounted, nothing is built locally.
 
 ```bash
-cp .env .env.local            # adjust if needed
+cp .env .env.local
+# fill in PIMCORE_ENCRYPTION_SECRET, PIMCORE_INSTANCE_IDENTIFIER and PIMCORE_PRODUCT_KEY in .env.local
 docker compose up -d
-docker compose logs -f php    # the first start installs Pimcore, CoreShop and the demo data
+docker compose logs -f install   # wait for "CoreShop demo installed"
 ```
 
-Then open the shop and `/pimcore-studio` on the host configured for the nginx container (user and
-password from `PIMCORE_INSTALL_ADMIN_USERNAME` / `PIMCORE_INSTALL_ADMIN_PASSWORD`).
+The first start runs the one-shot `install` service (`.docker/php/docker-dev-install.sh`): it
+installs the composer dependencies when `vendor/` is missing, waits for the database and runs
+`.docker/php/docker-install.sh`. The php, php-debug and supervisord containers start after it has
+finished. Later starts detect the existing installation and skip it; `docker compose down -v` gives
+you a fresh shop.
+
+| URL | Login |
+|---|---|
+| https://coreshop2026-demo.localhost | shop |
+| https://coreshop2026-demo.localhost/pimcore-studio | `admin` / `coreshop` (Studio; `PIMCORE_INSTALL_ADMIN_USERNAME` / `PIMCORE_INSTALL_ADMIN_PASSWORD`) |
 
 The first start installs Pimcore, CoreShop and the demo data in one go through the Pimcore 2026
 install profile `App\InstallProfile\DemoInstallProfile` (`src/InstallProfile`): it registers the
@@ -31,19 +42,20 @@ thing by hand:
 vendor/bin/pimcore-install --install-profile 'App\InstallProfile\DemoInstallProfile' --skip-validation --no-interaction
 ```
 
-The installer reads everything from the environment (no `.env.local` is written):
+The installer reads everything from the environment (`.env` plus the optional `.env.local`, both passed
+to every PHP container; no `.env.local` is written):
 
 | Variable | Purpose |
 |---|---|
-| `DATABASE_URL` | Doctrine DSN of the app database (built from `DATABASE_*` in `.env`) |
-| `PIMCORE_OPENSEARCH_DSN` | OpenSearch endpoint; locally `config/packages/dev/config.yaml` points the client to the `os` container |
+| `DATABASE_URL` | Doctrine DSN of the app database (built from `DATABASE_*` in `.env` by Symfony; docker compose sets it explicitly for the local stack) |
+| `PIMCORE_OPENSEARCH_DSN` | OpenSearch endpoint; docker compose sets `opensearch://os:9200?ssl=false` for the local stack (the dev config alone is not enough: `pimcore-install` re-reads `.env` with override and runs as `prod`) |
 | `PIMCORE_ENCRYPTION_SECRET` | defuse key for `pimcore.encryption.secret` (`vendor/bin/generate-defuse-key`) |
 | `PIMCORE_INSTANCE_IDENTIFIER` | Pimcore instance identifier |
 | `PIMCORE_PRODUCT_KEY` | Pimcore product key, **required**: Pimcore 2026 refuses to boot with a secret but without a registered key |
-| `PIMCORE_INSTALL_ADMIN_USERNAME`, `PIMCORE_INSTALL_ADMIN_PASSWORD` | admin user created by the installer |
+| `PIMCORE_INSTALL_ADMIN_USERNAME`, `PIMCORE_INSTALL_ADMIN_PASSWORD` | admin user created by the installer, default `admin` / `coreshop` in the local stack |
 
-Set them in `.env.local` for docker compose (plus `APP_ENV=dev` so the dev config is loaded); in
-Kubernetes they come from the `pimcore` secret of the manifest repository.
+The local stack runs `APP_ENV=dev` (dev config points the OpenSearch client to the `os` container);
+in Kubernetes the variables come from the `pimcore` secret of the manifest repository.
 
 ### Studio frontend builds
 
