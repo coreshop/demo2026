@@ -1,14 +1,6 @@
 #!/bin/sh
 set -e
 
-<<<<<<< Updated upstream
-# The Pimcore install secrets come from the container environment (Kubernetes
-# secret / docker compose .env), they are not part of the repository:
-#   PIMCORE_ENCRYPTION_SECRET    defuse key for pimcore.encryption.secret (config/config.yaml)
-#   PIMCORE_INSTANCE_IDENTIFIER  Pimcore instance identifier
-#   PIMCORE_PRODUCT_KEY          Pimcore product key (required at runtime, see README)
-for var in PIMCORE_ENCRYPTION_SECRET PIMCORE_INSTANCE_IDENTIFIER; do
-=======
 # Installs Pimcore, CoreShop and the demo data through the install profile
 # App\InstallProfile\DemoInstallProfile (see src/InstallProfile). Runs once: when the
 # database already holds a Pimcore installation the script exits without changes.
@@ -21,7 +13,6 @@ for var in PIMCORE_ENCRYPTION_SECRET PIMCORE_INSTANCE_IDENTIFIER; do
 #   PIMCORE_INSTALL_ADMIN_USERNAME   admin user to create
 #   PIMCORE_INSTALL_ADMIN_PASSWORD   password of that user
 for var in DATABASE_URL PIMCORE_ENCRYPTION_SECRET PIMCORE_INSTANCE_IDENTIFIER PIMCORE_PRODUCT_KEY PIMCORE_INSTALL_ADMIN_USERNAME PIMCORE_INSTALL_ADMIN_PASSWORD; do
->>>>>>> Stashed changes
   if [ -z "$(printenv "$var")" ]; then
     echo "$var is not set" >&2
     exit 1
