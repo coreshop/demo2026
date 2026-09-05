@@ -40,4 +40,6 @@ for d in vendor/coreshop/core-shop/src/CoreShop/Bundle/*/Resources/build-dist; d
 done
 bin/console cache:warmup
 
-rm -rf var/cache
+# The cache warmed as root above must not be reused by php-fpm (www-data); a failure to
+# remove it (e.g. a bind mount that keeps directory entries) is not fatal.
+rm -rf var/cache || true
