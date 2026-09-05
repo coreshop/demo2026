@@ -193,6 +193,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * }
  * @psalm-type PimcoreStudioUiConfig = array{
  *     url_path?: scalar|Param|null, // Default: "/pimcore-studio"
+ *     asset_upload?: array{
+ *         max_parallel_uploads?: int|Param, // How many asset uploads a single browser tab sends at the same time. Lower this if bursts of uploads exhaust the PHP-FPM pool. // Default: 5
+ *     },
  *     static_resources?: array{
  *         css?: list<scalar|Param|null>,
  *         js?: list<scalar|Param|null>,
@@ -287,6 +290,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             asset?: list<scalar|Param|null>,
  *             document?: list<scalar|Param|null>,
  *             data-object?: list<scalar|Param|null>,
+ *             ...<string, mixed>
  *         },
  *     },
  *     asset_metadata_adapter_mapping?: array<string, list<scalar|Param|null>>,
@@ -318,6 +322,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         expanded_left?: scalar|Param|null, // The id of the widget that should be expanded on the left side. // Default: null
  *         expanded_right?: scalar|Param|null, // The id of the widget that should be expanded on the right side. // Default: null
  *         context_permissions?: array<string, array<string, scalar|Param|null>>,
+ *         ...<string, mixed>
  *     }>,
  *     element_tree_widgets?: array<string, array{ // Default: []
  *         name?: scalar|Param|null,
@@ -332,12 +337,14 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         classes?: Param|string|list<scalar|Param|null>,
  *         pql?: scalar|Param|null, // Default: null
  *         context_permissions?: list<scalar|Param|null>,
+ *         ...<string, mixed>
  *     }>,
  *     studio_from_default_email?: scalar|Param|null, // Default: "studio-admin@pimcore.com"
  *     gdpr_data_extractor?: array{
  *         data_objects?: array{ // Settings for DataObjects DataProvider
  *             classes?: array<string, array{ // Default: []
  *                 allow_delete?: bool|Param, // Allow delete of objects directly in preview grid. // Default: false
+ *                 ...<string, mixed>
  *             }>,
  *         },
  *         assets?: array{ // Settings for Assets DataProvider
@@ -366,6 +373,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         authentication?: array{
  *             tokens?: array<string, list<scalar|Param|null>>,
  *         },
+ *     },
+ *     rate_limiting?: array{ // General rate limiting configuration for all Studio API endpoints.
+ *         enabled?: bool|Param, // Enable or disable general rate limiting for all Studio API endpoints. // Default: true
  *     },
  *     translations?: array{
  *         path?: scalar|Param|null, // Default: null
@@ -420,17 +430,21 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         search_settings?: array{
  *             list_page_size?: scalar|Param|null, // Default: 60
  *             list_max_filter_options?: scalar|Param|null, // Default: 500
- *             max_synchronous_children_rename_limit?: scalar|Param|null, // Maximum number of direct/synchronous children path updates if asset folders get renamed. If more then the given number of children need an path update the process will be done by the asynchronous index update command. This mechanismn is needed to be able to see directly the new paths in the folder navigation. // Default: 500
  *             search_analyzer_attributes?: array<string, array{ // Default: []
  *                 fields?: mixed, // Default: []
  *             }>,
  *         },
  *         index_settings?: mixed, // Default: []
+ *         reindex_settings?: array{
+ *             max_polls?: int|Param, // Maximum number of polling attempts when waiting for an async reindex task (default: 720 = 1 hour at 5-second intervals). // Default: 720
+ *             poll_interval?: int|Param, // Seconds to wait between reindex task status polls. // Default: 5
+ *         },
  *         queue_settings?: array{
  *             worker_count?: scalar|Param|null, // Default: 1
  *             min_batch_size?: scalar|Param|null, // Default: 5
  *             max_batch_size?: scalar|Param|null, // Default: 400
  *         },
+ *         calculated_fields_index_mode?: "live"|"query_store"|Param, // Where index values of calculated fields come from: "live" executes the calculator during indexing (default), "query_store" reads the save-time value from the object query table and never executes the calculator while indexing. // Default: "live"
  *         system_fields_settings?: array{
  *             general?: array<string, array{ // Default: []
  *                 type?: scalar|Param|null,
@@ -611,7 +625,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         datetime?: array{
  *             default_format?: scalar|Param|null, // Default: "Y-m-d\\TH:i:sP"
  *             default_deserialization_formats?: list<scalar|Param|null>,
- *             default_timezone?: scalar|Param|null, // Default: "Europe/Berlin"
+ *             default_timezone?: scalar|Param|null, // Default: "UTC"
  *             cdata?: scalar|Param|null, // Default: true
  *         },
  *         array_collection?: array{
@@ -711,7 +725,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             datetime?: array{
  *                 default_format?: scalar|Param|null, // Default: "Y-m-d\\TH:i:sP"
  *                 default_deserialization_formats?: list<scalar|Param|null>,
- *                 default_timezone?: scalar|Param|null, // Default: "Europe/Berlin"
+ *                 default_timezone?: scalar|Param|null, // Default: "UTC"
  *                 cdata?: scalar|Param|null, // Default: true
  *             },
  *             array_collection?: array{
@@ -2232,6 +2246,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         propel2?: array<mixed>,
  *     }>,
  * }
+ * @psalm-type CoreShopTelemetryConfig = array{
+ *     enabled?: scalar|Param|null, // Daily anonymous ping to the CoreShop license portal. Set CORESHOP_TELEMETRY=false to opt out. // Default: "%env(bool:CORESHOP_TELEMETRY)%"
+ *     endpoint?: scalar|Param|null, // Default: "https://license.coreshop.com/v1/ping"
+ *     timeout?: float|Param, // Default: 4.0
+ * }
  * @psalm-type StofDoctrineExtensionsConfig = array{
  *     orm?: array<string, array{ // Default: []
  *         translatable?: scalar|Param|null, // Default: false
@@ -3050,7 +3069,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             limiter?: scalar|Param|null, // A service id implementing "Symfony\Component\HttpFoundation\RateLimiter\RequestRateLimiterInterface".
  *             max_attempts?: int|Param, // Default: 5
  *             interval?: scalar|Param|null, // Default: "1 minute"
- *             lock_factory?: scalar|Param|null, // The service ID of the lock factory used by the login rate limiter (or null to disable locking). // Default: null
+ *             lock_factory?: scalar|Param|null, // The service ID of the lock factory used by the login rate limiter ("auto" to use the default one when the Lock component is configured, or null to disable locking). // Default: "auto"
  *             cache_pool?: string|Param, // The cache pool to use for storing the limiter state // Default: "cache.rate_limiter"
  *             storage_service?: string|Param, // The service ID of a custom storage implementation, this precedes any configured "cache_pool" // Default: null
  *         },
@@ -3263,7 +3282,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             lifetime?: int|Param, // Default: 31536000
  *             path?: scalar|Param|null, // Default: "/"
  *             domain?: scalar|Param|null, // Default: null
- *             secure?: true|false|"auto"|Param, // Default: null
+ *             secure?: true|false|"auto"|Param, // Default: "auto"
  *             httponly?: bool|Param, // Default: true
  *             samesite?: null|"lax"|"strict"|"none"|Param, // Default: "strict"
  *             always_remember_me?: bool|Param, // Default: false
@@ -3291,6 +3310,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         id?: scalar|Param|null,
  *         type?: scalar|Param|null,
  *         value?: mixed,
+ *         ...<string, mixed>
  *     }>,
  *     autoescape_service?: scalar|Param|null, // Default: null
  *     autoescape_service_method?: scalar|Param|null, // Default: null
@@ -3329,7 +3349,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         enabled?: bool|Param, // Default: false
  *     },
  *     intl?: bool|array{
- *         enabled?: bool|Param, // Default: false
+ *         enabled?: bool|Param, // Default: true
  *     },
  *     cssinliner?: bool|array{
  *         enabled?: bool|Param, // Default: false
@@ -3383,6 +3403,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             enabled?: bool|Param|null, // Default: null
  *             date_format?: scalar|Param|null,
  *             remove_used_context_fields?: bool|Param,
+ *             ...<string, mixed>
  *         },
  *         path?: scalar|Param|null, // Default: "%kernel.logs_dir%/%kernel.environment%.log"
  *         file_permission?: scalar|Param|null, // Default: null
@@ -3530,7 +3551,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         channels?: Param|string|array{
  *             type?: scalar|Param|null,
  *             elements?: list<scalar|Param|null>,
+ *             ...<string, mixed>
  *         },
+ *         ...<string, mixed>
  *     }>,
  * }
  * @psalm-type DoctrineConfig = array{
@@ -3623,6 +3646,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 use_savepoints?: bool|Param, // Use savepoints for nested transactions
  *                 instancename?: scalar|Param|null, // Optional parameter, complete whether to add the INSTANCE_NAME parameter in the connection. It is generally used to connect to an Oracle RAC server to select the name of a particular instance.
  *                 connectstring?: scalar|Param|null, // Complete Easy Connect connection descriptor, see https://docs.oracle.com/database/121/NETAG/naming.htm.When using this option, you will still need to provide the user and password parameters, but the other parameters will no longer be used. Note that when using this parameter, the getHost and getPort methods from Doctrine\DBAL\Connection will no longer function as expected.
+ *                 ...<string, mixed>
  *             }>,
  *             replicas?: array<string, array{ // Default: []
  *                 url?: scalar|Param|null, // A URL with connection information; any parameter value parsed from this string will override explicitly set parameters
@@ -3655,8 +3679,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 use_savepoints?: bool|Param, // Use savepoints for nested transactions
  *                 instancename?: scalar|Param|null, // Optional parameter, complete whether to add the INSTANCE_NAME parameter in the connection. It is generally used to connect to an Oracle RAC server to select the name of a particular instance.
  *                 connectstring?: scalar|Param|null, // Complete Easy Connect connection descriptor, see https://docs.oracle.com/database/121/NETAG/naming.htm.When using this option, you will still need to provide the user and password parameters, but the other parameters will no longer be used. Note that when using this parameter, the getHost and getPort methods from Doctrine\DBAL\Connection will no longer function as expected.
+ *                 ...<string, mixed>
  *             }>,
+ *             ...<string, mixed>
  *         }>,
+ *         ...<string, mixed>
  *     },
  *     orm?: array{
  *         default_entity_manager?: scalar|Param|null,
@@ -3695,6 +3722,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                         }>,
  *                     }>,
  *                 }>,
+ *                 ...<string, mixed>
  *             },
  *             connection?: scalar|Param|null,
  *             class_metadata_factory_name?: scalar|Param|null, // Default: "Doctrine\\ORM\\Mapping\\ClassMetadataFactory"
@@ -3756,10 +3784,12 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 class?: scalar|Param|null,
  *                 enabled?: bool|Param, // Default: false
  *                 parameters?: array<string, mixed>,
+ *                 ...<string, mixed>
  *             }>,
  *             identity_generation_preferences?: array<string, scalar|Param|null>,
  *         }>,
  *         resolve_target_entities?: array<string, scalar|Param|null>,
+ *         ...<string, mixed>
  *     },
  * }
  * @psalm-type DoctrineMigrationsConfig = array{
@@ -3890,7 +3920,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             timeout?: int|Param, // Connection timeout in seconds // Default: 90
  *             ignore_passive_address?: scalar|Param|null, // Ignore passive address // Default: null
  *             utf8?: bool|Param, // Enable UTF8 mode // Default: false
- *             transfer_mode?: scalar|Param|null, // Transfer mode (FTP_ASCII or FTP_BINARY constante on ftp extension) // Default: null
+ *             transfer_mode?: scalar|Param|null, // Transfer mode (FTP_ASCII or FTP_BINARY constant on ftp extension) // Default: null
  *             system_type?: null|"windows"|"unix"|Param, // FTP system type // Default: null
  *             timestamps_on_unix_listings_enabled?: bool|Param, // Enable timestamps on Unix listings // Default: false
  *             recurse_manually?: bool|Param, // Recurse directories manually // Default: true
@@ -3985,8 +4015,8 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         disable_asserts?: bool|Param, // Deprecated: The "disable_asserts" option is deprecated and will be removed in 4.0. // Default: false
  *         public_url?: list<scalar|Param|null>,
  *         path_normalizer?: scalar|Param|null, // Path normalizer service name (should implement League\Flysystem\PathNormalizer) // Default: null
- *         public_url_generator?: scalar|Param|null, // For adapter that do not provide public URLs or override adapter capabilities and public_url option, a public URL generator service name can be configured in the main Filesystem configuration (should implement League\Flysystem\PublicUrlGenerator) // Default: null
- *         temporary_url_generator?: scalar|Param|null, // For adapter that do not provide public URLs or override adapter capabilities, a temporary URL generator service name can be configured in the main Filesystem configuration (should implement League\Flysystem\TemporaryUrlGenerator) // Default: null
+ *         public_url_generator?: scalar|Param|null, // For adapter that do not provide public URLs or override adapter capabilities and public_url option, a public URL generator service name can be configured in the main Filesystem configuration (should implement League\Flysystem\UrlGeneration\PublicUrlGenerator) // Default: null
+ *         temporary_url_generator?: scalar|Param|null, // For adapter that do not provide public URLs or override adapter capabilities, a temporary URL generator service name can be configured in the main Filesystem configuration (should implement League\Flysystem\UrlGeneration\TemporaryUrlGenerator) // Default: null
  *         read_only?: bool|Param, // Converts a file system to read-only // Default: false
  *     }>,
  * }
@@ -4838,6 +4868,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     core_shop_wishlist?: CoreShopWishlistConfig,
  *     core_shop_class_definition_patch?: CoreShopClassDefinitionPatchConfig,
  *     payum?: PayumConfig,
+ *     core_shop_telemetry?: CoreShopTelemetryConfig,
  *     stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *     sylius_theme?: SyliusThemeConfig,
  *     webpack_encore?: WebpackEncoreConfig,

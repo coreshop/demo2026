@@ -23,7 +23,7 @@ pimcore_studio_backend:
 
 pimcore:
     product_registration:
-        instance_identifier: ***REMOVED***
-        product_key: '***REMOVED***'
+        instance_identifier: '%env(PIMCORE_INSTANCE_IDENTIFIER)%'
+        product_key: '%env(PIMCORE_PRODUCT_KEY)%'
     encryption:
-        secret: ***REMOVED***
+        secret: '%env(PIMCORE_ENCRYPTION_SECRET)%'
