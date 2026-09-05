@@ -48,7 +48,7 @@ to every PHP container; no `.env.local` is written):
 | Variable | Purpose |
 |---|---|
 | `DATABASE_URL` | Doctrine DSN of the app database (built from `DATABASE_*` in `.env` by Symfony; docker compose sets it explicitly for the local stack) |
-| `PIMCORE_OPENSEARCH_DSN` | OpenSearch endpoint; docker compose sets `http://os:9200` for the local stack (the dev config alone is not enough: `pimcore-install` re-reads `.env` with override and runs as `prod`) |
+| `PIMCORE_OPENSEARCH_DSN` | OpenSearch endpoint; docker compose sets `opensearch://os:9200?ssl=false` for the local stack (the dev config alone is not enough: `pimcore-install` re-reads `.env` with override and runs as `prod`) |
 | `PIMCORE_ENCRYPTION_SECRET` | defuse key for `pimcore.encryption.secret` (`vendor/bin/generate-defuse-key`) |
 | `PIMCORE_INSTANCE_IDENTIFIER` | Pimcore instance identifier |
 | `PIMCORE_PRODUCT_KEY` | Pimcore product key, **required**: Pimcore 2026 refuses to boot with a secret but without a registered key |
