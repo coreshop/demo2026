@@ -25,7 +25,7 @@ The install script `.docker/php/docker-install.sh` reads its secrets from the en
 |---|---|
 | `PIMCORE_ENCRYPTION_SECRET` | defuse key for `pimcore.encryption.secret` (`vendor/bin/generate-defuse-key`) |
 | `PIMCORE_INSTANCE_IDENTIFIER` | Pimcore instance identifier |
-| `PIMCORE_PRODUCT_KEY` | Pimcore product key, optional for a demo |
+| `PIMCORE_PRODUCT_KEY` | Pimcore product key; **required**, Pimcore refuses to boot with an encryption secret but no registered product key (register the instance identifier at https://license.pimcore.com/register) |
 
 Set them in `.env.local` for docker compose; in Kubernetes they come from the `pimcore` secret of
 the manifest repository.
