@@ -38,12 +38,16 @@ COPY --chown=www-data:www-data translations translations/
 COPY --chown=www-data:www-data var var/
 COPY --chown=www-data:www-data .env .env
 
+# The Studio frontend builds of the CoreShop bundles are extracted from Resources/build-dist into
+# Resources/public/studio during cache warmup; the extractor needs the parent directory to exist,
+# which CoreShop 2026.2.1 does not ship for most bundles (see README).
 # The build-time console calls boot the kernel without database, encryption secret and
 # product key; the "needs install" marker makes Pimcore skip the product registration
 # check for these calls. The real values come from the container environment at runtime.
 RUN set -eux; \
     composer dump-autoload; \
     mkdir -p var/config; touch var/config/needs-install.lock; \
+    for d in vendor/coreshop/core-shop/src/CoreShop/Bundle/*/Resources/build-dist; do mkdir -p "$(dirname "$d")/public"; done; \
     bin/console cache:clear --env=$APP_ENV; \
     bin/console assets:install; \
     PIMCORE_DISABLE_CACHE=1 bin/console pimcore:build:classes; \

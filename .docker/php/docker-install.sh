@@ -33,4 +33,11 @@ vendor/bin/pimcore-install \
   --skip-validation \
   --no-interaction
 
+# Extract the Studio frontend builds of the CoreShop bundles while the filesystem is writable
+# (see README: CoreShop 2026.2.1 ships them without the Resources/public parent directory).
+for d in vendor/coreshop/core-shop/src/CoreShop/Bundle/*/Resources/build-dist; do
+  mkdir -p "$(dirname "$d")/public"
+done
+bin/console cache:warmup
+
 rm -rf var/cache

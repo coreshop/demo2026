@@ -45,6 +45,15 @@ The installer reads everything from the environment (no `.env.local` is written)
 Set them in `.env.local` for docker compose (plus `APP_ENV=dev` so the dev config is loaded); in
 Kubernetes they come from the `pimcore` secret of the manifest repository.
 
+### Studio frontend builds
+
+The CoreShop bundles ship their Studio frontend as a zip in `Resources/build-dist`, which Pimcore's
+`StudioBuildCacheWarmer` extracts into `Resources/public/studio` on `cache:warmup`. The extractor
+requires the parent directory `Resources/public` to exist, and CoreShop 2026.2.1 does not ship it
+for 21 of its 22 bundles with a build, so Studio answers 500 ("Cannot extract the Studio frontend
+build archive"). The Dockerfile and the install script create the missing directories before the
+warmup as a workaround; remove it once CoreShop ships the directories (or the extractor creates them).
+
 ## CI/CD
 
 | Workflow | Trigger | What it does |
