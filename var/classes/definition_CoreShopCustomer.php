@@ -250,7 +250,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               5 => 
-              \Pimcore\Bundle\NewsletterBundle\Model\DataObject\ClassDefinition\Data\NewsletterActive::__set_state(array(
+              \Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'name' => 'newsletterActive',
                  'title' => 'coreshop.customer.newsletter_active',
                  'tooltip' => '',
@@ -260,7 +260,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
-                 'fieldtype' => '',
+                 'fieldtype' => 'checkbox',
                  'relationType' => false,
                  'invisible' => false,
                  'visibleGridView' => false,
@@ -272,7 +272,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               6 => 
-              \Pimcore\Bundle\NewsletterBundle\Model\DataObject\ClassDefinition\Data\NewsletterConfirmed::__set_state(array(
+              \Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'name' => 'newsletterConfirmed',
                  'title' => 'coreshop.customer.newsletter_confirmed',
                  'tooltip' => '',
@@ -282,7 +282,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
-                 'fieldtype' => '',
+                 'fieldtype' => 'checkbox',
                  'relationType' => false,
                  'invisible' => false,
                  'visibleGridView' => true,
