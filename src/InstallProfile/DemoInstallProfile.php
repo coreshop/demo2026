@@ -99,6 +99,12 @@ final readonly class DemoInstallProfile implements InstallProfileInterface, Inst
                 label: 'Installing CoreShop demo data',
                 priority: 80,
             ),
+            new PostInstallCommand(
+                command: 'pimcore:thumbnails:image',
+                label: 'Pre-generating the product thumbnails',
+                priority: 70,
+                arguments: ['--thumbnails=coreshop_productGrid,coreshop_productList,coreshop_productDetail,coreshop_productDetailThumbnail,coreshop_productCart,coreshop_productCartPreview', '--skip-high-res'],
+            ),
         ];
     }
 
