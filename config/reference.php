@@ -125,23 +125,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     ...<string, DefinitionType|AliasType|PrototypeType|StackType|ArgumentsType|null>
  * }
  * @psalm-type ExtensionType = array<string, mixed>
- * @psalm-type PimcoreNewsletterConfig = array{
- *     sender?: array{
- *         name?: scalar|Param|null,
- *         email?: scalar|Param|null,
- *     },
- *     return?: array{
- *         name?: scalar|Param|null,
- *         email?: scalar|Param|null,
- *     },
- *     method?: scalar|Param|null, // Default: null
- *     debug?: array{
- *         email_addresses?: scalar|Param|null, // Default: ""
- *     },
- *     use_specific?: bool|Param, // Default: false
- *     source_adapters?: array<string, scalar|Param|null>,
- *     default_url_prefix?: scalar|Param|null, // Default: null
- * }
  * @psalm-type PimcoreSeoConfig = array{
  *     sitemaps?: array{
  *         generators?: array<string, Param|bool|string|array{ // Default: []
@@ -424,7 +407,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     index_service?: array{
  *         client_params?: array{
  *             client_name?: scalar|Param|null, // Name of search client from to be used. // Default: "default"
- *             client_type?: "openSearch"|"elasticsearch"|Param, // Type of search client to be used. // Default: "openSearch"
+ *             client_type?: scalar|Param|null, // Type of search client to be used. Allowed values: openSearch, elasticsearch. Supports env vars. // Default: "openSearch"
  *             index_prefix?: scalar|Param|null, // Default: "pimcore_"
  *         },
  *         search_settings?: array{
@@ -477,106 +460,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  * }
- * @psalm-type PimcoreAdminConfig = array{
- *     gdpr_data_extractor?: array{
- *         dataObjects?: array{ // Settings for DataObjects DataProvider
- *             classes?: list<array{ // MY_CLASS_NAME: include: true allowDelete: false includedRelations: - manualSegemens - calculatedSegments // Default: []
- *                 include?: bool|Param, // Set if class should be considered in export. // Default: true
- *                 allowDelete?: bool|Param, // Allow delete of objects directly in preview grid. // Default: false
- *                 includedRelations?: list<scalar|Param|null>,
- *             }>,
- *         },
- *         assets?: array{ // Settings for Assets DataProvider
- *             types?: list<array{ // asset types // Default: []
- *             }>,
- *         },
- *     },
- *     objects?: array{
- *         notes_events?: array{
- *             types?: list<scalar|Param|null>,
- *         },
- *     },
- *     assets?: array{
- *         notes_events?: array{
- *             types?: list<scalar|Param|null>,
- *         },
- *         hide_edit_image?: bool|Param, // Default: false
- *         disable_tree_preview?: bool|Param, // Default: true
- *     },
- *     documents?: array{
- *         notes_events?: array{
- *             types?: list<scalar|Param|null>,
- *         },
- *         email_search?: list<scalar|Param|null>,
- *     },
- *     notifications?: bool|array{
- *         enabled?: bool|Param, // Default: true
- *         check_new_notification?: bool|array{ // Can be used to enable or disable the check of new notifications (url: /admin/notification/find-last-unread).
- *             enabled?: bool|Param, // Default: true
- *             interval?: int|Param, // Interval in seconds to check new notifications // Default: 30
- *         },
- *     },
- *     user?: array{
- *         default_key_bindings?: list<array{ // Default: []
- *             key?: scalar|Param|null,
- *             action?: scalar|Param|null,
- *             alt?: scalar|Param|null, // Default: false
- *             ctrl?: scalar|Param|null, // Default: false
- *             shift?: scalar|Param|null, // Default: false
- *         }>,
- *     },
- *     admin_languages?: list<scalar|Param|null>,
- *     export?: array{
- *         version_suffix?: bool|Param, // Default: false
- *     },
- *     csrf_protection?: array{
- *         excluded_routes?: list<scalar|Param|null>,
- *     },
- *     admin_csp_header?: bool|array{ // Can be used to enable or disable the Content Security Policy headers.
- *         enabled?: bool|Param, // Default: true
- *         exclude_paths?: list<scalar|Param|null>,
- *         additional_urls?: array{
- *             default-src?: list<scalar|Param|null>,
- *             img-src?: list<scalar|Param|null>,
- *             script-src?: list<scalar|Param|null>,
- *             style-src?: list<scalar|Param|null>,
- *             connect-src?: list<scalar|Param|null>,
- *             font-src?: list<scalar|Param|null>,
- *             media-src?: list<scalar|Param|null>,
- *             frame-src?: list<scalar|Param|null>,
- *         },
- *     },
- *     custom_admin_path_identifier?: scalar|Param|null, // Default: null
- *     custom_admin_route_name?: scalar|Param|null, // Default: "my_custom_admin_entry_point"
- *     branding?: array{
- *         login_screen_invert_colors?: bool|Param, // Default: false
- *         color_login_screen?: scalar|Param|null, // Default: null
- *         color_admin_interface?: scalar|Param|null, // Default: null
- *         color_admin_interface_background?: scalar|Param|null, // Default: null
- *         login_screen_custom_image?: scalar|Param|null, // Default: ""
- *     },
- *     session?: array{
- *         attribute_bags?: array<string, array{ // Default: []
- *             storage_key?: scalar|Param|null, // Default: null
- *         }>,
- *     },
- *     translations?: array{
- *         path?: scalar|Param|null, // Default: null
- *     },
- *     security_firewall?: mixed,
- *     config_location?: array{
- *         admin_system_settings?: array{
- *             write_target?: array{
- *                 type?: "symfony-config"|"settings-store"|"disabled"|Param, // Default: "symfony-config"
- *                 options?: list<mixed>,
- *             },
- *             read_target?: array{
- *                 type?: "symfony-config"|"settings-store"|Param, // Default: null
- *                 options?: list<mixed>,
- *             },
- *         },
- *     },
- * }
  * @psalm-type CoreShopCoreConfig = array{
  *     send_usage_log?: scalar|Param|null, // Default: true
  *     checkout_manager_factory?: scalar|Param|null,
@@ -596,22 +479,15 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             },
  *         },
  *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array{
- *             core?: scalar|Param|null, // Default: "/bundles/coreshopcore/pimcore/css/core.css"
- *             ...<string, mixed>
- *         },
- *         permissions?: scalar|Param|null, // Default: ["settings","ctc_assign_to_new","ctc_assign_to_existing"]
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *     },
  *     checkout?: array<string, array{ // Default: []
  *         steps?: array<string, array{ // Default: []
  *             step?: scalar|Param|null,
  *             priority?: int|Param,
  *         }>,
  *     }>,
+ *     pimcore_admin?: array{
+ *         permissions?: scalar|Param|null, // Default: ["settings","ctc_assign_to_new","ctc_assign_to_existing"]
+ *     },
  * }
  * @psalm-type CoreShopMenuConfig = array{
  *     autoconfigure_with_attributes?: scalar|Param|null, // Default: false
@@ -625,7 +501,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         datetime?: array{
  *             default_format?: scalar|Param|null, // Default: "Y-m-d\\TH:i:sP"
  *             default_deserialization_formats?: list<scalar|Param|null>,
- *             default_timezone?: scalar|Param|null, // Default: "UTC"
+ *             default_timezone?: scalar|Param|null, // Default: "Europe/Berlin"
  *             cdata?: scalar|Param|null, // Default: true
  *         },
  *         array_collection?: array{
@@ -725,7 +601,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             datetime?: array{
  *                 default_format?: scalar|Param|null, // Default: "Y-m-d\\TH:i:sP"
  *                 default_deserialization_formats?: list<scalar|Param|null>,
- *                 default_timezone?: scalar|Param|null, // Default: "UTC"
+ *                 default_timezone?: scalar|Param|null, // Default: "Europe/Berlin"
  *                 cdata?: scalar|Param|null, // Default: true
  *             },
  *             array_collection?: array{
@@ -821,12 +697,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * }
  * @psalm-type CoreShopPimcoreConfig = array{
  *     autoconfigure_with_attributes?: scalar|Param|null, // Default: false
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *     },
  * }
  * @psalm-type CoreShopLocaleConfig = array{
  *     autoconfigure_with_attributes?: scalar|Param|null, // Default: false
@@ -877,28 +747,15 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     translation?: bool|array{
  *         enabled?: bool|Param, // Default: true
  *         locale_provider?: scalar|Param|null, // Default: "CoreShop\\Component\\Resource\\Translation\\Provider\\TranslationLocaleProviderInterface"
+ *         locale_column_length?: int|Param, // Length of the `locale` column mapped onto every `*_translation` database table. The default of 5 fits plain language/region codes like "de_AT" but is too short for locales with a script subtag, e.g. "zh_Hans" / "zh_Hant" (7 chars) - MySQL silently truncates them, which then collides with the unique (translatable_id, locale) constraint. IMPORTANT: changing this value only updates Doctrine's mapping metadata for newly created schemas - it does NOT alter any already-created database column. You must ship your own migration that runs `ALTER TABLE ... MODIFY locale VARCHAR(<n>)` on every existing `*_translation` table, or inserts will keep failing/truncating against the old column width. // Default: 5
  *     },
  *     drivers?: list<"doctrine/orm"|Param>,
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *     },
  *     orm_cascade_merge_associations?: array<string, array{ // Default: []
  *         associations?: list<scalar|Param|null>,
  *     }>,
  * }
  * @psalm-type CoreShopSeoConfig = array{
  *     autoconfigure_with_attributes?: scalar|Param|null, // Default: false
- * }
- * @psalm-type CoreShopMoneyConfig = array{
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *     },
  * }
  * @psalm-type CoreShopWorkflowConfig = array{
  *     state_machine?: array<string, array{ // Default: []
@@ -937,16 +794,12 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     }>,
  * }
  * @psalm-type CoreShopMessengerConfig = array{
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *         permissions?: scalar|Param|null, // Default: ["messenger"]
- *     },
  *     doctrine?: array{
  *         table_name?: scalar|Param|null, // Default: null
  *         connection?: scalar|Param|null, // Default: null
+ *     },
+ *     pimcore_admin?: array{
+ *         permissions?: scalar|Param|null, // Default: ["messenger"]
  *     },
  * }
  * @psalm-type CoreShopRuleConfig = array{
@@ -972,12 +825,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 repository?: scalar|Param|null,
  *             },
  *         },
- *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *     },
  * }
  * @psalm-type CoreShopConfigurationConfig = array{
@@ -1185,16 +1032,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             },
  *         },
  *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *         permissions?: scalar|Param|null, // Default: ["cart_price_rule","order_list","order_detail","order_create","quote_list","quote_detail","quote_create","cart_list","cart_detail","cart_create"]
- *         install?: array{
- *             grid_config?: list<scalar|Param|null>,
- *         },
- *     },
  *     stack?: array{
  *         purchasable?: scalar|Param|null, // Default: "CoreShop\\Component\\Order\\Model\\PurchasableInterface"
  *         order?: scalar|Param|null, // Default: "CoreShop\\Component\\Order\\Model\\OrderInterface"
@@ -1203,6 +1040,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         order_invoice_item?: scalar|Param|null, // Default: "CoreShop\\Component\\Order\\Model\\OrderInvoiceItemInterface"
  *         order_shipment?: scalar|Param|null, // Default: "CoreShop\\Component\\Order\\Model\\OrderShipmentInterface"
  *         order_shipment_item?: scalar|Param|null, // Default: "CoreShop\\Component\\Order\\Model\\OrderShipmentItemInterface"
+ *     },
+ *     pimcore_admin?: array{
+ *         permissions?: scalar|Param|null, // Default: ["cart_price_rule","order_list","order_detail","order_create","quote_list","quote_detail","quote_create","cart_list","cart_detail","cart_create"]
  *     },
  * }
  * @psalm-type CoreShopCustomerConfig = array{
@@ -1258,14 +1098,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["customer_list","customer_group_list"]
- *         install?: array{
- *             grid_config?: list<scalar|Param|null>,
- *         },
  *     },
  * }
  * @psalm-type CoreShopUserConfig = array{
@@ -1286,12 +1119,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 type?: scalar|Param|null, // Default: "object"
  *             },
  *         },
- *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *     },
  * }
  * @psalm-type CoreShopInventoryConfig = array{
@@ -1337,12 +1164,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 type?: scalar|Param|null, // Default: "object"
  *             },
  *         },
- *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *     },
  *     redirect_to_main_variant?: scalar|Param|null, // Default: true
  * }
@@ -1513,17 +1334,13 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             },
  *         },
  *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *         permissions?: scalar|Param|null, // Default: ["product_price_rule","product_unit"]
- *     },
  *     stack?: array{
  *         product?: scalar|Param|null, // Default: "CoreShop\\Component\\Product\\Model\\ProductInterface"
  *         category?: scalar|Param|null, // Default: "CoreShop\\Component\\Product\\Model\\CategoryInterface"
  *         manufacturer?: scalar|Param|null, // Default: "CoreShop\\Component\\Product\\Model\\ManufacturerInterface"
+ *     },
+ *     pimcore_admin?: array{
+ *         permissions?: scalar|Param|null, // Default: ["product_price_rule","product_unit"]
  *     },
  * }
  * @psalm-type CoreShopThemeConfig = array{
@@ -1639,10 +1456,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["country","state","zone"]
  *     },
  * }
@@ -1680,10 +1493,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["currency","exchange_rate"]
  *     },
  * }
@@ -1751,10 +1560,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["tax_rate","tax_rule_group"]
  *     },
  * }
@@ -1778,10 +1583,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["store"]
  *     },
  * }
@@ -1837,15 +1638,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             },
  *         },
  *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *         permissions?: scalar|Param|null, // Default: ["index","filter"]
- *     },
  *     mapping_types?: array<string, scalar|Param|null>,
  *     worker_mapping_types?: array<string, array<string, scalar|Param|null>>,
+ *     pimcore_admin?: array{
+ *         permissions?: scalar|Param|null, // Default: ["index","filter"]
+ *     },
  * }
  * @psalm-type CoreShopShippingConfig = array{
  *     autoconfigure_with_attributes?: scalar|Param|null, // Default: false
@@ -1903,10 +1700,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["carrier","shipping_rule"]
  *     },
  * }
@@ -1989,10 +1782,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["payment_provider","payment_provider_rule"]
  *     },
  * }
@@ -2047,10 +1836,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         },
  *     },
  *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
  *         permissions?: scalar|Param|null, // Default: ["notification"]
  *     },
  * }
@@ -2069,13 +1854,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         default_sort_name?: scalar|Param|null, // Default: "name"
  *         default_sort_direction?: scalar|Param|null, // Default: "asc"
  *     },
- *     pimcore_admin?: array{
- *         install?: array{
- *             routes?: list<scalar|Param|null>,
- *             documents?: list<scalar|Param|null>,
- *             image_thumbnails?: list<scalar|Param|null>,
- *         },
- *     },
  *     controllers?: array{
  *         index?: scalar|Param|null, // Default: "CoreShop\\Bundle\\FrontendBundle\\Controller\\IndexController"
  *         register?: scalar|Param|null, // Default: "CoreShop\\Bundle\\FrontendBundle\\Controller\\RegisterController"
@@ -2091,6 +1869,12 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         security?: scalar|Param|null, // Default: "CoreShop\\Bundle\\FrontendBundle\\Controller\\SecurityController"
  *         payment?: scalar|Param|null, // Default: "CoreShop\\Bundle\\PayumBundle\\Controller\\PaymentController"
  *         mail?: scalar|Param|null, // Default: "CoreShop\\Bundle\\FrontendBundle\\Controller\\MailController"
+ *     },
+ *     pimcore_admin?: array{
+ *         install?: array{
+ *             documents?: list<scalar|Param|null>,
+ *             image_thumbnails?: list<scalar|Param|null>,
+ *         },
  *     },
  * }
  * @psalm-type CoreShopPayumConfig = array{
@@ -2125,13 +1909,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 form?: scalar|Param|null, // Default: "CoreShop\\Bundle\\ProductQuantityPriceRulesBundle\\Form\\Type\\ProductQuantityPriceRuleType"
  *             },
  *         },
- *     },
- *     pimcore_admin?: array{
- *         js?: array<string, scalar|Param|null>,
- *         css?: array<string, scalar|Param|null>,
- *         editmode_js?: array<string, scalar|Param|null>,
- *         editmode_css?: array<string, scalar|Param|null>,
- *         permissions?: scalar|Param|null, // Default: ["notification"]
  *     },
  * }
  * @psalm-type CoreShopWishlistConfig = array{
@@ -2328,16 +2105,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     },
  *     context?: scalar|Param|null, // Default: "sylius.theme.context.settable"
  *     legacy_mode?: bool|Param, // Deprecated: "legacy_mode" at path "sylius_theme.legacy_mode" is deprecated since Sylius/ThemeBundle 2.0 and will be removed in 3.0. // Default: false
- * }
- * @psalm-type WebpackEncoreConfig = array{
- *     output_path?: scalar|Param|null, // The path where Encore is building the assets - i.e. Encore.setOutputPath()
- *     crossorigin?: false|"anonymous"|"use-credentials"|Param, // crossorigin value when Encore.enableIntegrityHashes() is used, can be false (default), anonymous or use-credentials // Default: false
- *     preload?: bool|Param, // preload all rendered script and link tags automatically via the http2 Link header. // Default: false
- *     cache?: bool|Param, // Enable caching of the entry point file(s) // Default: false
- *     strict_mode?: bool|Param, // Throw an exception if the entrypoints.json file is missing or an entry is missing from the data // Default: true
- *     builds?: array<string, scalar|Param|null>,
- *     script_attributes?: array<string, scalar|Param|null>,
- *     link_attributes?: array<string, scalar|Param|null>,
  * }
  * @psalm-type CoreShopStorageListConfig = array{
  *     list?: array<string, array{ // Default: []
@@ -3073,28 +2840,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             cache_pool?: string|Param, // The cache pool to use for storing the limiter state // Default: "cache.rate_limiter"
  *             storage_service?: string|Param, // The service ID of a custom storage implementation, this precedes any configured "cache_pool" // Default: null
  *         },
- *         two_factor?: array{
- *             check_path?: scalar|Param|null, // Default: "/2fa_check"
- *             post_only?: bool|Param, // Default: true
- *             auth_form_path?: scalar|Param|null, // Default: "/2fa"
- *             always_use_default_target_path?: bool|Param, // Default: false
- *             default_target_path?: scalar|Param|null, // Default: "/"
- *             success_handler?: scalar|Param|null, // Default: null
- *             failure_handler?: scalar|Param|null, // Default: null
- *             authentication_required_handler?: scalar|Param|null, // Default: null
- *             auth_code_parameter_name?: scalar|Param|null, // Default: "_auth_code"
- *             trusted_parameter_name?: scalar|Param|null, // Default: "_trusted"
- *             remember_me_sets_trusted?: scalar|Param|null, // Default: false
- *             multi_factor?: bool|Param, // Default: false
- *             prepare_on_login?: bool|Param, // Default: false
- *             prepare_on_access_denied?: bool|Param, // Default: false
- *             enable_csrf?: scalar|Param|null, // Default: false
- *             csrf_parameter?: scalar|Param|null, // Default: "_csrf_token"
- *             csrf_token_id?: scalar|Param|null, // Default: "two_factor"
- *             csrf_header?: scalar|Param|null, // Default: null
- *             csrf_token_manager?: scalar|Param|null, // Default: "scheb_two_factor.csrf_token_manager"
- *             provider?: scalar|Param|null, // Default: null
- *         },
  *         x509?: array{
  *             provider?: scalar|Param|null,
  *             user?: scalar|Param|null, // Default: "SSL_CLIENT_S_DN_Email"
@@ -3287,6 +3032,28 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             samesite?: null|"lax"|"strict"|"none"|Param, // Default: "strict"
  *             always_remember_me?: bool|Param, // Default: false
  *             remember_me_parameter?: scalar|Param|null, // Default: "_remember_me"
+ *         },
+ *         two_factor?: array{
+ *             check_path?: scalar|Param|null, // Default: "/2fa_check"
+ *             post_only?: bool|Param, // Default: true
+ *             auth_form_path?: scalar|Param|null, // Default: "/2fa"
+ *             always_use_default_target_path?: bool|Param, // Default: false
+ *             default_target_path?: scalar|Param|null, // Default: "/"
+ *             success_handler?: scalar|Param|null, // Default: null
+ *             failure_handler?: scalar|Param|null, // Default: null
+ *             authentication_required_handler?: scalar|Param|null, // Default: null
+ *             auth_code_parameter_name?: scalar|Param|null, // Default: "_auth_code"
+ *             trusted_parameter_name?: scalar|Param|null, // Default: "_trusted"
+ *             remember_me_sets_trusted?: scalar|Param|null, // Default: false
+ *             multi_factor?: bool|Param, // Default: false
+ *             prepare_on_login?: bool|Param, // Default: false
+ *             prepare_on_access_denied?: bool|Param, // Default: false
+ *             enable_csrf?: scalar|Param|null, // Default: false
+ *             csrf_parameter?: scalar|Param|null, // Default: "_csrf_token"
+ *             csrf_token_id?: scalar|Param|null, // Default: "two_factor"
+ *             csrf_header?: scalar|Param|null, // Default: null
+ *             csrf_token_manager?: scalar|Param|null, // Default: "scheb_two_factor.csrf_token_manager"
+ *             provider?: scalar|Param|null, // Default: null
  *         },
  *     }>,
  *     access_control?: list<array{ // Default: []
@@ -3793,6 +3560,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     },
  * }
  * @psalm-type DoctrineMigrationsConfig = array{
+ *     enable_service_migrations?: bool|Param, // Whether to enable fetching migrations from the service container. // Default: false
  *     migrations_paths?: array<string, scalar|Param|null>,
  *     services?: array<string, scalar|Param|null>,
  *     factories?: array<string, scalar|Param|null>,
@@ -4042,6 +3810,16 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     convert_exception?: bool|Param, // Default: false
  *     remove_first_page_param?: bool|Param, // Default: false
  * }
+ * @psalm-type WebpackEncoreConfig = array{
+ *     output_path?: scalar|Param|null, // The path where Encore is building the assets - i.e. Encore.setOutputPath()
+ *     crossorigin?: false|"anonymous"|"use-credentials"|Param, // crossorigin value when Encore.enableIntegrityHashes() is used, can be false (default), anonymous or use-credentials // Default: false
+ *     preload?: bool|Param, // preload all rendered script and link tags automatically via the http2 Link header. // Default: false
+ *     cache?: bool|Param, // Enable caching of the entry point file(s) // Default: false
+ *     strict_mode?: bool|Param, // Throw an exception if the entrypoints.json file is missing or an entry is missing from the data // Default: true
+ *     builds?: array<string, scalar|Param|null>,
+ *     script_attributes?: array<string, scalar|Param|null>,
+ *     link_attributes?: array<string, scalar|Param|null>,
+ * }
  * @psalm-type DebugConfig = array{
  *     max_items?: int|Param, // Max number of displayed items past the first level, -1 means no limit. // Default: 2500
  *     min_depth?: int|Param, // Minimum tree depth to clone all the items, 1 is default. // Default: 1
@@ -4056,29 +3834,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     },
  *     intercept_redirects?: bool|Param, // Default: false
  *     excluded_ajax_paths?: scalar|Param|null, // Default: "^/((index|app(_[\\w]+)?)\\.php/)?_wdt"
- * }
- * @psalm-type PimcoreStaticRoutesConfig = array{
- *     definitions?: list<array{ // Default: []
- *         name?: scalar|Param|null,
- *         pattern?: scalar|Param|null,
- *         reverse?: scalar|Param|null,
- *         controller?: scalar|Param|null,
- *         variables?: scalar|Param|null,
- *         defaults?: scalar|Param|null,
- *         siteId?: list<int|Param>,
- *         methods?: list<scalar|Param|null>,
- *         priority?: int|Param,
- *         creationDate?: int|Param,
- *         modificationDate?: int|Param,
- *     }>,
- *     config_location?: array{
- *         staticroutes?: array{
- *             write_target?: array{
- *                 type?: "symfony-config"|"settings-store"|"disabled"|Param, // Default: "symfony-config"
- *                 options?: list<mixed>,
- *             },
- *         },
- *     },
  * }
  * @psalm-type PrestaSitemapConfig = array{
  *     generator?: scalar|Param|null, // Default: "presta_sitemap.generator_default"
@@ -4103,6 +3858,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * }
  * @psalm-type PimcoreElasticsearchClientConfig = array{
  *     es_clients?: array<string, array{ // Default: []
+ *         dsn?: scalar|Param|null, // DSN string: elasticsearch://user:pass@host:port?ssl_verify=bool. When set, overrides hosts/username/password/ssl_verification. // Default: null
  *         name?: scalar|Param|null,
  *         hosts?: list<scalar|Param|null>,
  *         logger_channel?: scalar|Param|null, // Logger channel to be used for elasticsearch client logs // Default: "pimcore.elasticsearch.default"
@@ -4120,6 +3876,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * }
  * @psalm-type PimcoreOpenSearchClientConfig = array{
  *     clients?: array<string, array{ // Default: []
+ *         dsn?: scalar|Param|null, // DSN string: opensearch://user:pass@host:port?ssl_verify=bool. When set, overrides hosts/username/password/ssl_verification. // Default: null
  *         name?: scalar|Param|null,
  *         hosts?: list<scalar|Param|null>,
  *         logger_channel?: scalar|Param|null, // Logger channel to be used for opensearch client logs // Default: "pimcore.opensearch.default"
@@ -4266,6 +4023,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         thumbnails?: array{
  *             allowed_formats?: list<scalar|Param|null>,
  *             max_scaling_factor?: float|Param, // Default: 5.0
+ *         },
+ *         storage_operation_queue?: array{ // Defers the physical part of asset folder moves/deletes on storages that cannot rename directories natively (e.g. object storage such as S3). Operations are recorded in the asset_storage_operation_queue table and applied by the pimcore:assets:storage-queue:process command, which must be scheduled (e.g. nightly cron) when this feature is enabled.
+ *             enabled?: bool|Param, // Default: false
  *         },
  *         frontend_prefixes?: array{
  *             source?: scalar|Param|null, // Default: ""
@@ -4417,6 +4177,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             disable_stack_trace?: bool|Param, // Default: false
  *         },
  *         default_controller?: scalar|Param|null, // Default: "App\\Controller\\DefaultController::defaultAction"
+ *         auto_provide_templates?: bool|Param, // Automatically provide the list of selectable templates for a document. If false, you must provide your own templates by creating a "Pimcore\Controller\Config\Template\TemplateProviderInterface" service and tagging it as "pimcore.template_provider". // Default: true
  *         error_pages?: array{
  *             default?: scalar|Param|null, // Default: null
  *             localized?: list<scalar|Param|null>,
@@ -4750,6 +4511,16 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         instance_identifier?: scalar|Param|null, // Unique identifier of that Pimcore instance. Will be generated during install.
  *         product_key?: scalar|Param|null, // Product registration key obtained during product registration. It is based on `instance_identifier` and `pimcore.encryption.secret`.
  *     },
+ *     cdn?: array{
+ *         base_url?: scalar|Param|null, // Public base URL of the CDN (scheme + host) used for URL-based purges of original assets that nginx serves directly off disk and that therefore never receive a Cache-Tag from PHP, e.g. https://cdn.example.com. Use env var CDN_BASE_URL. // Default: "%env(CDN_BASE_URL)%"
+ *         excluded_paths?: list<scalar|Param|null>,
+ *         image_optimizer_source_formats?: list<scalar|Param|null>,
+ *         fastly?: array{
+ *             api_token?: scalar|Param|null, // Fastly API token with purge_select scope. Use env var FASTLY_API_TOKEN. // Default: "%env(FASTLY_API_TOKEN)%"
+ *             service_id?: scalar|Param|null, // Fastly service ID. Use env var FASTLY_API_SERVICE. // Default: "%env(FASTLY_API_SERVICE)%"
+ *             api_base_url?: scalar|Param|null, // Base URL for the Fastly API. Override for local testing against a mock. Use env var FASTLY_API_BASE_URL. // Default: "%env(FASTLY_API_BASE_URL)%"
+ *         },
+ *     },
  *     config_location?: array{
  *         image_thumbnails?: array{
  *             write_target?: array{
@@ -4825,13 +4596,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
  *     services?: ServicesConfig,
- *     pimcore_newsletter?: PimcoreNewsletterConfig,
  *     pimcore_seo?: PimcoreSeoConfig,
  *     pimcore_custom_reports?: PimcoreCustomReportsConfig,
  *     pimcore_studio_ui?: PimcoreStudioUiConfig,
  *     pimcore_studio_backend?: PimcoreStudioBackendConfig,
  *     pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
- *     pimcore_admin?: PimcoreAdminConfig,
  *     core_shop_core?: CoreShopCoreConfig,
  *     core_shop_menu?: CoreShopMenuConfig,
  *     jms_serializer?: JmsSerializerConfig,
@@ -4839,7 +4608,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     core_shop_locale?: CoreShopLocaleConfig,
  *     core_shop_resource?: CoreShopResourceConfig,
  *     core_shop_seo?: CoreShopSeoConfig,
- *     core_shop_money?: CoreShopMoneyConfig,
  *     core_shop_workflow?: CoreShopWorkflowConfig,
  *     core_shop_messenger?: CoreShopMessengerConfig,
  *     core_shop_rule?: CoreShopRuleConfig,
@@ -4871,7 +4639,6 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     core_shop_telemetry?: CoreShopTelemetryConfig,
  *     stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *     sylius_theme?: SyliusThemeConfig,
- *     webpack_encore?: WebpackEncoreConfig,
  *     core_shop_storage_list?: CoreShopStorageListConfig,
  *     framework?: FrameworkConfig,
  *     security?: SecurityConfig,
@@ -4885,9 +4652,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     fos_js_routing?: FosJsRoutingConfig,
  *     flysystem?: FlysystemConfig,
  *     knp_paginator?: KnpPaginatorConfig,
+ *     webpack_encore?: WebpackEncoreConfig,
  *     debug?: DebugConfig,
  *     web_profiler?: WebProfilerConfig,
- *     pimcore_static_routes?: PimcoreStaticRoutesConfig,
  *     presta_sitemap?: PrestaSitemapConfig,
  *     pimcore_elasticsearch_client?: PimcoreElasticsearchClientConfig,
  *     pimcore_open_search_client?: PimcoreOpenSearchClientConfig,
@@ -4899,13 +4666,11 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
  *         services?: ServicesConfig,
- *         pimcore_newsletter?: PimcoreNewsletterConfig,
  *         pimcore_seo?: PimcoreSeoConfig,
  *         pimcore_custom_reports?: PimcoreCustomReportsConfig,
  *         pimcore_studio_ui?: PimcoreStudioUiConfig,
  *         pimcore_studio_backend?: PimcoreStudioBackendConfig,
  *         pimcore_generic_data_index?: PimcoreGenericDataIndexConfig,
- *         pimcore_admin?: PimcoreAdminConfig,
  *         core_shop_core?: CoreShopCoreConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias

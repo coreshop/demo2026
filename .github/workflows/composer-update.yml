@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.3"
+          php-version: "8.4"
           extensions: intl, gd, simpleXML, dom, exif, fileinfo, iconv, mbstring, mysqli, pdo_mysql, zip, zlib, imagick
       - run: composer update --no-interaction --no-progress --no-scripts
       - uses: peter-evans/create-pull-request@v7

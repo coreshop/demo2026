@@ -1,2 +1,5 @@
 _pimcore:
     resource: "@PimcoreCoreBundle/config/routing.yaml"
+
+coreshop_frontend:
+    resource: "@CoreShopFrontendBundle/Resources/config/routes.yaml"

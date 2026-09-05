@@ -1,6 +1,6 @@
 {
   "name": "pimcore/skeleton",
-    "description": "CoreShop 5.1 demo shop on Pimcore 12",
+    "description": "CoreShop 2026 demo shop on Pimcore 2026",
   "type": "project",
   "license": "GPL-3.0-or-later",
   "config": {
@@ -10,16 +10,17 @@
     "allow-plugins": {
       "php-http/discovery": true,
       "symfony/runtime": true
+    },
+    "platform": {
+      "php": "8.4.13"
     }
   },
   "require": {
-    "coreshop/core-shop": "^5.1",
-    "pimcore/admin-ui-classic-bundle": "^2.0",
-    "pimcore/newsletter-bundle": "^2.0",
-    "pimcore/pimcore": "^12.3",
-    "pimcore/quill-bundle": "^2.0",
-    "pimcore/studio-backend-bundle": "^2025.4",
-    "pimcore/studio-ui-bundle": "^2025.4",
+    "coreshop/core-shop": "^2026.2",
+    "pimcore/pimcore": "^2026.2",
+    "pimcore/quill-bundle": "^2026.1",
+    "pimcore/studio-backend-bundle": "^2026.2",
+    "pimcore/studio-ui-bundle": "^2026.2",
     "rybakit/twig-deferred-extension": "^3.0",
     "symfony/runtime": "^7.4"
   },
